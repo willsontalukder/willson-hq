@@ -9,7 +9,7 @@ Details: [brief](brief.md) · [shot list](shot-list.md) · [audio plan](audio-pl
 - [ ] Charge: every A7C battery, Mic Mini 2 TX(s) + RX + case, phone (80%+), power bank. Count transmitters (plan works with 1 or 2)
 - [ ] Camera → **PAL (50Hz)**, then **format the card in camera** (the switch needs it). Format the spare card too (128 GB+ each)
 - [ ] Set **4K 25p** XAVC S 100 Mbps, shutter **1/50**; save to MR1. Set **1080p 100p**, **1/100**; save to MR2
-- [ ] Picture profile **HLG3 / Pro / Detail -7** in a custom slot; zebras 100+; AF-C Face/Eye AF, tracking 2, speed 5; SteadyShot on
+- [ ] Picture Profile **Off**; Creative Style **Standard, Contrast -1, Saturation 0, Sharpness -1**; DRO Off (*check on camera* that Creative Style applies in movie mode); zebras 100+; AF-C Face/Eye AF, tracking 2, speed 5; SteadyShot on
 - [ ] Audio: Rec Level **manual**, Wind Noise Reduction **off**, DJI noise cancelling off
 - [ ] Mic test: RX in the A7C mic jack, headphones in, speak at vow volume, peaks about **-12 dB**; test magnet clip
 - [ ] Clean both lenses; pack per the [run-of-show packing list](run-of-show.md#packing-list); laptop, drive and reader stay home
@@ -18,7 +18,7 @@ Details: [brief](brief.md) · [shot list](shot-list.md) · [audio plan](audio-pl
 
 - [ ] 07:45 up, eat, dark quiet clothes, soft shoes
 - [ ] 08:20 battery and formatted card in camera; spare battery, spare card, power bank in pocket
-- [ ] Check MR1 = 4K 25p 1/50, PP slot = HLG3; quick RX-to-camera pairing check with headphones
+- [ ] Check MR1 = 4K 25p 1/50, Picture Profile = Off, Creative Style = Standard (-1/0/-1); quick RX-to-camera pairing check with headphones
 - [ ] Phone on airplane mode/DND, voice recorder set to WAV/lossless; ride booked (car or Uber, not rickshaw)
 
 ## 3. Friday timeline
@@ -57,11 +57,11 @@ Details: [brief](brief.md) · [shot list](shot-list.md) · [audio plan](audio-pl
 
 | Venue | WB | ISO | Aperture | Notes |
 |---|---|---|---|---|
-| Church | Custom WB on faces, about 4300–4800K | 125–3200, ceiling 6400 | Wide open / 1 stop down | Windows to the side; let them clip slightly. Phone locked-off wide as backup |
+| Church | Custom WB on faces, about 4300–4800K (colour is baked in: get this right) | 100–3200, ceiling 6400 | Wide open / 1 stop down | Windows to the side; let them clip slightly. Phone locked-off wide as backup |
 | Outdoors (steps) | Custom/daylight ~5600K | Base | f/8–f/11 at 1/50 (no ND) | Open shade; only 100p uses 1/100 |
 | Restaurant | Re-set custom WB on arrival | 800–6400 if dim | Wide open | Step aside from overhead downlights; flicker → Variable Shutter |
 
-All venues: PAL, 25p @ 1/50, 100p @ 1/100 (never 1/60 or 1/125), HLG3, AF-C Face/Eye. Lens swaps only between moments: 85 on before vows, 24 on before exit.
+All venues: PAL, 25p @ 1/50, 100p @ 1/100 (never 1/60 or 1/125), Picture Profile Off + Creative Style Standard (-1/0/-1), expose for faces, AF-C Face/Eye. Footage should look finished out of camera; Premiere gets light Lumetri touches only. Lens swaps only between moments: 85 on before vows, 24 on before exit.
 
 ## 5. Audio setup
 

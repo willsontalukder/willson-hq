@@ -54,8 +54,10 @@ Quick math: frame width is about **distance x 1.5** on the 24mm and **distance x
   forgiving at f/1.8.
 - 85mm at f/1.8 in the dark means razor-thin focus plus shake. Stop to **f/2.2-2.8** and raise ISO instead.
 - A7C ISO comfort zone for video: **100-6400 clean, up to 12800 acceptable**. Expose properly; underexposed
-  8-bit footage turns blotchy when you lift it in the edit. In S-Log3 the minimum ISO is high (check your
-  firmware), so in low light prefer **HLG or a Cine profile** and save S-Log3 for controlled, bright scenes.
+  8-bit footage turns blotchy when you lift it in the edit. Shoot with the look baked in: **Picture Profile Off,
+  Creative Style Standard (Contrast -1, Saturation 0, Sharpness -1)**, which works from ISO 100 and needs no
+  grading. Log and HLG profiles record flat footage meant for grading, so Frank doesn't use them. Set custom WB
+  per location, since colour can't be fixed much later (menu location of Creative Style: check on camera).
 - Find light first: face toward a window, a shopfront or a phone screen; put practicals (lamps, string lights)
   in the background of 85mm shots so they turn into bokeh.
 

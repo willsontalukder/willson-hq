@@ -11,17 +11,19 @@ Deliverables: 3–5 min highlight film and a full ceremony edit. Items marked *v
 | Main video | **4K 25p**, XAVC S 100 Mbps | same |
 | Slow motion | **1080p 100p** (normal movie mode, keeps audio), conform to 25p = 4x slow | same |
 | Shutter | **1/50** for 25p, **1/100** for 100p. Never 1/60 or 1/125 (flicker) | same |
-| Picture profile | **HLG3 gamma, Pro colour, Detail -7** (save to a custom PP slot) | same |
-| Exposure | Faces at normal brightness to +1/3. Zebras at 100+ to watch windows | same |
-| ISO | Base 125–800. **Ceiling 6400** (prefer 3200 or lower) | same; may need 3200–6400 if dim |
+| Picture profile | **Off** (MENU > Picture Profile > Off). Footage records in standard Rec.709 with the look baked in | same |
+| Creative Style | **Standard, Contrast -1, Saturation 0, Sharpness -1** (MENU > Creative Style; only active when Picture Profile is Off; exact menu tab *check on camera*) | same |
+| DRO / Auto HDR | **DRO Off** so brightness does not shift between shots (whether DRO applies in movie mode: *check on camera*) | same |
+| Exposure | **Expose for faces, get it right in camera** (no stretch for over/under). Zebras at 100+ to watch windows; accept small window clipping, never clip faces | same |
+| ISO | Base 100–800. **Ceiling 6400** (prefer 3200 or lower) | same; may need 3200–6400 if dim |
 | Aperture | 85mm wide open or 1 stop down; 24mm wide open indoors | same |
-| White balance | **Manual Kelvin / custom WB** off a white card on a face position. No AWB | re-set custom WB on arrival |
+| White balance | **Custom WB** off a white card at a face position (or manual Kelvin). No AWB. The colour is now baked in, so this is the most important setting of the day | re-set custom WB on arrival, and again if the light changes |
 | Focus | AF-C, Face/Eye AF on, tracking sensitivity 2 (stops jumping to guests), transition speed 5 | same |
 | IBIS | SteadyShot on. Use **Active** for 24mm moving shots if this firmware has it (*verify*), Standard for 85mm | same |
 
 **Why 25p, not 30p.** Bangladesh mains is 50Hz, so tungsten, LED and tube lights pulse at 100Hz. At 25p with 1/50 or 1/100 the shutter matches the pulse and the image is clean. 30p at 1/60 bands and flickers under cheap LEDs. 4K 25p also avoids the 1.2x crop the A7C applies at 4K 30p (*verify*). Slow motion therefore goes at 100p and 1/100, not 120p. If an LED still flickers, use Variable Shutter to find the clean speed, or keep that light out of frame.
 
-**Why HLG3 and not S-Log3.** The footage is 8-bit. S-Log3 needs ISO 640 minimum and +1 to +2 stops of overexposure, which a dim church cannot give, so it would come out noisy and band in the grade. HLG3 starts at ISO 125, keeps more highlight room than Standard for the bright windows, and grades to Rec.709 in minutes. If the light is flat and there is no time to grade, PP off (Standard) is an acceptable fallback; do not switch mid-event.
+**Why a baked-in look (Picture Profile off, Creative Style Standard).** Frank edits in Premiere Pro and does not colour grade, so the footage has to look finished the moment it comes off the card. Log and HLG profiles record a flat image that only looks right after grading; Standard records normal contrast and natural skin tones straight out of camera. It also suits the A7C's 8-bit files: the look is set before compression, so nothing gets stretched later and there is no banding or blotchy noise from pushing flat footage. Standard works from ISO 100, which helps in a dim church. Contrast -1 keeps a little more room for the bright windows; Sharpness -1 avoids the crunchy, over-sharpened video look. The trade-off: highlights clip sooner and white balance cannot be rescued much later, so expose for faces and set custom WB carefully at each venue. In Premiere, only light touches: Lumetri Basic Correction for small exposure and WB nudges and matching shots. Do not change the Creative Style mid-event.
 
 ## 2. Must-get list
 
@@ -86,7 +88,7 @@ Golden and blue hour do not fall during the event. Approximate Dhaka times for 2
 ## 5. Pre-shoot checklist (Thursday night)
 
 - [ ] Camera set to **PAL**, card formatted *in camera* after the switch
-- [ ] Custom PP (HLG3 / Pro / Detail -7) saved; 25p and 100p saved to MR1 and MR2 if possible
+- [ ] Picture Profile **Off**; Creative Style **Standard, Contrast -1, Saturation 0, Sharpness -1**; DRO Off. 25p and 100p saved to MR1 and MR2 if possible (whether MR also stores the Creative Style: *check on camera*). Record a 10 s test clip and check it looks right on a laptop without any correction
 - [ ] All batteries charged (NP-FZ100); spares in pocket. Full 4K is about 1.5–2 h per battery (*verify*)
 - [ ] SD card(s) formatted. 100 Mbps uses about 45 GB/hour, so bring at least 128 GB plus a spare card (single slot: swap at lunch)
 - [ ] Lens cloth, blower; both lenses cleaned

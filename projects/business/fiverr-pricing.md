@@ -1,6 +1,6 @@
 # Fiverr Pricing · Video editing gigs (USD) · Task T34
 
-Prepared by Matthew (finance), 21 Oct 2026. For Frank Willson Talukder, Dhaka. He edits in DaVinci Resolve on an ASUS TUF laptop.
+Prepared by Matthew (finance), 21 Oct 2026. For Frank Willson Talukder, Dhaka. He edits in Adobe Premiere Pro on an ASUS TUF laptop. **Correction 21 Oct 2026:** Frank does not use DaVinci Resolve and does not offer colour grading. The colour-grading gig has been removed, Gig 3 is now wedding and event highlight editing in Premiere Pro, and every package includes light colour correction only, not grading.
 
 **Updated 21 Oct 2026** with Frank's real Fiverr stats from `fiverr-snapshot.md`, which were read from his app screenshots. We still don't know the laptop's specs. We couldn't open Fiverr itself from here (fiverr.com did not resolve). Every market figure therefore comes from search-engine snippets of Fiverr pages or from third-party guides, and each one is cited and rated below. **Before publishing, open 10 to 15 competing gigs in each category on Fiverr and check them against §1.**
 
@@ -22,7 +22,7 @@ We still lift him off $20. Prices rise in one moderate step, and package scope i
 | | Basic | Standard | Premium |
 |---|---|---|---|
 | Comeback price | **$30** | **$70** | **$140** |
-| Scope (trimmed from the §2 tables) | up to 15 min raw → up to 3 min finished, 1 revision, 3 days | up to 45 min raw → up to 8 min, subtitles, sound design, 2 revisions, 4 days | up to 90 min raw → up to 15 min, full grade, motion graphics, thumbnail, 3 revisions, 6 days |
+| Scope (trimmed from the §2 tables) | up to 15 min raw → up to 3 min finished, 1 revision, 3 days | up to 45 min raw → up to 8 min, subtitles, sound design, 2 revisions, 4 days | up to 90 min raw → up to 15 min, light color correction, motion graphics, thumbnail, 3 revisions, 6 days |
 | Net USD / BDT (@122) | $24 / ৳2,928 | $56 / ৳6,832 | $112 / ৳13,664 |
 | Hours (estimate) / net per hour | 2.25 h / $10.7 | 5 h / $11.2 | 9.5 h / $11.8 |
 
@@ -31,23 +31,28 @@ We still lift him off $20. Prices rise in one moderate step, and package scope i
 | | Basic | Standard | Premium |
 |---|---|---|---|
 | Comeback price | **$25** | **$55** | **$120** |
-| Scope | 1 video up to 60 s from up to 10 min raw, styled captions, 1 revision, 2 days | 3 videos from up to 20 min raw, animated captions, color correction, 2 revisions, 3 days | 6 videos from up to 60 min raw, animated captions, grade, cover frames, 3 revisions, 5 days |
+| Scope | 1 video up to 60 s from up to 10 min raw, styled captions, 1 revision, 2 days | 3 videos from up to 20 min raw, animated captions, light color correction, 2 revisions, 3 days | 6 videos from up to 60 min raw, animated captions, light color correction, cover frames, 3 revisions, 5 days |
 | Net USD / BDT (@122) | $20 / ৳2,440 | $44 / ৳5,368 | $96 / ৳11,712 |
 | Hours (estimate) / net per hour | 1.75 h / $11.4 | 4 h / $11.0 | 8.5 h / $11.3 |
 
-**Color grading** (new gig, no reviews of its own, but the profile's 4.8 helps)
+**Wedding & event highlight editing in Premiere Pro** (new gig with no reviews of its own, but his bio already leads with wedding editing and the profile has a 4.8 rating)
 
 | | Basic | Standard | Premium |
 |---|---|---|---|
-| Launch price | **$35** | **$80** | **$160** |
-| Scope | as §2 Gig 3 | as §2 Gig 3 | as §2 Gig 3 |
-| Net USD / BDT (@122) | $28 / ৳3,416 | $64 / ৳7,808 | $128 / ৳15,616 |
-| Hours (estimate) / net per hour | 2.5 h / $11.2 | 6 h / $10.7 | 12 h / $10.7 |
+| Comeback price | **$55** | **$120** | **$230** |
+| Scope (trimmed from §2 Gig 3) | 1-min teaser (9:16 or 16:9) from up to 1 h raw, light color correction, 1 revision, 4 days | 3–4 min highlight from up to 3 h raw, vows/speech audio, light color correction, 2 revisions, 6 days | 5–6 min highlight + 1-min 9:16 teaser from up to 6 h raw, multicam, light color correction matched across cameras, 3 revisions, 10 days |
+| Net USD / BDT (@122) | $44 / ৳5,368 | $96 / ৳11,712 | $184 / ৳22,448 |
+| Hours (estimate) / net per hour | 4.25 h / $10.4 | 8.75 h / $11.0 | 16.5 h / $11.2 |
 
-This gig fits the filmmaker story, and Frank already works in DaVinci Resolve and S-Log. Lead with "Sony S-Log / DaVinci Resolve".
+Hours breakdown:
+- Basic: review 1, cut 2, correction 0.25, revision 0.5, admin 0.5.
+- Standard: review 2.5, cut 3.5, correction 0.75, revisions 1.5, admin 0.5.
+- Premium: review/sync 4.5, cut 6.5, correction 1.5, teaser 1.5, revisions 2, admin 0.5.
+
+This gig fits the filmmaker story and the "Wedding video editing" line already in his bio. It sits low in the observed $50–400 Fiverr range (§1).
 
 **Why these step-ups are safe:**
-- $20 → $30 and $20 → $25 keep the gig's "From" price inside the $25–50 range where most reviewed sellers sit (see §1).
+- $20 → $30 and $20 → $25 keep the gig's "From" price inside the $25–50 range where most reviewed sellers sit (see §1). The wedding gig's $55 "From" price is at the budget end of the $50–100 band.
 - 61 reviews at 4.8 justify being above the $5–15 beginner tier.
 - Buyers see a single small jump. Standard and Premium carry the real value.
 
@@ -57,7 +62,7 @@ This gig fits the filmmaker story, and Frank already works in DaVinci Resolve an
 |---|---|---|---|
 | YouTube editing | $45 | $95 | $180 |
 | UGC / short-form | $25 | $65 | $160 |
-| Color grading | $40 | $90 | $180 |
+| Wedding & event highlight (Premiere Pro) | $70 | $150 | $290 |
 
 Packages go back to the full scope in §2. From there the ladder in §5 takes over. He is likely to regain Level 1 quickly, since he already meets its order, client and earnings numbers, and that triggers Stage 1. **His review count is already past Stage 2's 20 reviews, so he can apply Stage 2 prices as soon as Level 2 comes back.**
 
@@ -88,10 +93,9 @@ None of these changes happens without Frank's approval: he makes them in his own
 |---|---|---|---|
 | YouTube video editing | **$45** | **$95** | **$180** |
 | Short-form (Reels/TikTok/Shorts) | **$25** (1 video) | **$65** (3 videos) | **$160** (8 videos) |
-| Color grading (DaVinci Resolve) | **$40** | **$90** | **$180** |
-| Wedding/event highlight | **$70** | **$150** | **$290** |
+| Wedding & event highlight (Premiere Pro) | **$70** | **$150** | **$290** |
 
-These are the **Phase B target prices**. Frank uses the Phase A comeback prices above until he has 5 new orders. After Fiverr's 20% fee they net about **$10–13 per hour** of Frank's time, which is about **৳1,240–1,560/h**. That is between 2 and 3 times his effective rate on local Dhaka shoots (~৳490–575/h in `packages-and-pricing.md`), with no travel and no gear wear. The ladder in §5 raises prices once reviews arrive.
+These are the **Phase B target prices**. Frank uses the Phase A comeback prices above until he has 5 new orders. After Fiverr's 20% fee they net about **$10.3–13 per hour** of Frank's time, which is about **৳1,255–1,600/h**. That is between 2 and 3 times his effective rate on local Dhaka shoots (~৳490–575/h in `packages-and-pricing.md`), with no travel and no gear wear. The ladder in §5 raises prices once reviews arrive.
 
 ---
 
@@ -122,16 +126,6 @@ How reliable the sources are: **thin to medium.** Most figures are a gig's "From
 
 **Range:** $5–15 from new or bargain sellers, $20–50 per video from sellers with reviews.
 
-### Color grading
-
-| Source | Data | Reliability |
-|---|---|---|
-| Fiverr category [color-grading](https://block.fiverr.com/gigs/color-grading) / [colorist](https://block.fiverr.com/gigs/colorist) | From **$40** (basic correction and grade). From $100 cinematic. Pro colorists from $100–240 (custom LUT from $240). Commercial work from $350–495. | "From" prices, undated |
-| Fiverr gig, [coloristjewel](https://fiverr.com/coloristjewel/do-beautiful-color-grading) (DaVinci) | Orders shown at $50 (1 day) and $100–200 (4 days) | One seller |
-| Fiverr profiles ([kabirsuri](https://www.fiverr.com/kabirsuri), [premiervix](https://www.fiverr.com/premiervix)) | Hourly rates of $42–45 from colorists. One outlier at $7/h. | Snippets |
-
-**Range:** $40–100 for short pieces from non-Pro sellers, $100–250+ from Pro or specialist colorists. **No per-minute pricing was found.**
-
 ### Wedding / event highlight editing
 
 | Source | Data | Reliability |
@@ -152,6 +146,7 @@ How reliable the sources are: **thin to medium.** Most figures are a gig's "From
 Rules that apply to every gig:
 - "Raw footage in" is the maximum client footage Frank has to review. Past that limit, the "extra raw footage" add-on applies.
 - Music: either the client supplies licensed tracks, or Frank uses a track from a library the client licenses. Frank does **not** resell his own music licence.
+- Editing is in Adobe Premiere Pro. Color work is **light color correction** only (exposure, white balance, basic matching); no creative grading is offered.
 - Accepted inputs: H.264/H.265/ProRes up to 4K. Camera RAW or 6K+ footage gets a quote first. The laptop's GPU is unknown, so proxies add time.
 - Delivery: H.264 MP4. ProRes is available on request at no charge, if file size allows.
 - "Revision" means one round of consolidated notes on the same cut. A new direction is a new order.
@@ -163,7 +158,7 @@ Rules that apply to every gig:
 | Raw footage in | up to 30 min | up to 60 min | up to 120 min |
 | Finished length | up to 5 min | up to 10 min | up to 20 min |
 | Cuts, pacing, audio clean-up, music bed | Yes | Yes | Yes |
-| Color correction | Basic | Basic | Full creative grade |
+| Light color correction | Yes | Yes | Yes + shot matching |
 | Text / lower thirds / B-roll placement (client-supplied) | Simple titles | Yes | Yes + motion graphics |
 | Subtitles (burned-in or SRT) | No | Yes | Yes |
 | Sound design (SFX, mix to −14 LUFS) | No | Yes | Yes |
@@ -181,34 +176,20 @@ Rules that apply to every gig:
 | Raw footage in (total) | up to 10 min | up to 30 min | up to 90 min (e.g. a podcast or long video to repurpose) |
 | Hook-first edit, music, SFX, 9:16 | Yes | Yes | Yes |
 | Captions | Styled | Animated, word-by-word | Animated, word-by-word |
-| Color correction | No | Yes | Yes + grade |
+| Light color correction | No | Yes | Yes |
 | Cover frame per video | No | No | Yes |
 | Revisions | 1 | 2 | 3 |
 | Delivery | 2 days | 3 days | 5 days |
 
 Price per video works out to $25, $21.67 and $20: a volume discount without dropping below the floor.
 
-### Gig 3: Color grading (DaVinci Resolve)
-
-| | Basic **$40** | Standard **$90** | Premium **$180** |
-|---|---|---|---|
-| Finished timeline length | up to 3 min | up to 10 min | up to 25 min |
-| Correction (exposure, white balance, Log/RAW to Rec.709) | Yes | Yes | Yes |
-| Look | 1 look | 2 look options to choose from | Custom look, scene by scene |
-| Shot matching | Basic | Yes | Yes |
-| Skin tones, secondaries, power windows | No | Skin tones | Full secondaries and tracking |
-| Custom .cube LUT of the look | No | No | Yes |
-| Input | XML/EDL or a flattened file | XML/EDL | XML/EDL |
-| Revisions | 1 | 2 | 3 |
-| Delivery | 2 days | 3 days | 5 days |
-
-### Gig 4: Wedding / event highlight
+### Gig 3: Wedding & event highlight editing (Premiere Pro)
 
 | | Basic **$70** | Standard **$150** | Premium **$290** |
 |---|---|---|---|
 | Raw footage in | up to 2 h | up to 4 h | up to 8 h, multicam |
 | Output | 1-min teaser (9:16 or 16:9) | 3–5 min cinematic highlight | 5–8 min highlight + 1-min 9:16 teaser |
-| Color | Correction | Cinematic grade | Cinematic grade, matched across cameras |
+| Color | Light correction | Light correction | Light correction, matched across cameras |
 | Vows/speech audio woven in | No | Yes | Yes |
 | Music sync (client-licensed track) | Yes | Yes | Yes, up to 2 tracks |
 | Revisions | 1 | 2 | 3 |
@@ -221,16 +202,14 @@ Fiverr also takes 20% of every extra. The net figure is what Frank receives.
 | Extra | Price | Net | Applies to |
 |---|---|---|---|
 | Extra-fast delivery | +$10 (Short-form Basic) / +$20 (other Basics) / +$35 (Standard) / +$60 (Premium) | 80% | All |
-| Additional revision round | +$10 (short-form, color) / +$15 (YouTube) / +$25 (wedding) | 80% | All |
+| Additional revision round | +$10 (short-form) / +$15 (YouTube) / +$25 (wedding) | 80% | All |
 | Extra 30 min of raw footage | +$10 (YouTube, short-form) / +$20 per extra hour (wedding) | 80% | YouTube, short-form, wedding |
-| Extra finished minute | +$10 (YouTube) / +$30 (wedding) / +$12 (color) | 80% | YouTube, wedding, color |
+| Extra finished minute | +$10 (YouTube) / +$30 (wedding) | 80% | YouTube, wedding |
 | Subtitles (SRT or burned-in) | +$10 per 10 min | $8 | YouTube Basic, wedding |
 | Thumbnail | +$15 | $12 | YouTube Basic and Standard |
 | Extra Short/Reel | +$20 each | $16 | Short-form, YouTube |
 | Extra aspect ratio (9:16 / 1:1 / 16:9) | +$10 per video | $8 | All |
-| Color grade upgrade | +$20 | $16 | YouTube Basic/Standard, short-form Basic |
-| Custom .cube LUT | +$25 | $20 | Color Basic and Standard |
-| Source file (DaVinci Resolve project, media not included) | +$40 (YouTube, color, short-form) / +$60 (wedding) | 80% | All |
+| Source file (Premiere Pro project, media not included) | +$40 (YouTube, short-form) / +$60 (wedding) | 80% | All |
 
 ---
 
@@ -253,9 +232,6 @@ Other cash-flow points, also from third-party sources:
 | Short-form Basic | $25 | $5 | **$20** | ৳2,440 |
 | Short-form Standard | $65 | $13 | **$52** | ৳6,344 |
 | Short-form Premium | $160 | $32 | **$128** | ৳15,616 |
-| Color Basic | $40 | $8 | **$32** | ৳3,904 |
-| Color Standard | $90 | $18 | **$72** | ৳8,784 |
-| Color Premium | $180 | $36 | **$144** | ৳17,568 |
 | Wedding Basic | $70 | $14 | **$56** | ৳6,832 |
 | Wedding Standard | $150 | $30 | **$120** | ৳14,640 |
 | Wedding Premium | $290 | $58 | **$232** | ৳28,304 |
@@ -270,16 +246,13 @@ How the hours were estimated: Fiverr's own guide says 1–2 h of editing per fin
 |---|---|---|---|---|
 | YouTube Basic | 3.5 | review 0.5, cut 1.5, polish 0.5, revision 0.5, admin 0.5 | $10.3 | ৳1,255 |
 | YouTube Standard | 6.5 | review 1, cut 2.5, subs/sound 1.5, revisions 1, admin 0.5 | $11.7 | ৳1,426 |
-| YouTube Premium | 11.5 | review 2, cut 4, grade/graphics 2.5, thumbnail+Short 1, revisions 1.5, admin 0.5 | $12.5 | ৳1,528 |
+| YouTube Premium | 11 | review 2, cut 4, correction/graphics 2, thumbnail+Short 1, revisions 1.5, admin 0.5 | $13.1 | ৳1,597 |
 | Short-form Basic | 1.75 | review 0.25, edit+captions 0.75, revision 0.25, admin 0.5 | $11.4 | ৳1,394 |
 | Short-form Standard | 4.5 | review 0.5, 3 × 1 h, revisions 0.5, admin 0.5 | $11.6 | ৳1,410 |
 | Short-form Premium | 11 | review 1.5, 8 × 1 h, revisions 1, admin 0.5 | $11.6 | ৳1,420 |
-| Color Basic | 2.5 | conform 0.5, grade 1, render 0.5 (unattended, half counted), admin 0.5 | $12.8 | ৳1,562 |
-| Color Standard | 6 | conform 0.5, grade 3.5, revisions 1, admin 1 | $12.0 | ৳1,464 |
-| Color Premium | 12 | conform 1, grade 8, LUT 0.5, revisions 1.5, admin 1 | $12.0 | ৳1,464 |
-| Wedding Basic | 5.5 | review 2, cut 2, grade 0.5, revision 0.5, admin 0.5 | $10.2 | ৳1,242 |
-| Wedding Standard | 11 | review 3.5, cut 4, grade 1.5, revisions 1.5, admin 0.5 | $10.9 | ৳1,331 |
-| Wedding Premium | 21 | review/sync 6, cut 8, grade 3, teaser 1.5, revisions 2, admin 0.5 | $11.0 | ৳1,348 |
+| Wedding Basic | 5.25 | review 2, cut 2, correction 0.25, revision 0.5, admin 0.5 | $10.7 | ৳1,301 |
+| Wedding Standard | 10.25 | review 3.5, cut 4, correction 0.75, revisions 1.5, admin 0.5 | $11.7 | ৳1,428 |
+| Wedding Premium | 19.5 | review/sync 6, cut 8, correction 1.5, teaser 1.5, revisions 2, admin 0.5 | $11.9 | ৳1,451 |
 
 **Floors to protect:**
 - **Do not accept under $10/h net (~৳1,220/h).** At that point a Fiverr order earns less than a local shoot once Fiverr's 20% and the 14-day wait are counted.
@@ -304,7 +277,7 @@ Fiverr's level requirements, from [Fiverr Help Center "Achieving levels"](https:
 | **0. Launch** | 0–4 reviews (for Frank: the first 5 new orders after his restart, priced at Phase A comeback prices; see "Your starting point") | Use the prices in this document. Do not discount Standard or Premium. Basic is the "door" that brings first orders. If there are no orders after ~30 days with healthy impressions, cut **Basic only** by $5 (short-form to $20, YouTube to $40). Never go below $10/h net. | $10–12/h |
 | **1. First proof** | **5 reviews at 4.8+** or Level 1 | Raise Basic ~20% (e.g. YouTube $55, short-form $30). Raise Standard/Premium ~10% (YouTube $105/$200, wedding $165/$320). | $12–14/h |
 | **2. Established** | **20 reviews** or Level 2 | +20–25% on all tiers (e.g. YouTube $65/$130/$240, short-form $35/$85/$200, wedding $90/$190/$360). Add a 4-week "repeat client" custom-offer bundle. | $15–17/h |
-| **3. In demand** | 40+ reviews, Top Rated, or Pro | Price towards the top of the observed market: wedding $250+ for a 3–5 min highlight, colorist $100–240. Drop the cheapest Basic or make it a "1 Short" sampler. | $20–25/h |
+| **3. In demand** | 40+ reviews, Top Rated, or Pro | Price towards the top of the observed market: wedding $250+ for a 3–5 min highlight. Drop the cheapest Basic or make it a "1 Short" sampler. | $20–25/h |
 
 Raise prices at any stage if any of these happens:
 - The order queue stays over 7 days of work for 2 weeks running.
@@ -322,7 +295,7 @@ How to raise:
 - ~~Frank to confirm his level, reviews and prices~~ Done 21 Oct 2026 (`fiverr-snapshot.md`): Level 0, 61 reviews at 4.8, 80 orders, video gigs from $20. Next: Frank to approve and enter the Phase A prices, and pause the two $5 gigs.
 - Find out why Frank is at Level 0 despite meeting the numbers. The likely reason is no recent activity, but this is not verified on Fiverr's site.
 - Frank to open Fiverr's "Fiverr fees for sellers" help page once to confirm the 20% (third-party sources agree, but it is not seen directly).
-- Spot-check 10–15 competitor gigs per category on Fiverr. The search data here is thin for short-form and color grading.
+- Spot-check 10–15 competitor gigs per category on Fiverr. The search data here is thin for short-form.
 - Laptop specs (CPU/GPU/RAM) decide whether 4K/RAW client footage is viable at these hours.
 - Tax treatment of Fiverr income in Bangladesh: not researched.
 - Log real hours on the first 5 orders per gig, then update §4.

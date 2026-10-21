@@ -346,67 +346,75 @@ price]**. Suggested delivery: 3 / 5 / 7 days. **Cap raw footage per package** so
 
 ---
 
-### Gig 3 · Cinematic colour grading in DaVinci Resolve
+### Gig 3 · Wedding & event highlight editing (Premiere Pro)
+
+**Create it new.** No reviewed gig to reuse, and the gigs being paused have no reviews, so nothing is lost. Your bio
+already says you edit wedding videos, so this fits your history.
 
 **Gig title (ready to paste):**
-`I will color grade your log footage in davinci resolve for a cinematic look`
+`I will edit your wedding or event footage into a cinematic highlight film`
 
 Alternatives:
-- `I will do cinematic color grading for sony slog3 and drone footage`
-- `I will color correct and grade your music video, short film or travel video`
+- `I will do wedding video editing: highlight film, teaser and reels`
+- `I will edit wedding, holud and event highlight videos in premiere pro`
 
-**Category:** Video & Animation → Video Editing (or a colour-grading subcategory if the live menu has one; check).
+**Category:** Video & Animation → Video Editing. Check the live menu for a closer wedding/event option.
 
-**Search tags (5):** `color grading` · `davinci resolve` · `color correction` · `slog3` · `cinematic look`
+**Search tags (5):** `wedding video editing` · `wedding highlight` · `event video editing` · `wedding teaser` · `premiere pro`
 
-**Packages:** Basic: up to 1 min / 15 shots · Standard: up to 5 min / 60 shots, shot matching + 1 custom look · Premium:
-up to 15 min, shot matching, skin-tone work, 2 look options + a LUT of the final look. 2 revisions each. Prices:
-**[Matthew's price]**. Suggested delivery: 2 / 4 / 6 days.
+**Packages:** Basic: 1-min teaser/Reel from up to 2 h of footage · Standard: 3–5 min highlight film from up to 4 h ·
+Premium: 5–8 min highlight film + 1-min teaser + 1 vertical Reel, from up to 8 h. 2 revisions each. Prices: **[Matthew's
+price]**. Suggested delivery: 4 / 7 / 10 days. Weddings are long edits, so set times you can hit alongside your own
+shoots. **Cap footage hours per package**; longer footage gets a custom offer on Fiverr.
 
 **Description:**
 
-> **Flat, grey log footage in. A film-look grade out, with natural skin tones.**
+> **You captured the day. I'll turn hours of footage into the few minutes they'll watch again and again.**
 >
-> I colour grade video in DaVinci Resolve: music videos, short films, travel and drone videos, brand films and Reels.
+> I edit wedding and event highlight films in Adobe Premiere Pro, for videographers who need an extra editor and for
+> couples who have their own footage.
 >
 > **What's included**
-> - Log → Rec.709 conversion (Sony S-Log2/S-Log3 and other camera Log profiles), done properly
-> - Shot matching so every clip looks like it came from the same camera and day
-> - A cinematic look built for your story: warm, moody, clean or filmic
-> - Skin-tone protection so people still look like people
-> - Drone footage matched to your main camera
-> - Premium: the final look exported as a LUT you can reuse
+> - Watching all your footage and picking the real moments: vows, reactions, laughter, the dance floor
+> - A story with a beginning, middle and end, not just a montage
+> - Cuts timed to licensed music, or a track you provide
+> - Speeches and vows used where they carry the story, with cleaned-up audio
+> - Drone shots worked in where you have them
+> - Standard/Premium: a teaser and a vertical Reel for Instagram
 >
 > **Why me**
-> I'm a cinematographer first. I shoot S-Log3 on a Sony full-frame camera and fly my own drone, so I grade the kind
-> of footage I shoot every week. Have a look at the before/afters in my gallery. Every grade is done by me personally.
+> I'm a filmmaker in Dhaka who shoots and edits weddings, holuds and events myself. I know the moments that matter
+> because I'm usually the one filming them. I edit every order personally, so your film gets one consistent style.
 >
 > **How it works**
-> 1. Message me a 10-second sample clip. I'll tell you honestly what's possible with your footage
-> 2. Order and share your edited timeline (XML/EDL + media) or a single exported file
-> 3. I send a look preview on 2–3 key shots first, so we agree on the style early
-> 4. Full grade, 2 revision rounds, final export
+> 1. Message me with what you shot (hours, cameras, any drone) and a highlight film you like
+> 2. Order and upload your footage (Google Drive / Dropbox / WeTransfer), sorted by camera or part of the day if you can
+> 3. I send the first cut through Fiverr on time
+> 4. 2 rounds of changes, then final export in the resolution you need
 >
-> **Send me one clip and a reference frame you love, and I'll show you where I'd take it.**
+> **Not sure which package fits your footage? Message me before ordering and I'll tell you honestly.**
 
 **FAQs (5):**
-1. **What do I need to send?** Best: a DaVinci Resolve project, or an XML/EDL with the original camera files. Also fine:
-   a single high-quality export (ProRes/DNxHR). An already compressed MP4 limits what I can do.
-2. **Can you fix overexposed or badly lit footage?** I can improve it a lot, but blown highlights can't be fully
-   recovered. Send a sample clip first and I'll tell you honestly.
-3. **Can you match a film or reference video?** Yes. Send stills of the look you want. I'll build a look in that
-   direction for your footage. It won't be an exact copy, because cameras and light differ.
-4. **Is drone footage included?** Yes. I match drone shots to your main camera inside the same grade.
-5. **Do I get the LUT?** The Premium package includes a LUT of the final look for future projects. Note that a LUT is a
-   starting point: footage shot in different light will still need adjusting.
+1. **How do I send hours of footage?** Upload it to Google Drive, Dropbox or WeTransfer and paste the link in the
+   requirements. Large uploads take time, so the delivery clock starts once all files have arrived.
+2. **Can you match my studio's editing style?** Yes. Send 1–2 of your past films and I'll follow the same pace, titles
+   and music feel.
+3. **Can you use a popular song?** I can't license commercial songs for you. I'll use licensed music, or you supply a
+   track you have the rights to. Songs you don't have rights to can get your video muted or blocked online.
+4. **Do you edit the full ceremony or documentary film too?** These packages are highlight films. For a full-length
+   edit, message me first and I'll send a custom offer on Fiverr.
+5. **Which software do you use, and can I get the project file?** I edit in Adobe Premiere Pro. You get the finished
+   MP4. Project files aren't included unless agreed in a custom offer.
 
 **Buyer requirements:**
 1. Footage link (Drive/Dropbox/WeTransfer), with access set to "anyone with the link". *(required)*
-2. Camera(s) and picture profile used, e.g. Sony A7 IV S-Log3, DJI drone D-Log. *(required)*
-3. What are you sending: Resolve project / XML or EDL + media / single export? *(multiple choice)*
-4. 2–5 reference stills or links for the look you want. *(required)*
-5. Where will it be shown: YouTube, Instagram, cinema/festival, client TV? *(multiple choice)*
-6. Deliverable format and resolution you need. *(required)*
+2. Total footage length, and the cameras used (including drone, if any). *(required)*
+3. Type of event: wedding, holud, engagement, reception, birthday, corporate… *(multiple choice)*
+4. Names to use in titles (or none), and the date/place, if you want them shown. *(optional)*
+5. 1–3 links to highlight films whose style you like. *(required)*
+6. Music: your own licensed track (upload), or a licensed track picked by me in a mood you describe? *(required)*
+7. Must-include moments or people, and anything to leave out. *(optional)*
+8. Final format: 16:9, 9:16 or both; resolution. *(required)*
 
 ---
 
