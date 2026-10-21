@@ -6,7 +6,7 @@ Frank's checklist for every export: **YT** = YouTube, **SOC** = Instagram Reels 
 - [ ] Resolution: YT 3840x2160 or 1920x1080 · SOC 1080x1920 (9:16) · CLI as quoted (usually 4K or 1080p, 16:9)
 - [ ] Frame rate is **25p** from shoot to timeline to export, with no 23.976/29.97 conform. Slow motion (50/100p) is conformed to 25p.
 - [ ] Aspect ratio and SAR 1:1. No black bars unless intended. SOC: titles and faces are clear of the caption/button areas at the top, bottom and right edge.
-- [ ] S-Log3 is fully graded (no flat or grey shots). Skin tones match from shot to shot. Rec.709, video (limited) levels. No crushed blacks and no clipped whites on the scopes.
+- [ ] Baked-in footage (no log, no LUTs) has only light Lumetri correction in Premiere: exposure, white balance and skin tones are consistent from shot to shot and venue to venue, with no shot noticeably brighter, darker, warmer or cooler than its neighbours. Rec.709, video (limited) levels. No clipped whites (faces, windows, white dresses) and no crushed blacks (dark suits, hair) on the Lumetri waveform.
 - [ ] No banding in skies or walls (the A7C records 8-bit, so add grain or dither if it shows). Check on the export, not the timeline.
 - [ ] No flicker from LED or mains lighting (50 Hz: shutter 1/50 or 1/100). No flash frames, black frames or stray gaps at cuts.
 - [ ] Drone shots: horizon is level, no props in frame, no jello.
