@@ -43,9 +43,9 @@ couple's written OK). Leave price empty or `[price]` until Matthew confirms; upd
 
 | Item name | Price | Description (short) | Link / item code |
 |---|---|---|---|
-| A · Intimate Wedding / Holud / Engagement | [price] | One shooter, up to ~5 h. 3–5 min highlight film + 60 s vertical teaser. One revision round, licensed music. Deposit to book, balance on delivery. | `PKG-A` |
-| B · Restaurant/Café Reels | [price] | One ~2 h shoot → 3 vertical Reels (15–30 s) with captions. Optional monthly repeat. One revision round, licensed music. Deposit to book. | `PKG-B` |
-| C · Product Starter | [price] | Up to 3 products → 1 hero video (30–45 s) + 3 short cuts for Reels/ads. One revision round, licensed music. Deposit to book. | `PKG-C` |
+| A · Intimate Wedding / Holud / Engagement | ৳22,000 (intro) | One shooter, up to ~5 h. 3–5 min highlight film + 60 s vertical teaser. 2 revision rounds, licensed music. Deposit to book, balance on delivery. | `PKG-A` |
+| B · Restaurant/Café Reels | ৳12,000 (intro) | One ~2 h shoot → 3 vertical Reels (15–30 s) with captions. Optional monthly repeat. 2 revision rounds, licensed music. Deposit to book. | `PKG-B` |
+| C · Product Starter | ৳10,000 (intro) | Up to 3 products → 1 hero video (30–45 s) + 3 short cuts for Reels/ads. 2 revision rounds, licensed music. Deposit to book. | `PKG-C` |
 
 Add delivery time to each description once Matthew sets it. Optional fourth item later: "Showreel" with the
 showreel link, once Bartholomew's cut is approved.

@@ -185,10 +185,13 @@ deliberately below studio drone add-ons (FrameCipher ৳25,000) because the Neo 
 7. **Usage rights:**
    - **A:** the couple/family get a permanent personal licence: share online, with family, at events. Not for commercial
      resale.
-   - **B, C:** the business gets a licence to use the videos on its own social pages, website and **boosted/paid social
-     ads**, with no time limit. TV, cinema, billboard or reselling the footage to another brand: ask first (separate fee).
-   - Music is licensed for the platform it was delivered for. Don't swap in other music or re-upload to a channel that
-     would cause a copyright claim; if music needs changing, ask Frank.
+   - **B, C:** the business gets a licence to use the videos on its own social pages and website, with no time limit.
+     **Boosted/paid ads:** tell Frank before booking so the music can be licensed for ads. TV, cinema, billboard or reselling the footage to another brand: ask first (separate fee).
+   - Music: every track is licensed through Frank's [library name, plan] for use in this video on the channels listed
+     above. Please don't replace the music, use the track on its own, or re-edit the video with other music; ask Frank
+     instead. If a platform shows a copyright notice, send Frank a screenshot and he will clear it.
+     *(James-the-less confirms the library and tier covers client work, paid ads and use after the subscription ends
+     before the first B/C quote.)*
    - **Frank keeps the copyright** and may use clips in his portfolio and showreel. **For weddings, only with the
      couple's written OK** (sales-plan ground rule); the couple can say no and it doesn't change the price.
 8. **Files & backup:** delivered files stay online 30 days. Frank keeps the project archive for 6 months as a courtesy,
@@ -277,8 +280,8 @@ Terms message (second WhatsApp, short form):
 শর্তাবলি / Terms (short):
 ১. ৫০% অগ্রিমে তারিখ কনফার্ম, বাকি ৫০% ডেলিভারিতে। / 50% advance books the date; 50% on delivery.
 ২. ২ বার রিভিশন, প্রতিবার এক তালিকায়, ১৪ দিনের মধ্যে। / 2 revision rounds, one list each, within 14 days.
-৩. বাতিল: ইভেন্ট—৩০+ দিন আগে অগ্রিম নতুন তারিখে বা ৫০% ফেরত; ৩০ দিনের কম হলে অগ্রিম ফেরতযোগ্য নয় (একবার তারিখ বদল ফ্রি)। রিল/প্রোডাক্ট—৭২ ঘণ্টা আগে জানালে অগ্রিম নতুন তারিখে।
-   Cancellation: events—30+ days before: advance moves to a new date or 50% refunded; under 30 days: advance kept (one free date change). Reels/products—72 h notice: advance moves to a new date.
+৩. বাতিল: ইভেন্ট—৩০+ দিন আগে অগ্রিম নতুন তারিখে বা ৫০% ফেরত; ৩০ দিনের কম হলে অগ্রিম ফেরতযোগ্য নয় (একবার তারিখ বদল ফ্রি)। রিল/প্রোডাক্ট—শুটের ৭২ ঘণ্টার বেশি আগে জানালে অগ্রিম নতুন তারিখে যাবে; ৭২ ঘণ্টার কম হলে অগ্রিম ফেরতযোগ্য নয়।
+   Cancellation: events—30+ days before: advance moves to a new date or 50% refunded; under 30 days: advance kept (one free date change). Reels/products—more than 72 h notice: advance moves to a new date; under 72 h: advance is kept.
 ৪. আমি বাতিল করলে পুরো টাকা ফেরত। হরতাল/দুর্যোগে ফ্রি রিশিডিউল। / If I cancel, full refund. Hartal/bad weather: free reschedule.
 ৫. ব্যবহার: বিয়ে—ব্যক্তিগত ব্যবহার; ব্যবসা—নিজের পেজ, ওয়েবসাইট ও বুস্টেড অ্যাডে। পোর্টফোলিওতে ব্যবহারের আগে আপনার লিখিত অনুমতি নেব (বিয়ের ক্ষেত্রে)।
    Usage: weddings—personal use; businesses—own pages, website and boosted ads. For weddings I only use clips in my portfolio with your written OK.

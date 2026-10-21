@@ -40,7 +40,7 @@ Later (after 60 days): event venues, real-estate walk-throughs, corporate. Drone
 - **B. Restaurant/Café Reels:** one ~2 h shoot → 3 vertical Reels (15–30 s) with captions; optional monthly repeat.
 - **C. Product Starter:** up to 3 products → 1 hero video (30–45 s) + 3 short cuts for Reels/ads.
 
-Every package states: delivery time, revisions (one round), licensed music only, deposit to book, balance on delivery.
+Every package states: delivery time, revisions (two rounds), licensed music only, 50% advance to book, balance on delivery.
 
 ## 4. The funnel
 
