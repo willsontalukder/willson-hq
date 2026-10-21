@@ -112,7 +112,7 @@ How reliable the sources are: **thin to medium.** Most figures are a gig's "From
 | Fiverr YouTube editing gigs ([shainsiby](https://fiverr.com/shainsiby/do-professional-youtube-video-editing) and others in [search](https://www.fiverr.com/categories/video-animation/buy/video-editing/youtube-videos)) | Many gigs listed "up to $50", 1–4 days. Some reviews show $100–200 orders. One gig lists $5–20 per edited minute. One 10-min package "starting at $150". | Snippets only. |
 | [sidestackers.com](https://www.sidestackers.com/blog/video-editing-rates) (Feb 2026), [hammadj.com](https://hammadj.com/pricing-guide.html) (2026) | 10–15 min YouTube video $150–500 across freelancing in general. Mid-tier Fiverr gigs for a 5–10 min video $150–350. Fiverr entry level $5–30. | Third-party blogs, some selling their own services. |
 
-**Range:** about $25–50 for a basic short edit, $75–150 for a 10-minute video with subtitles and grade, and $150–350 at mid-tier.
+**Range:** about $25–50 for a basic short edit, $75–150 for a 10-minute video with subtitles and color work, and $150–350 at mid-tier.
 
 ### Short-form (Reels / TikTok / Shorts)
 

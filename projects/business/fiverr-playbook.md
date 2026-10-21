@@ -48,7 +48,7 @@ The gigs pull in five directions: video editing, thumbnails, graphic design, AI 
 | **3** | **Gig cleanup, part 1: pause** the 4 gigs that don't fit, or merge them as add-ons (see (2)). Remove the "click bait" thumbnail image and any gig image with other people's faces (see (4)). | A focused profile reads as a specialist; removes the riskiest images straight away. | 3 live gigs (plus graphic design, see (2)). |
 | **4** | **Gig cleanup, part 2: rewrite the YouTube editing gig** (32 reviews) with the Gig 2 copy in §2. Keep its category and the words "YouTube video editing" in the title, so the gig keeps its search history. | Your most-reviewed gig: the best shot at the first new order. | New description, 5 FAQs, requirements, before/after image 1, gig video. |
 | **5** | **Rewrite the UGC gig** (9 reviews) with the Gig 1 copy in §2 (UGC version). | Second-strongest gig; short-form buyers order again and again. | Same as day 4. |
-| **6** | **Create the colour-grading gig** (Gig 3 in §2) with 2–3 before/after images from your own S-Log3 and drone footage. Set delivery times you can hit around local shoots. | It's the one gig with no reviewed version to keep, and it shows your strongest skill. | Live, with a gig video. |
+| **6** | **Create the wedding & event highlight gig** (Gig 3 in §2) with 2–3 images from your own wedding/event films (only footage the couple or client agreed you can show). Cap footage hours per package and set delivery times you can hit around local shoots. | It's the one gig with no reviewed version to keep; your bio already says you edit weddings, and the order value is higher. | Live, with a gig video. |
 | **7** | **Prices and promotion.** Send Matthew the facts (from $20 today, 4.8 from 61 reviews) for new package prices. Then post one Facebook Reel linking the YouTube gig. Start the §3 daily routine. | Getting found again: off-platform traffic to the gig is allowed; contacting buyers out of the blue is not (next box). | Prices set by Matthew, one FB post live, routine running. |
 
 **About Briefs and past buyers. This is where it's easy to break the rules:**
@@ -73,7 +73,7 @@ from scratch.** Your profile rating already shows all 61 reviews.
 |---|---|---|---|
 | Do professional YouTube video editing… | 4.7 (32) · $20 | **Keep + rewrite** (day 4). Keep category and "YouTube video editing" in the title. Add the old thumbnail service as an add-on ("thumbnail design") if you still want to sell it. | **Gig 2** · YouTube / talking-head editing |
 | Do UGC video editing for TikTok ads and Instagram… | 4.7 (9) · $20 | **Keep + rewrite** (day 5). Keep "UGC" in the title and tags; widen it to Reels/TikTok/Shorts. | **Gig 1** · Short-form editing (UGC / Reels / TikTok / Shorts) |
-| *(new)* Colour grading in DaVinci Resolve | — | **Create** (day 6). No reviewed gig to reuse; the paused AI gigs have no reviews, so nothing is lost. | **Gig 3** · Colour grading (incl. drone) |
+| *(new)* Wedding & event highlight editing (Premiere Pro) | — | **Create** (day 6). No reviewed gig to reuse; the paused AI gigs have no reviews, so nothing is lost. | **Gig 3** · Wedding & event highlights (incl. drone shots) |
 | Design a catchy YouTube thumbnail in 2… ("Click bait" image) | none · $5 | **Pause** and **merge** as an add-on to the YouTube gig. Remove the "click bait" image now. | Add-on to Gig 2 |
 | Create any kind of graphic design into st… | **5.0 (20)** · $5 | **Keep live for now, don't promote.** 20 five-star reviews and new orders count as activity while the video gigs restart. Decide at day 30: pause it once the video gigs are getting orders. | None (off-brand side gig) |
 | Provide natural text to speech AI human voice… | none · $10 | **Pause.** Off-brand, no reviews. | — |
@@ -82,23 +82,23 @@ from scratch.** Your profile rating already shows all 61 reviews.
 
 Pausing (not deleting) keeps the gigs if you change your mind. Prices on every kept gig: **[Matthew's price]**.
 
-### (3) New bio, ready to paste (495 characters)
+### (3) New bio, ready to paste (463 characters)
 
 Third-party guides put the bio limit at 600 characters **(unverified; Fiverr's page not checked)**
 ([EduEarnHub character limits](https://eduearnhub.com/?p=5875)). This version fits under that. It makes no claims we
 can't check: no "expert", no years of experience, no numbers. Your 61 reviews already speak for you on the same page.
 
 ```
-I'm Willson, a filmmaker and video editor from Dhaka, Bangladesh. I shoot my own films on a Sony full-frame camera and a drone, and I edit and colour grade in DaVinci Resolve, so I understand footage from both sides of the camera.
+I'm Willson, a filmmaker and video editor from Dhaka, Bangladesh. I shoot my own films on a Sony full-frame camera and a drone, and I edit in Adobe Premiere Pro, so I understand footage from both sides of the camera.
 
-Here I edit YouTube videos, UGC ads and short-form Reels, TikToks and Shorts, and I colour grade Log footage for a cinematic look.
+Here I edit YouTube videos, UGC ads, short-form Reels, TikToks and Shorts, and wedding and event highlight films.
 
 I edit every order myself. Send me a sample clip and tell me what you're making, and I'll tell you honestly what I can do with it.
 ```
 
 What changed from the old bio ("I am  a Filmmaker And Professional Video Editor i have experience 6+ years i am expert
 at this serves…"): grammar and capitals fixed; "6+ years" and "expert" removed, since a buyer can't check them and
-your reviews make the point better; the wedding/short-film list replaced with the 3 services you'll actually sell; ends
+your reviews make the point better; the service list cut to the 3 you'll actually sell (wedding editing stays, now as highlight films); ends
 with an on-platform call to action. If you want "6+ years" back, it's your claim to make, but only if it's true.
 
 ### (4) Avatar and gig images
@@ -116,7 +116,7 @@ with an on-platform call to action. If you want "6+ years" back, it's your claim
   is someone else's image **(our reading)**. Replace them with frames from your own footage, or with real client
   thumbnails only where the client has said yes in writing on Fiverr.
 - **"Click bait" wording: drop it.** The word itself tells buyers the thumbnail overpromises, which clashes with a
-  filmmaker selling quality. Use "Before / After" or a plain outcome ("YouTube edit · captions · colour"), and keep
+  filmmaker selling quality. Use "Before / After" or a plain outcome ("YouTube edit · captions · music"), and keep
   overlay text to 3–5 words.
 - **Every gig image 1:** a split-screen before/after from your own footage. That is your best proof.
 
@@ -131,11 +131,11 @@ Run it once now, then again on day 30. Tick each box only if the statement is tr
 | ✓ | Item | What "good" looks like |
 |---|---|---|
 | ☐ | **Profile photo** | Real photo of Frank's face: well lit, shot on the A7C + 85mm, plain background. Not the Keep Rolling logo and not an AI portrait. Buyers hire a person. |
-| ☐ | **Display name / one-liner** | One line that says who you serve and what you deliver, e.g. *"Cinematographer & DaVinci Resolve editor: Reels, YouTube edits, colour grading."* No "best", "#1" or "cheap". |
+| ☐ | **Display name / one-liner** | One line that says who you serve and what you deliver, e.g. *"Filmmaker & Premiere Pro editor: Reels, YouTube edits, wedding highlights."* No "best", "#1" or "cheap". |
 | ☐ | **Description (About)** | 3 short paragraphs: (1) what you edit and for whom, (2) why you're different: you shoot too (Sony A7C, drone), so you edit like someone who knows the footage, and every edit is done by you personally, (3) how to start: "Send me a message with a sample clip." Use "I", not "we". The FB page's "আমরা" (we) mixes the message for a one-person brand. |
-| ☐ | **Skills** | Matches the gigs: Video Editing, Color Grading, DaVinci Resolve, Short-form Video, YouTube Video Editing, Drone Footage. List only skills you'd accept an order for tomorrow. |
+| ☐ | **Skills** | Matches the gigs: Video Editing, Adobe Premiere Pro, Short-form Video, YouTube Video Editing, Wedding Video Editing, Drone Footage. List only skills you'd accept an order for tomorrow. |
 | ☐ | **Languages** | English with your honest level, Bengali native. Don't overstate English: buyers test it in the first message. |
-| ☐ | **Portfolio** | 6–10 pieces, all your own original work (see §4). Each has a before/after or a one-line context: "S-Log3 → graded, Sony A7C, 24mm, Dhaka rooftop". Mix: 2 Reels, 2 YouTube-style edits, 2 grade before/afters, 1 drone piece. |
+| ☐ | **Portfolio** | 6–10 pieces, all your own original work (see §4). Each has a raw-vs-finished comparison or a one-line context: "3 h of holud footage → 4-min highlight, Sony A7C + drone, Dhaka". Mix: 2 Reels, 2 YouTube-style edits, 2 wedding/event highlights, 1 drone piece. |
 | ☐ | **Education / certifications** | Only real ones. Leave empty rather than pad it. |
 | ☐ | **Links** | No phone, email or WhatsApp anywhere on the profile or in gig images (see §4). |
 
@@ -143,7 +143,7 @@ Run it once now, then again on day 30. Tick each box only if the statement is tr
 
 | ✓ | Item | What "good" looks like |
 |---|---|---|
-| ☐ | **Gig title** | "I will …" plus the exact phrase a buyer types, e.g. "edit reels", "color grade". One service per gig. Fiverr's Pro guidance suggests keeping it short so the card doesn't cut it off ([Fiverr Pro help](https://help.fiverr.com/hc/en-us/articles/29454478348433-Creating-a-Fiverr-Pro-Gig)). |
+| ☐ | **Gig title** | "I will …" plus the exact phrase a buyer types, e.g. "edit reels", "wedding video editing". One service per gig. Fiverr's Pro guidance suggests keeping it short so the card doesn't cut it off ([Fiverr Pro help](https://help.fiverr.com/hc/en-us/articles/29454478348433-Creating-a-Fiverr-Pro-Gig)). |
 | ☐ | **Category / subcategory** | Video & Animation → the most specific matching subcategory (e.g. Video Editing, Short Video Ads, Visual Effects). Subcategory names change ([Fiverr help: subcategories](https://help.fiverr.com/hc/en-us/articles/360011263198-Video-Animation-category-Subcategories)), so pick from the live menu. A wrong category hides the gig. |
 | ☐ | **Search tags** | All 5 used ([Fiverr help: Creating a Gig](https://help.fiverr.com/hc/en-us/articles/360010451397-Creating-a-Gig)), each a phrase buyers really search. Don't repeat the title word for word. No competitor or brand names you don't work for. |
 | ☐ | **Pricing / packages** | Basic / Standard / Premium with clearly different scope: length, number of clips, revisions, extras. Prices: **[Matthew's price]**. |
@@ -212,7 +212,7 @@ editing has too few buyers to stand alone **(unverified; no data found)**, so it
 
 Alternatives to A/B test later (change one thing at a time; allow time between changes; one guide suggests about 30
 days **(unverified)**). Keep "UGC" in any version so the gig keeps the searches it already ranks for:
-- `I will edit UGC ads and talking head reels with captions and cinematic color`
+- `I will edit UGC ads and talking head reels with captions, b roll and music`
 - `I will edit UGC videos and reels for coaches, creators and small brands`
 
 **Category:** keep the UGC gig's current category (Video & Animation → its existing subcategory).
@@ -220,7 +220,7 @@ days **(unverified)**). Keep "UGC" in any version so the gig keeps the searches 
 **Search tags (5):** `ugc video editing` · `reels editing` · `tiktok ads` · `youtube shorts` · `talking head video`
 
 **Packages:** Basic: 1 Reel up to 60 s · Standard: 3 Reels · Premium: 8 Reels (a month of content). Each includes
-captions, cuts, music from a licensed source or the buyer's own, colour and 2 revisions. Prices: **[Matthew's price]**.
+captions, cuts, music from a licensed source or the buyer's own, and 2 revisions. Prices: **[Matthew's price]**.
 Delivery days: Frank's call. Suggested defaults: 2 / 4 / 7 days.
 
 **Description:**
@@ -235,14 +235,13 @@ Delivery days: Frank's call. Suggested defaults: 2 / 4 / 7 days.
 > - Tight jump cuts, pace that matches your voice
 > - Clean, readable captions in your brand colours
 > - B-roll, zooms and simple motion where it helps, not everywhere
-> - Colour correction so your skin tones and footage look natural
 > - Music from a licensed library, or your own track
 > - 9:16 export ready to post, plus a cover frame on request
 >
 > **Why me**
 > I'm a cinematographer as well as an editor. I shoot on a Sony full-frame camera and a drone, so I know what good
 > footage needs and how to rescue footage that isn't perfect. Every edit is done by me personally, not passed to a
-> team, so the style stays consistent from video to video. I edit and grade in DaVinci Resolve.
+> team, so the style stays consistent from video to video. I edit in Adobe Premiere Pro.
 >
 > **How it works**
 > 1. Message me with one sample clip and a Reel you like
@@ -258,7 +257,7 @@ Delivery days: Frank's call. Suggested defaults: 2 / 4 / 7 days.
    Please set the link to "anyone with the link can view".
 2. **Can you use trending TikTok/Instagram sounds?** I can't license those for you. I'll use royalty-free music from a
    licensed library, or your own track. You can add a trending sound yourself inside the app when posting.
-3. **What if my footage is shot on a phone?** That's fine. Most Reels are. I'll correct colour and audio as far as the
+3. **What if my footage is shot on a phone?** That's fine. Most Reels are. I'll clean up the audio and pacing as far as the
    footage allows. Good light and a clear voice matter more than the camera.
 4. **How many revisions do I get?** 2 rounds per video, covering changes to the edit, captions and music within the
    original brief. A new script or new footage counts as a new video.
@@ -281,16 +280,16 @@ Delivery days: Frank's call. Suggested defaults: 2 / 4 / 7 days.
 **Rewrite of the existing YouTube editing gig (32 reviews). Don't create a new one.** Keep its current category.
 
 **Gig title (ready to paste):**
-`I will do professional youtube video editing with captions and cinematic color`
+`I will do professional youtube video editing with captions, b roll and music`
 
 Alternatives (keep "youtube video editing" in any version):
 - `I will do youtube video editing for talking head, vlog and podcast channels`
-- `I will do professional youtube video editing in davinci resolve`
+- `I will do professional youtube video editing in premiere pro`
 
 **Category:** keep the YouTube gig's current category (Video & Animation → Video Editing). Thumbnail design moves
 here as an add-on (see §0).
 
-**Search tags (5):** `youtube video editing` · `talking head video` · `vlog editing` · `podcast video editing` · `davinci resolve`
+**Search tags (5):** `youtube video editing` · `talking head video` · `vlog editing` · `podcast video editing` · `premiere pro`
 
 **Packages:** Basic: up to 8 min final / 30 min raw · Standard: up to 15 min final / 60 min raw + 1 Short cut from it ·
 Premium: up to 25 min final / 120 min raw + 3 Shorts + thumbnail frame. 2 revisions each. Prices: **[Matthew's
@@ -307,13 +306,13 @@ price]**. Suggested delivery: 3 / 5 / 7 days. **Cap raw footage per package** so
 > - A hook in the first 30 seconds, built from your best moment
 > - B-roll, on-screen text and simple graphics to explain key points
 > - Audio clean-up and levelling so your voice is clear
-> - Colour correction and a consistent look across episodes
+> - A consistent look across episodes: same titles, captions and pace
 > - Licensed background music, chapters list on request
 > - Standard/Premium: vertical Shorts cut from the same video
 >
 > **Why me**
 > I'm a working cinematographer and editor in Dhaka. I shoot my own films on a Sony full-frame camera and a drone,
-> and I edit everything myself in DaVinci Resolve. You always deal with the same person, and your channel keeps one
+> and I edit everything myself in Adobe Premiere Pro. You always deal with the same person, and your channel keeps one
 > consistent style.
 >
 > **How it works**
@@ -329,7 +328,7 @@ price]**. Suggested delivery: 3 / 5 / 7 days. **Cap raw footage per package** so
    first and I'll send a custom offer on Fiverr.
 2. **Do you write titles and thumbnails?** I can suggest title ideas and export a thumbnail frame (Premium). Full
    thumbnail design isn't included.
-3. **Can you match my existing style?** Yes. Send 1–2 of your past videos and I'll follow the same captions, colour and pace.
+3. **Can you match my existing style?** Yes. Send 1–2 of your past videos and I'll follow the same captions, titles and pace.
 4. **What file do I get?** An MP4 (H.264) at the resolution you shot in, up to 4K, ready for YouTube. Project files
    aren't included.
 5. **What if I don't like the first cut?** Tell me exactly what to change. You get 2 revision rounds. If the
@@ -439,15 +438,15 @@ Use this structure. Write it fresh each time, and never send a copy-paste:
 
 1. **Mirror their goal in one line.** "You need 8 Reels a month from your coaching videos, with captions in your brand colours."
 2. **Show one relevant sample.** Link the single portfolio piece closest to their request, not the whole gallery.
-3. **Say exactly what you'll do.** 3 bullets: cut, captions, colour, delivery time.
+3. **Say exactly what you'll do.** 3 bullets: cut, captions, music, delivery time.
 4. **Ask one smart question** that shows you read the brief. "Are the videos filmed on a phone or a camera?"
 5. **Make a clear offer** on-platform: package/price **[Matthew's price]**, delivery date, revisions.
 6. **Stop.** Under ~120 words. No "Dear Sir", no list of every skill, no begging, no contact details.
 
 Example:
 > Hi Sarah, you want your weekly coaching videos turned into 8 Reels a month, with captions in your brand colours and
-> a fast hook. Here's a talking-head Reel I edited and graded: [portfolio link on Fiverr]. I'd cut each to under 45 s,
-> open on your strongest line, add word-by-word captions and correct the colour. Delivery: first 4 in 4 days. Quick
+> a fast hook. Here's a talking-head Reel I edited: [portfolio link on Fiverr]. I'd cut each to under 45 s,
+> open on your strongest line, add word-by-word captions and clean up the audio. Delivery: first 4 in 4 days. Quick
 > question: do you film on a phone or a camera? Offer attached: 8 Reels, 2 revisions each, **[Matthew's price]**.
 > — Frank
 
@@ -456,7 +455,7 @@ Example:
 - **Week 1. Fix the foundations.** Run the §1 checklist. Rewrite the profile. Publish or rework Gigs 1–3 with the copy
   above. Make the 3 gig videos (20–60 s each, original footage, licensed music only). Make the before/after image 1 for
   each gig.
-- **Week 2. Portfolio and proof.** Add 6–10 original portfolio pieces. Cut 2 before/after grade Reels from your own
+- **Week 2. Portfolio and proof.** Add 6–10 original portfolio pieces. Cut 2 raw-vs-finished edit Reels from your own
   shoots (they double as FB content). Post the first FB gig promo (below).
 - **Week 3. Look at the numbers.** In Analytics, note impressions → clicks → orders per gig. Lots of impressions but few
   clicks: fix gig image 1 and the title. Clicks but no orders: fix the description, pricing and FAQs. Change one thing
@@ -471,7 +470,7 @@ Example:
   offer for next month?"* Then send it **as a Fiverr custom offer**.
 - Keep a short style note per buyer (fonts, colours, caption style, music mood) in your own files, so order 2 needs no
   briefing. That consistency is what makes buyers come back.
-- Upsell honestly across the gigs. YouTube buyer → "want 3 Shorts cut from this?" Grade buyer → "want the LUT?"
+- Upsell honestly across the gigs. YouTube buyer → "want 3 Shorts cut from this?" Wedding buyer → "want a vertical Reel from the same film?"
 - **No follow-up sales messages after the order closes.** Fiverr lists messages that promote your services or gigs
   as spam ([Community Standards](https://help.fiverr.com/hc/en-us/articles/32242973123985-Our-Community-Standards)).
   Make the offer once, inside the delivery message, while the order is still open. After that, wait for the buyer to
@@ -497,16 +496,16 @@ hold back files until they review; ask for a review a second time.
 Sending people **to** your Fiverr gigs from your own channels is fine. The rule is about taking Fiverr buyers **off**
 Fiverr (§4).
 
-- **1 Fiverr post a week on FB**, and it's real work, not an ad. Week 1: before/after grade Reel → "Colour grading
+- **1 Fiverr post a week on FB**, and it's real work, not an ad. Week 1: raw-vs-finished wedding highlight Reel (3 h of footage → 60 s) → "Wedding highlight editing
   is one of my Fiverr services, link in comments." Week 2: talking-head Reel edit before/after. Week 3: "How I turn a
-  60-min YouTube recording into 3 Shorts" (behind the scenes, screen recording of Resolve). Week 4: a short
+  60-min YouTube recording into 3 Shorts" (behind the scenes, screen recording of Premiere Pro). Week 4: a short
   face-to-camera Reel: "I'm Frank, I edit for creators worldwide on Fiverr. Here's what I do."
 - Use the **gig link**, and pin the best-performing post.
 - Keep it **you, solo, "I"**. Don't post AI-labelled content. The Oct 14 AI-tagged post got the lowest engagement and
   undercuts a filmmaker's credibility ([facebook-page-snapshot.md](facebook-page-snapshot.md)).
 - The FB page's WhatsApp button is fine for **local Dhaka clients who find you on Facebook**. But someone who first
   contacted you on Fiverr stays on Fiverr, even if they later find your FB page.
-- Fix the bio's broken emoji box and consider adding a line: "Remote editing & colour grading on Fiverr: [gig link]".
+- Fix the bio's broken emoji box and consider adding a line: "Remote video editing on Fiverr: [gig link]".
 
 ### Day-30 check
 
@@ -578,4 +577,4 @@ Third-party (unverified):
 - [EduEarnHub: character limits 2026](https://eduearnhub.com/?p=5875)
 - [Unilink: Fiverr SEO 2026](https://www.unilink.us/blog/fiverr-seo-2026) · [Zenlance: seller levels 2026](https://zenlance.net/fiverr-seller-levels/) · [EduEarnHub: levels 2026](https://eduearnhub.com/?p=5735) · [AiProposer: brief responses](https://aiproposer.com/guides/fiverr/fiverr-buyer-request-responses)
 - Fiverr community thread on review requests: [#311345](https://community.fiverr.com/public/forum/boards/start-here-c9d/posts/311345-can-we-ask-buyers-to-write-a-review-it-is-not-against-tos)
-- Live listings used only to see what competitors offer: [colour category](https://block.fiverr.com/gigs/color?page=13), [wedding highlight category](https://block.fiverr.com/gigs/wedding-highlight), [coaches Reels gig](https://fiverr.com/jam_abid/script-edit-reels-coaches), [short-form gig](https://fiverr.com/jamie_deeps/edit-short-form-content), [grading gig](https://fiverr.com/ajoshuafilms/do-professional-cinematic-color-grading-davinci-resolve), [wedding gig](https://fiverr.com/nitheesh_seban/do-professional-wedding-reels)
+- Live listings used only to see what competitors offer: [wedding highlight category](https://block.fiverr.com/gigs/wedding-highlight), [coaches Reels gig](https://fiverr.com/jam_abid/script-edit-reels-coaches), [short-form gig](https://fiverr.com/jamie_deeps/edit-short-form-content), [wedding gig](https://fiverr.com/nitheesh_seban/do-professional-wedding-reels), [wedding gig 2](https://fiverr.com/roy_valerafilms/edit-your-wedding-videos-and-highlights)

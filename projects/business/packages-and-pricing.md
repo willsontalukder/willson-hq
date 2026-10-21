@@ -18,7 +18,7 @@ Builds on `sales-plan.md` §3 (packages A–C). One change from that plan: the b
 
 Why these numbers, in one line each:
 - **A** sits at the top of the reported ৳8,000–25,000 "single-operator per event" band and below a Dhaka studio's ৳32,000
-  single-event highlight package (see §1). Solo, but with a proper graded highlight film, so not the bottom of the band.
+  single-event highlight package (see §1). Solo, but with a properly edited highlight film, so not the bottom of the band.
 - **B** is well under agency social-video pricing (lakh-level) and well above ৳1,500 "15-second ad" listings, which are
   a different product (phone-level, no shoot planning). ৳4,000 per finished Reel.
 - **C** is a home-studio shoot with no travel to a venue; cheaper than B, still above studio-rental-only costs
@@ -83,7 +83,7 @@ quote on a café Reel and a holud film (as an honest enquiry for market research
 
 All packages: one shooter (Frank), Sony A7C with 24mm and 85mm primes, DJI Mic Mini 2 wireless audio for speeches/vows/
 talking-to-camera, natural and available light (**no lighting kit, gimbal or tripod owned**: said up front so nobody
-expects a multi-camera studio setup). Licensed music only. Colour grading included. Files delivered by Google Drive link
+expects a multi-camera studio setup). Licensed music only. Light colour correction included. Files delivered by Google Drive link
 (kept online 30 days; client downloads and keeps their own copy).
 
 ### A. Intimate Wedding / Holud / Engagement: **৳22,000** (intro) · ৳30,000 standard
@@ -95,7 +95,7 @@ For big weddings needing two angles at once (e.g. stage + entrance), Frank says 
 |---|---|
 | On-site coverage | Up to **5 hours** at one venue, one event, one day, inside Dhaka city |
 | Pre-event call | 30-min call or visit to list key moments, family names, rituals, timings |
-| Highlight film | **3–5 min**, 16:9 horizontal, 4K or 1080p, colour graded, licensed music |
+| Highlight film | **3–5 min**, 16:9 horizontal, 4K or 1080p, light colour correction, licensed music |
 | Teaser | **60 s**, 9:16 vertical for Facebook/Instagram Reels/WhatsApp status |
 | Audio | Wireless mic on groom/bride or speaker for vows/speeches where possible |
 | Revisions | **2 rounds** (see Terms) |
@@ -140,7 +140,7 @@ Food, cosmetics or fragile items: client confirms how they must be handled.
 | Full ceremony edit (A) | ৳8,000 | 20–40 min lightly edited documentary cut of speeches/rituals, 16:9 |
 | Extra Reel (B) / extra product (C) | ৳3,500 per Reel / ৳2,500 per product | Same shoot only |
 | Extra aspect-ratio version | ৳1,000 per video | e.g. a 16:9 version of a Reel |
-| Raw footage | ৳4,000 (A) · ৳2,000 (B, C) | All usable clips, ungraded (log), as recorded. Client supplies a drive or pays for cloud transfer. Sold as-is, no support. |
+| Raw footage | ৳4,000 (A) · ৳2,000 (B, C) | All usable clips, as recorded. Client supplies a drive or pays for cloud transfer. Sold as-is, no support. |
 | Extra revision round | ৳1,500 per round | After the 2 included rounds |
 | Rush delivery | +30% of package price | Delivery in about half the normal time; only if Frank's calendar allows; quote confirms the date |
 | Drone shots (DJI Neo 2) | ৳5,000 per shoot | **Only where it is legal and written permission is in hand.** Not offered by default. See below. |
@@ -250,7 +250,7 @@ Location: [venue, area]
 Included:
 • Up to [5 hours] on site, one cinematographer (Frank)
 • [3–5 min highlight film (16:9) + 60 s teaser (9:16)]
-• Licensed music and colour grading
+• Licensed music and light colour correction
 • 2 rounds of revisions
 • Delivery: [teaser in 7 days, highlight in 21 days] by Google Drive link
 
@@ -328,7 +328,7 @@ local transport = typical CNG/Uber inside Dhaka.
   why the intro window is limited (first 3 bookings per package or until 28 Feb 2027, whichever is first), then
   standard prices apply (~৳670–750/h).
 - **Editing is the cost driver.** On A, Frank works ~8 hours for every 1 hour on site. The biggest lever is a reusable
-  edit template (titles, grade LUT for S-Log3, Reel caption style) built once, which could cut A's edit time by a few hours.
+  Premiere Pro project template (titles, colour-correction presets, Reel caption style) built once, which could cut A's edit time by a few hours.
 - **Don't discount below intro.** If a client pushes, cut scope instead (e.g. A at 3 h with a 2–3 min highlight for
   ৳16,000; B as 2 Reels for ৳9,000), never the per-hour value.
 - **The B monthly plan** is the best cash-flow product: lower rate per job but no hunting cost and predictable income.
