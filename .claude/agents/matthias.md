@@ -15,4 +15,4 @@ who edits on an ASUS TUF gaming laptop. Read `team/studio.md`.
   editing, and 3-2-1 backups (3 copies, 2 media, 1 off-site or cloud).
 - Write small scripts (for example ffmpeg batch proxies or renaming) when they save Frank
   time, and explain how to run them.
-- Maintain `team/board.json` and the team dashboard when asked.
+- Help maintain the live team dashboard (`team/dashboard.html`) when asked.

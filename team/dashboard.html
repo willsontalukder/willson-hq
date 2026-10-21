@@ -1,0 +1,380 @@
+<title>The Twelve</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;800&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: one column like a call sheet — command slate on top, then Tasks / Team / Activity. Dark-first edit-suite palette. */
+:root {
+  --bg: #121110; --panel: #1c1a18; --panel-2: #24221f; --line: #34312c;
+  --fg: #f2eee7; --muted: #a39d92; --accent: #f0a63c; --accent-ink: #1a1306;
+  --rec: #ff4d3d; --ok: #5fd08a; --warn: #f0a63c;
+  --display: "Big Shoulders Display", "Arial Narrow", Impact, sans-serif;
+  --body: "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --mono: "IBM Plex Mono", ui-monospace, Menlo, Consolas, monospace;
+  --r: 12px;
+  color-scheme: dark;
+}
+@media (prefers-color-scheme: light) { :root:not([data-theme="dark"]) {
+  --bg: #f4f1ea; --panel: #fffdf8; --panel-2: #efebe2; --line: #ddd7cb;
+  --fg: #1d1b18; --muted: #6b655b; --accent: #b86a00; --accent-ink: #fffaf0;
+  --rec: #d63426; --ok: #23824a; --warn: #a65d00; color-scheme: light; } }
+:root[data-theme="light"] {
+  --bg: #f4f1ea; --panel: #fffdf8; --panel-2: #efebe2; --line: #ddd7cb;
+  --fg: #1d1b18; --muted: #6b655b; --accent: #b86a00; --accent-ink: #fffaf0;
+  --rec: #d63426; --ok: #23824a; --warn: #a65d00; color-scheme: light; }
+
+* { box-sizing: border-box; }
+body { background: var(--bg); color: var(--fg); font-family: var(--body); font-size: 15px; line-height: 1.45; }
+.wrap { max-width: 44rem; margin: 0 auto; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); padding-block: 12px 48px; display: grid; gap: 16px; }
+button { font: inherit; color: inherit; }
+button:focus-visible, textarea:focus-visible, a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+/* Top bar */
+body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); z-index: 10; background: var(--bg); }
+.top { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 5; background: var(--bg); display: flex; align-items: center; justify-content: space-between; gap: 12px; padding-block: 8px; border-bottom: 1px solid var(--line); }
+.brand { font-family: var(--display); font-weight: 800; font-size: 28px; letter-spacing: .04em; text-transform: uppercase; line-height: 1; }
+.brand small { display: block; font-family: var(--mono); font-weight: 400; font-size: 11px; letter-spacing: .08em; color: var(--muted); margin-top: 4px; }
+.live { display: inline-flex; align-items: center; gap: 8px; font-family: var(--mono); font-size: 12px; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); border: 1px solid var(--line); border-radius: 999px; padding: 6px 12px; }
+.live i { width: 9px; height: 9px; border-radius: 50%; background: var(--muted); }
+.live.on { color: var(--fg); }
+.live.on i { background: var(--rec); box-shadow: 0 0 0 0 var(--rec); animation: rec 2s infinite; }
+@keyframes rec { 0% { box-shadow: 0 0 0 0 color-mix(in srgb, var(--rec) 60%, transparent); } 70% { box-shadow: 0 0 0 8px transparent; } 100% { box-shadow: 0 0 0 0 transparent; } }
+
+/* Command slate */
+.slate { background: var(--panel); border: 1px solid var(--line); border-radius: var(--r); padding: 14px; display: grid; gap: 12px; }
+.slate-row { display: flex; gap: 8px; align-items: flex-end; }
+.slate textarea { flex: 1; min-width: 0; resize: none; min-height: 48px; max-height: 140px; border-radius: 10px; border: 1px solid var(--line); background: var(--bg); color: var(--fg); font: inherit; padding: 12px; }
+.send { flex: none; min-height: 48px; padding: 0 18px; border: 0; border-radius: 10px; background: var(--accent); color: var(--accent-ink); font-weight: 600; cursor: pointer; }
+.send:disabled { opacity: .5; cursor: default; }
+.chips { display: flex; gap: 8px; overflow-x: auto; padding-bottom: 2px; scrollbar-width: none; }
+.chips::-webkit-scrollbar { display: none; }
+.chip { flex: none; min-height: 40px; padding: 0 14px; border-radius: 999px; border: 1px solid var(--line); background: var(--panel-2); cursor: pointer; font-size: 14px; white-space: nowrap; }
+.chip:hover { border-color: var(--accent); }
+.chip:disabled { opacity: .5; }
+.slate-note { font-size: 12px; color: var(--muted); margin: 0; }
+
+/* Summary */
+.stats { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; }
+.stat { background: var(--panel); border: 1px solid var(--line); border-radius: var(--r); padding: 10px 12px; }
+.stat b { display: block; font-family: var(--display); font-weight: 800; font-size: 34px; line-height: 1; font-variant-numeric: tabular-nums; }
+.stat span { font-family: var(--mono); font-size: 11px; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+.stat.working b { color: var(--ok); }
+
+/* Tabs */
+.tabs { display: grid; grid-template-columns: repeat(3, 1fr); background: var(--panel); border: 1px solid var(--line); border-radius: 999px; padding: 4px; }
+.tab { min-height: 40px; border: 0; border-radius: 999px; background: none; color: var(--muted); cursor: pointer; font-weight: 500; }
+.tab[aria-selected="true"] { background: var(--fg); color: var(--bg); }
+
+/* Projects & tasks */
+.pane { display: grid; gap: 16px; }
+.project { display: grid; gap: 8px; }
+.project-head { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; }
+.project-name { font-family: var(--display); font-weight: 600; font-size: 22px; letter-spacing: .02em; text-transform: uppercase; margin: 0; }
+.project-count { font-family: var(--mono); font-size: 12px; color: var(--muted); white-space: nowrap; }
+.bar { height: 4px; border-radius: 4px; background: var(--panel-2); overflow: hidden; }
+.bar i { display: block; height: 100%; background: var(--ok); border-radius: 4px; }
+.task { background: var(--panel); border: 1px solid var(--line); border-radius: var(--r); padding: 12px; display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 4px 12px; }
+.task.done { opacity: .62; }
+.mono-av { grid-row: span 3; width: 36px; height: 36px; border-radius: 50%; display: grid; place-items: center; font-family: var(--display); font-weight: 800; font-size: 16px; background: var(--panel-2); border: 1px solid var(--line); }
+.task-top { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 8px; font-size: 13px; color: var(--muted); }
+.task-top .who { color: var(--fg); font-weight: 600; }
+.pill { font-family: var(--mono); font-size: 11px; letter-spacing: .04em; text-transform: uppercase; padding: 2px 8px; border-radius: 999px; border: 1px solid var(--line); }
+.pill[data-s="In progress"] { color: var(--ok); border-color: color-mix(in srgb, var(--ok) 45%, transparent); }
+.pill[data-s="Needs Frank"] { color: var(--warn); border-color: color-mix(in srgb, var(--warn) 45%, transparent); }
+.pill.high { color: var(--rec); border-color: color-mix(in srgb, var(--rec) 40%, transparent); }
+.task-title { font-weight: 500; line-height: 1.35; }
+.task.done .task-title { text-decoration: line-through; }
+.task-next { font-size: 13px; color: var(--muted); }
+.task-acts { grid-column: 2; display: flex; flex-wrap: wrap; gap: 8px; margin-top: 6px; }
+.act { min-height: 38px; padding: 0 14px; border-radius: 10px; border: 1px solid var(--line); background: var(--panel-2); cursor: pointer; font-size: 14px; font-weight: 500; }
+.act.primary { background: var(--accent); color: var(--accent-ink); border-color: var(--accent); }
+.act:disabled { opacity: .5; cursor: default; }
+.sent-tag { font-family: var(--mono); font-size: 11px; color: var(--accent); align-self: center; }
+details.done-group > summary { cursor: pointer; list-style: none; font-family: var(--mono); font-size: 12px; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); padding: 6px 0; }
+details.done-group > summary::-webkit-details-marker { display: none; }
+details.done-group[open] > summary { margin-bottom: 8px; }
+details.done-group > div { display: grid; gap: 8px; }
+
+/* Team */
+.team { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 15rem), 1fr)); gap: 8px; }
+.member { background: var(--panel); border: 1px solid var(--line); border-radius: var(--r); padding: 12px; display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 2px 12px; align-items: start; }
+.member .mono-av { grid-row: span 3; }
+.member.working .mono-av { border-color: var(--ok); color: var(--ok); }
+.m-name { font-family: var(--display); font-weight: 600; font-size: 20px; line-height: 1.1; text-transform: uppercase; letter-spacing: .02em; }
+.m-role { font-size: 13px; color: var(--muted); }
+.m-now { font-size: 13px; }
+.m-now.free { color: var(--muted); }
+.member .act { grid-column: 2; margin-top: 8px; justify-self: start; }
+
+/* Activity */
+.feed { display: grid; gap: 0; background: var(--panel); border: 1px solid var(--line); border-radius: var(--r); }
+.ev { display: grid; grid-template-columns: 64px minmax(0, 1fr); gap: 12px; padding: 12px; }
+.ev + .ev { border-top: 1px solid var(--line); }
+.ev time { font-family: var(--mono); font-size: 12px; color: var(--muted); padding-top: 2px; }
+.ev-text { font-size: 14px; }
+.ev-sub { font-size: 12px; color: var(--muted); margin-top: 2px; }
+.ev.cmd .ev-text::before { content: "› "; color: var(--accent); font-weight: 600; }
+.cmd-state { font-family: var(--mono); font-size: 11px; text-transform: uppercase; letter-spacing: .06em; }
+.cmd-state[data-s="done"] { color: var(--ok); }
+.cmd-state[data-s="working"] { color: var(--accent); }
+.cmd-state[data-s="queued"] { color: var(--warn); }
+
+.empty { text-align: center; color: var(--muted); padding: 32px 16px; background: var(--panel); border: 1px dashed var(--line); border-radius: var(--r); }
+.empty b { display: block; color: var(--fg); font-family: var(--display); font-size: 24px; text-transform: uppercase; margin-bottom: 4px; }
+
+.toast { position: fixed; left: 50%; bottom: calc(16px + env(safe-area-inset-bottom, 0px)); transform: translateX(-50%); max-width: calc(100% - 32px); background: var(--fg); color: var(--bg); padding: 12px 16px; border-radius: 12px; font-size: 14px; z-index: 20; box-shadow: 0 8px 24px rgba(0,0,0,.3); }
+@media (prefers-reduced-motion: reduce) { .live.on i { animation: none; } }
+@media (max-width: 380px) { .stat b { font-size: 28px; } .brand { font-size: 24px; } }
+</style>
+
+<div class="wrap">
+  <header class="top">
+    <div class="brand">The Twelve<small>Frank Willson Talukder · film studio</small></div>
+    <span class="live" id="live"><i></i><span id="live-text">Connecting</span></span>
+  </header>
+
+  <section class="slate" id="command" aria-label="Give the team a command">
+    <div class="slate-row">
+      <textarea id="cmd" rows="1" placeholder="Tell the team what to do…" aria-label="Command"></textarea>
+      <button class="send" id="send" type="button">Send</button>
+    </div>
+    <div class="chips" id="chips">
+      <button class="chip" type="button" data-cmd="What should I do next? Give me the top 3 things.">What's next?</button>
+      <button class="chip" type="button" data-cmd="Give me a short update on everything the team is working on.">Team update</button>
+      <button class="chip" type="button" data-cmd="Start every To do task for Friday's Banns of Marriage shoot.">Start Friday's tasks</button>
+      <button class="chip" type="button" data-cmd="Peter, plan a new project for me. Ask me only what you really need.">New project</button>
+      <button class="chip" type="button" data-cmd="Jude, give me 5 content ideas I can post this week.">Content ideas</button>
+    </div>
+    <p class="slate-note" id="slate-note">Tap or type a command. It waits on the board until Claude, your team lead, picks it up; replies show up in Activity.</p>
+  </section>
+
+  <div class="stats" id="stats">
+    <div class="stat working"><b id="n-active">–</b><span>Working</span></div>
+    <div class="stat"><b id="n-todo">–</b><span>To do</span></div>
+    <div class="stat"><b id="n-done">–</b><span>Done</span></div>
+  </div>
+
+  <nav class="tabs" role="tablist" aria-label="Views">
+    <button class="tab" role="tab" id="tab-tasks" data-tab="tasks" aria-selected="true">Tasks</button>
+    <button class="tab" role="tab" id="tab-team" data-tab="team" aria-selected="false">Team</button>
+    <button class="tab" role="tab" id="tab-activity" data-tab="activity" aria-selected="false">Activity</button>
+  </nav>
+
+  <section class="pane" id="tasks" role="tabpanel" aria-labelledby="tab-tasks">
+    <div class="empty"><b>Loading the board</b>Connecting to your team…</div>
+  </section>
+  <section class="pane" id="team" role="tabpanel" aria-labelledby="tab-team" hidden></section>
+  <section class="pane" id="activity" role="tabpanel" aria-labelledby="tab-activity" hidden></section>
+</div>
+<div class="toast" id="toast" hidden></div>
+
+<script>
+const STATUS_ORDER = { "Needs Frank": 0, "In progress": 1, "To do": 2, "Done": 3 };
+const PRIO = { High: 0, Medium: 1, Low: 2 };
+const state = { tasks: [], members: [], activity: [], commands: [], tab: "tasks", live: false, db: null };
+const $ = (id) => document.getElementById(id);
+const el = (tag, cls, text) => { const e = document.createElement(tag); if (cls) e.className = cls; if (text != null) e.textContent = text; return e; };
+const initials = (name) => name.split(/\s+/).filter((w) => /^[A-Z]/.test(w) && w !== "The").map((w) => w[0]).join("").slice(0, 2) || name[0];
+const nowIso = () => new Date().toISOString();
+function ago(iso) {
+  if (!iso) return "";
+  const s = (Date.now() - new Date(iso).getTime()) / 1000;
+  if (isNaN(s)) return "";
+  if (s < 60) return "now";
+  if (s < 3600) return Math.floor(s / 60) + "m";
+  if (s < 86400) return Math.floor(s / 3600) + "h";
+  return new Date(iso).toLocaleDateString(undefined, { month: "short", day: "numeric" });
+}
+let toastTimer;
+function toast(msg) { const t = $("toast"); t.textContent = msg; t.hidden = false; clearTimeout(toastTimer); toastTimer = setTimeout(() => { t.hidden = true; }, 3500); }
+
+// ---- tabs ----
+function showTab(tab) {
+  state.tab = tab;
+  document.querySelectorAll(".tab").forEach((b) => b.setAttribute("aria-selected", String(b.dataset.tab === tab)));
+  ["tasks", "team", "activity"].forEach((id) => { $(id).hidden = id !== tab; });
+  try { localStorage.setItem("twelve-tab", tab); } catch (e) {}
+}
+document.querySelectorAll(".tab").forEach((b) => b.addEventListener("click", () => showTab(b.dataset.tab)));
+try { const t = localStorage.getItem("twelve-tab"); if (t && $(t)) showTab(t); } catch (e) {}
+const hash = location.hash.slice(1); if (["tasks", "team", "activity"].includes(hash)) showTab(hash);
+
+// ---- commands ----
+const cmdBox = $("cmd");
+cmdBox.addEventListener("input", () => { cmdBox.style.height = "auto"; cmdBox.style.height = Math.min(cmdBox.scrollHeight, 140) + "px"; });
+cmdBox.addEventListener("keydown", (e) => { if (e.key === "Enter" && !e.shiftKey) { e.preventDefault(); $("send").click(); } });
+$("send").addEventListener("click", async () => {
+  const text = cmdBox.value.trim();
+  if (!text) { cmdBox.focus(); return; }
+  $("send").disabled = true;
+  const ok = await sendCommand(text);
+  $("send").disabled = false;
+  if (ok !== null) { cmdBox.value = ""; cmdBox.style.height = ""; }
+});
+document.querySelectorAll(".chip").forEach((c) => c.addEventListener("click", async () => {
+  c.disabled = true; await sendCommand(c.dataset.cmd); c.disabled = false;
+}));
+
+// Saves the command on the board for Claude, the team lead. Returns true when saved, null when nothing could be saved.
+async function sendCommand(text, taskId) {
+  if (!state.db) { toast("Open this page signed in to claude.ai to send commands."); return null; }
+  try {
+    await state.db.collection("commands").add({ text, taskId: taskId || null, at: nowIso(), status: "queued" });
+    toast("Saved ✓ Say \"check the board\" in chat and the team starts.");
+    return true;
+  } catch (e) { toast("Couldn't save that command. Try again."); return null; }
+}
+
+// ---- direct task changes (no Claude needed) ----
+async function setStatus(task, status) {
+  if (!state.db) return;
+  try {
+    await state.db.doc("tasks/" + task.id).update({ status, updated: nowIso().slice(0, 10) });
+    const who = (state.members.find((m) => m.id === task.owner) || {}).name || task.owner;
+    await state.db.collection("activity").add({ at: nowIso(), by: "Frank", text: `${status === "Done" ? "Marked done" : "Reopened"}: ${task.title}`, sub: `${task.id} · ${who}` });
+  } catch (e) { toast("Couldn't save that change. Try again."); }
+}
+
+// ---- render ----
+function render() {
+  const tasks = state.tasks, members = state.members;
+  const byId = new Map(members.map((m) => [m.id, m]));
+  const count = (s) => tasks.filter((t) => t.status === s).length;
+  $("n-active").textContent = count("In progress");
+  $("n-todo").textContent = count("To do") + count("Needs Frank");
+  $("n-done").textContent = count("Done");
+  const pending = new Map(state.commands.filter((c) => c.taskId && (c.status === "queued" || c.status === "working")).map((c) => [c.taskId, c]));
+
+  // Tasks grouped by project, active projects first
+  const pane = $("tasks");
+  if (!tasks.length) { pane.replaceChildren(emptyBox(state.db ? "No tasks yet" : "Board offline", state.db ? "Send a command above and the team will add work here." : "Open this page signed in to claude.ai to see the live board.")); }
+  else {
+    const projects = new Map();
+    tasks.forEach((t) => { if (!projects.has(t.project)) projects.set(t.project, []); projects.get(t.project).push(t); });
+    const list = [...projects.entries()].map(([name, ts]) => ({ name, ts, open: ts.filter((t) => t.status !== "Done").length, active: ts.some((t) => t.status === "In progress") }))
+      .sort((a, b) => (b.active - a.active) || (b.open - a.open) || a.name.localeCompare(b.name));
+    pane.replaceChildren(...list.map((p) => {
+      const sec = el("section", "project");
+      const head = el("div", "project-head");
+      head.append(el("h2", "project-name", p.name), el("span", "project-count", `${p.ts.length - p.open}/${p.ts.length} done`));
+      const bar = el("div", "bar"); const fill = el("i"); fill.style.width = (100 * (p.ts.length - p.open) / p.ts.length) + "%"; bar.append(fill);
+      sec.append(head, bar);
+      const sorted = p.ts.slice().sort((a, b) => (STATUS_ORDER[a.status] - STATUS_ORDER[b.status]) || ((PRIO[a.priority] ?? 3) - (PRIO[b.priority] ?? 3)) || a.id.localeCompare(b.id));
+      sorted.filter((t) => t.status !== "Done").forEach((t) => sec.append(taskCard(t, byId, pending)));
+      const done = sorted.filter((t) => t.status === "Done");
+      if (done.length) {
+        const d = el("details", "done-group"); d.id = "done-" + p.name.replace(/[^A-Za-z0-9]+/g, "-");
+        d.open = !!state.openDone?.[d.id];
+        d.addEventListener("toggle", () => { state.openDone = { ...(state.openDone || {}), [d.id]: d.open }; });
+        const inner = el("div"); done.forEach((t) => inner.append(taskCard(t, byId, pending)));
+        d.append(el("summary", null, `${done.length} done`), inner);
+        sec.append(d);
+      }
+      return sec;
+    }));
+  }
+
+  // Team
+  const team = $("team");
+  if (!members.length) team.replaceChildren(emptyBox("Team loading", "Your twelve disciples appear here."));
+  else {
+    const grid = el("div", "team");
+    grid.append(...members.slice().sort((a, b) => a.order - b.order).map((m) => {
+      const mine = tasks.filter((t) => t.owner === m.id);
+      const active = mine.filter((t) => t.status === "In progress");
+      const open = mine.filter((t) => t.status !== "Done");
+      const card = el("article", "member" + (active.length ? " working" : "")); card.id = "m-" + m.id;
+      const av = el("span", "mono-av", initials(m.name)); av.setAttribute("aria-hidden", "true");
+      const now = active.length ? el("div", "m-now", "Working: " + active[0].title + (active.length > 1 ? ` (+${active.length - 1})` : ""))
+        : el("div", "m-now free", open.length ? `${open.length} task${open.length > 1 ? "s" : ""} waiting to start` : "Free");
+      const give = el("button", "act", "Give work"); give.type = "button";
+      give.addEventListener("click", () => { cmdBox.value = m.name + ", "; cmdBox.focus(); window.scrollTo({ top: 0, behavior: "smooth" }); });
+      card.append(av, el("div", "m-name", m.name), el("div", "m-role", m.role), now, give);
+      return card;
+    }));
+    team.replaceChildren(grid);
+  }
+
+  // Activity: commands + events, newest first
+  const feed = [
+    ...state.commands.map((c) => ({ at: c.at, cmd: c })),
+    ...state.activity.map((a) => ({ at: a.at, ev: a })),
+  ].sort((a, b) => String(b.at).localeCompare(String(a.at))).slice(0, 40);
+  const act = $("activity");
+  if (!feed.length) act.replaceChildren(emptyBox("Quiet so far", "Commands you send and the team's progress show up here."));
+  else {
+    const box = el("div", "feed");
+    box.append(...feed.map((f) => {
+      const row = el("div", "ev" + (f.cmd ? " cmd" : ""));
+      const time = el("time", null, ago(f.at)); time.dateTime = f.at || "";
+      const body = el("div");
+      if (f.cmd) {
+        body.append(el("div", "ev-text", f.cmd.text));
+        const st = el("div", "ev-sub");
+        const label = { queued: "Waiting for Claude", working: "Team on it", done: "Done" }[f.cmd.status] || f.cmd.status;
+        const s = el("span", "cmd-state", label); s.dataset.s = f.cmd.status;
+        st.append(s);
+        body.append(st);
+        if (f.cmd.reply) body.append(el("div", "ev-sub", f.cmd.reply));
+      } else {
+        body.append(el("div", "ev-text", (f.ev.by && f.ev.by !== "Claude" ? f.ev.by + ": " : "") + f.ev.text));
+        if (f.ev.sub) body.append(el("div", "ev-sub", f.ev.sub));
+      }
+      row.append(time, body);
+      return row;
+    }));
+    act.replaceChildren(box);
+  }
+}
+
+function taskCard(t, byId, pending) {
+  const m = byId.get(t.owner) || { name: t.owner };
+  const card = el("article", "task" + (t.status === "Done" ? " done" : "")); card.id = "task-" + t.id;
+  const av = el("span", "mono-av", initials(m.name)); av.setAttribute("aria-hidden", "true");
+  const top = el("div", "task-top");
+  const st = el("span", "pill", t.status); st.dataset.s = t.status;
+  top.append(el("span", "who", m.name), st);
+  if (t.priority === "High" && t.status !== "Done") top.append(el("span", "pill high", "High"));
+  card.append(av, top, el("div", "task-title", t.title));
+  if (t.next) card.append(el("div", "task-next", t.status === "Done" ? t.next : "Next: " + t.next));
+  const acts = el("div", "task-acts");
+  if (t.status === "Done") {
+    const b = el("button", "act", "Reopen"); b.type = "button";
+    b.addEventListener("click", () => setStatus(t, "To do")); acts.append(b);
+  } else {
+    if (t.status !== "In progress") {
+      const p = pending.get(t.id);
+      if (p) acts.append(el("span", "sent-tag", p.status === "queued" ? "Waiting for Claude" : m.name + " is on it"));
+      else {
+        const go = el("button", "act primary", "▶ Start"); go.type = "button";
+        go.addEventListener("click", async () => { go.disabled = true; await sendCommand(`Start ${t.id}: ${m.name}, do "${t.title}".`, t.id); go.disabled = false; });
+        acts.append(go);
+      }
+    }
+    const done = el("button", "act", "✓ Done"); done.type = "button";
+    done.addEventListener("click", () => setStatus(t, "Done"));
+    acts.append(done);
+  }
+  card.append(acts);
+  return card;
+}
+
+function emptyBox(title, text) { const d = el("div", "empty"); d.append(el("b", null, title), text); return d; }
+
+function setLive(on, text) { state.live = on; $("live").classList.toggle("on", on); $("live-text").textContent = text; }
+
+// ---- boot ----
+render();
+setInterval(() => { if (state.tab === "activity") render(); }, 60000);
+(async () => {
+  const db = await claude.use("db");
+  if (!db) { setLive(false, "Offline"); render(); return; }
+  state.db = db;
+  const fail = (e) => { setLive(false, e && e.code === "revoked" ? "No access" : "Offline"); };
+  const on = (snap) => { setLive(!snap.metadata.fromCache, snap.metadata.fromCache ? "Syncing" : "Live"); };
+  db.collection("tasks").onSnapshot((s) => { state.tasks = s.docs.map((d) => ({ id: d.id, ...d.data() })); on(s); render(); }, fail);
+  db.collection("members").onSnapshot((s) => { state.members = s.docs.map((d) => ({ id: d.id, ...d.data() })); render(); }, fail);
+  db.collection("activity").orderBy("at", "desc").limit(30).onSnapshot((s) => { state.activity = s.docs.map((d) => d.data()); render(); }, fail);
+  db.collection("commands").orderBy("at", "desc").limit(30).onSnapshot((s) => { state.commands = s.docs.map((d) => ({ id: d.id, ...d.data() })); render(); }, fail);
+})();
+</script>

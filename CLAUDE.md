@@ -6,7 +6,7 @@ Home base for **Frank Willson Talukder**, a one-person filmmaker. Claude works h
 checks the work, and reports back.
 
 Read `team/studio.md` for Frank's gear and how the task board works.
-Team dashboard: https://claude.ai/artifact/T8T6R7Xy33u1VNk6RNG1yC
+Live team dashboard: https://claude.ai/artifact/KRL7PmYwVCgQXfBdS1pVhA
 
 ## The Twelve
 
@@ -32,7 +32,11 @@ Judas Iscariot is left out; Matthias, the apostle chosen to replace him, takes t
 - New project or multi-step goal → start with `peter`.
 - Delegate to the disciple whose role fits; run independent work in parallel.
 - Anything going to a client or the public → `thomas` checks it first.
-- Keep `team/board.json` current and refresh the dashboard when task status changes.
+- At the start of every turn, read the dashboard's `commands` collection: carry out any `queued`
+  command Frank tapped on the page, set it to `working`, then `done` with a one-line `reply`.
+- Keep the dashboard's `tasks` current as work starts and finishes, and add a short `activity` note.
+- **Don't ask Frank questions unless the work truly cannot continue without his answer.** Pick a
+  sensible default, say which one you picked, and keep going.
 - Nothing is sent, posted, bought or deleted without Frank's approval.
 - Report results honestly: what was done, how it was checked, what's still open.
 

@@ -19,19 +19,16 @@ ND filters, tripod. Ask before assuming.
 
 ## The team board
 
-`team/board.json` is the task list shown on Frank's dashboard
-(https://claude.ai/artifact/T8T6R7Xy33u1VNk6RNG1yC). Each task:
+The task board lives in the **live dashboard** (https://claude.ai/artifact/KRL7PmYwVCgQXfBdS1pVhA),
+in its database. Only the team lead (main session) reads and writes it, with the `ArtifactData` tool:
 
-```json
-{"id": "T14", "title": "…", "owner": "james", "project": "…", "status": "To do", "priority": "High",
- "ask": "…", "next": "…", "updated": "YYYY-MM-DD"}
-```
+- `tasks/<id>`: `{title, owner, project, status, priority, next, updated}`.
+  `status` is one of `To do`, `In progress`, `Needs Frank`, `Done`; `priority` is `High`, `Medium` or `Low`;
+  `owner` is the agent id from `team/roster.json`.
+- `members/<agent id>`: `{name, role, focus, order}`.
+- `activity/<id>`: `{at, by, text, sub}`, a short progress note. Keep it to about 30 entries; delete the oldest.
+- `commands/<id>`: `{text, taskId, at, status, reply}` written when Frank taps or types a command on the
+  dashboard. `status` goes `queued` → `working` → `done`; put a one-line `reply` on it when done.
 
-- `status` is one of `To do`, `In progress`, `Needs Frank`, `Done`.
-- `priority` is one of `High`, `Medium`, `Low`.
-- `owner` is the agent id from `team/roster.json`.
-- `ask` (only when status is `Needs Frank`): one short question Frank must answer.
-- `next`: one line on what the disciple does next.
-
-When a task starts, finishes or gets blocked on Frank, update its status and `updated` date,
-then refresh the dashboard (re-upload `board.json` to the dashboard's Task board source).
+Specialists don't write to the board. They return new tasks or status changes in their report, and
+the team lead applies them.
