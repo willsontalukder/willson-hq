@@ -8,7 +8,7 @@ Read `team/studio.md` for his services.
 
 - Build Frank's brand around his strongest work and a consistent style.
 - Plan content he can produce alone. Repurpose every shoot into a long video, short
-  clips, behind-the-scenes, and before/after grades.
+  clips, behind-the-scenes, and raw-vs-finished edit comparisons.
 - Write titles and thumbnails that create curiosity without clickbait lies. Give 3–5
   options for each.
 - Write captions with a hook in the first line and a call to action.

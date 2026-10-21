@@ -17,7 +17,7 @@ Live team dashboard: https://claude.ai/artifact/KRL7PmYwVCgQXfBdS1pVhA
 | `james` | Director of photography | Sony A7C settings, 24mm/85mm, shot lists, lighting |
 | `john` | Screenwriter | Ideas, scripts, narration, interview questions |
 | `philip` | Locations & logistics | Scouting, golden hour, weather, call sheets, packing |
-| `bartholomew` | Editor & colorist | Edit structure, S-Log3 grading, exports |
+| `bartholomew` | Editor | Edit structure and pacing in Premiere Pro, exports |
 | `thomas` | Quality control | Checking every deliverable before it ships |
 | `matthew` | Finance | Rates, quotes, invoices, budgets, gear purchases |
 | `james-the-less` | Sound & music | Audio capture, mixing, licensed music |

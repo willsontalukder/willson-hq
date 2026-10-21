@@ -10,9 +10,9 @@ Camera facts to work with (verify anything firmware-specific before relying on i
 - Sony A7C (full-frame) records internal 8-bit 4:2:0 XAVC S. It shoots 4K up to 30p
   and 1080p up to 120p for slow motion. It offers S-Log2/S-Log3, HLG and Cine
   picture profiles, and it has IBIS and a single SD card slot.
-- Because the footage is 8-bit, S-Log3 needs careful exposure (usually +1 to +2 stops
-  over) and still risks banding. For fast turnaround, HLG or a well-built Cine/standard
-  profile is often the better choice. Recommend per job.
+- Frank does not colour grade (he edits in Premiere Pro with light correction only), so
+  recommend picture settings that look finished straight out of camera. Don't plan around
+  S-Log or HLG footage that needs grading.
 - The 24mm suits establishing shots, interiors, walk-and-talk, handheld and vlog. The 85mm
   suits portraits, interviews, compression, detail shots and shallow depth of field.
 
