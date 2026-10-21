@@ -1,7 +1,7 @@
 # Pre-production · Banns of Marriage · Fri 23 Oct 2026
 
 Church 10:00, Farmgate (assumed Holy Rosary, Tejgaon; unconfirmed) → Green Garden Restaurant, 4/2 Daffodil Plaza, Sobahanbag, Dhanmondi, 12:00 (basement entrance, Lift 8). Frank solo, unpaid. Drone stays home unless Simon clears it.
-Details: [brief](brief.md) · [shot list](shot-list.md) · [audio plan](audio-plan.md) · [run of show](run-of-show.md)
+Details: [brief](brief.md) · [shot list](shot-list.md) · [audio plan](audio-plan.md) · [run of show](run-of-show.md) · [photo frames](photo-frames.md)
 
 ## 1. Thursday 22 Oct (evening, in this order)
 
@@ -10,6 +10,7 @@ Details: [brief](brief.md) · [shot list](shot-list.md) · [audio plan](audio-pl
 - [ ] Camera → **PAL (50Hz)**, then **format the card in camera** (the switch needs it). Format the spare card too (128 GB+ each)
 - [ ] Set **4K 25p** XAVC S 100 Mbps, shutter **1/50**; save to MR1. Set **1080p 100p**, **1/100**; save to MR2
 - [ ] Picture Profile **Off**; Creative Style **Standard, Contrast -1, Saturation 0, Sharpness -1**; DRO Off (*check on camera* that Creative Style applies in movie mode); zebras 100+; AF-C Face/Eye AF, tracking 2, speed 5; SteadyShot on
+- [ ] Stills (dial on M): **RAW + JPEG Fine**, same Creative Style Standard (-1/0/-1), PP Off, DRO Off; M + Auto ISO 100–6400; AF-C Eye AF, Tracking Wide; Cont. Mid; Mechanical + EFCS on; anti-flicker on if present (*check on camera*). WB = Custom, same as video. Format **two** 128 GB+ cards (A church, B lunch)
 - [ ] Audio: Rec Level **manual**, Wind Noise Reduction **off**, DJI noise cancelling off
 - [ ] Mic test: RX in the A7C mic jack, headphones in, speak at vow volume, peaks about **-12 dB**; test magnet clip
 - [ ] Clean both lenses; pack per the [run-of-show packing list](run-of-show.md#packing-list); laptop, drive and reader stay home
@@ -77,3 +78,12 @@ All venues: PAL, 25p @ 1/50, 100p @ 1/100 (never 1/60 or 1/125), Picture Profile
 2. Copy the same folder to the external drive, then play a few files from each copy.
 3. 19:00: confirm both copies are complete (file counts match) and note the take count.
 4. Format cards only after both copies are checked; keep the originals until then.
+
+## 7. Photos
+
+Frank also shoots stills, alone and on the same A7C. The full plan is in [photo-frames.md](photo-frames.md): 30 frames (12 must-gets), the stills settings, the hybrid rule and a pocket checklist.
+
+- **Video stays first** for the banns, vows, rings and speeches. There are no stills while recording; use frame grabs later.
+- **Photo-first:** 10:55–11:20 family groups G1–G6 on the church steps in shade (a friend calls the names), hero portraits, ring hands recreated. At lunch: cake, feeding, laughs during applause, window portrait.
+- **Switching:** dial on MR = video, dial on M = photo. Switch only at pauses.
+- **Added load:** about 15–25 GB and about half a battery. Bring 2 cards (swap at 11:20) and 3+ batteries.
