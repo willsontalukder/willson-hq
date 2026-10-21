@@ -273,7 +273,7 @@ Never drop the packages post or the booking post.
 - **Caption:**
   > একই কাপ কফি। Edit-এর আগে আর পরে।
   >
-  > ২ ঘণ্টার shoot, ৮৫mm lens, জানালার আলো। Grade-এ শুধু রংটা ঠিক করেছি, যাতে coffee-টা দেখতে যেমন, খেতেও যেন তেমন লাগে।
+  > ২ ঘণ্টার shoot, ৮৫mm lens, জানালার আলো। Edit-এ সেরা shot-গুলো বেছে music-এর তালে কেটেছি, যাতে coffee-টা দেখতে যেমন, খেতেও যেন তেমন লাগে।
   >
   > Café, restaurant বা online shop চালান? Keep Rolling Package B (café Reels) আর C (product video) pinned post-এ।
   > আপনার menu বা product-এর নাম লিখে WhatsApp করুন, কী ধরনের shot হবে বলে দেব।

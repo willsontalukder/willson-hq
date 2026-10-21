@@ -35,8 +35,8 @@ Frank's edge is that he does it **alone** and it still looks cinematic. Every po
 things: (a) the films are beautiful, (b) he's calm and capable working solo, (c) he knows his craft (tips).
 
 **Consistent style (keep it the same on every post):**
-- **Look:** warm, natural skin tones, soft contrast, no heavy teal-orange. Same grade on everything this month
-  (the HLG3 to Rec.709 grade Bartholomew builds for the wedding becomes the house look).
+- **Look:** warm, natural skin tones, soft contrast, no heavy teal-orange. The look is baked in on the camera
+  (same in-camera look on every shoot), so there's no grading step: what he films is what gets posted.
 - **Lenses as signature:** 24mm for place, 85mm for faces. Mention it often; it's memorable and true.
 - **Text on screen:** one clean font, white with a soft shadow, lower third. Bangla + English captions
   burned in (most people scroll with sound off).
@@ -66,12 +66,12 @@ Bangladesh weekend). After two weeks, check Insights and move to whatever his ow
 
 | Code | Footage | Source |
 |---|---|---|
-| **W** | Banns of Marriage, 23 Oct: church details (rings, Bible, flowers), vows, ring exchange, exit slow-mo, family reactions, lunch food/cake slow-mo, speeches | A7C, 4K 25p + 1080 100p, HLG3 (shot list #1–23) |
+| **W** | Banns of Marriage, 23 Oct: church details (rings, Bible, flowers), vows, ring exchange, exit slow-mo, family reactions, lunch food/cake slow-mo, speeches | A7C, 4K 25p + 1080 100p, baked-in camera look (shot list #1–23) |
 | **BTS** | Phone clips of Frank working on the day: kit bag, mic'ing the groom, bracing on a pew, swapping lenses. *If he didn't film any, recreate at home (kit, settings menu, lens swap); no wedding needed.* | Phone |
 | **G** | Gear and settings: flat-lay, menu screen grabs, 25p vs 30p flicker test under a home LED bulb | A7C + phone, at home, ~30 min |
 | **D1** | Dhaka b-roll walk #1: golden hour, **Fri 30 Oct, ~16:50–17:40** (Hatirjheel or Dhanmondi Lake), 85mm only | A7C, 1.5 h incl. travel |
 | **D2** | Dhaka b-roll walk #2: early morning, **Sat 14 Nov, ~05:45–07:00** (Karwan Bazar or a tea stall street; avoid filming people who object) | A7C, 24mm only |
-| **E** | Editing screen: before/after grade, timeline | Screen recording on the ASUS laptop |
+| **E** | Editing screen in Premiere Pro: raw clips vs finished cut, timeline, how a scene is cut | Screen recording on the ASUS laptop |
 
 Total new shooting this month: about **3 hours** (G + D1 + D2). Everything else is footage he already has.
 
@@ -121,12 +121,13 @@ wedding posts one week later.*
 - **Footage:** BTS (mic'ing the groom, pew bracing, lens swap) cut against W finished shots.
 - **Fallback:** same hook, BTS recreated at home + D1 b-roll as "finished" shots.
 
-**Thu 5 Nov · R · [OK] Before/after grade (10–15 s)**
-- **Hook:** "Straight out of camera vs 5 minutes later." (Swipe/wipe reveal.)
-- **Caption idea:** Shot in HLG3, graded to Rec.709. Say what changed in plain words: warmer skin, lifted
-  shadows, calmer highlights in the church windows. CTA: "Which one do you prefer, left or right?"
+**Thu 5 Nov · R · [OK] Raw vs finished edit (10–15 s)**
+- **Hook:** "Raw clips vs the finished cut." (Swipe/wipe reveal: the unedited clips in camera order, then the
+  same moment cut to music.)
+- **Caption idea:** Say what the edit changed in plain words: which clips he kept, the order, the cut on the
+  beat, where the sound comes in. CTA: "Which version would you share, left or right?"
 - **Footage:** W church details (rings, Bible, flowers: no faces, lowest-risk wedding footage) + E.
-- **Fallback:** before/after on D1 golden-hour shots.
+- **Fallback:** raw vs finished on D1 golden-hour shots.
 
 **Sat 7 Nov · R · [OK] Highlight teaser (30–45 s)**
 - **Hook:** "এই মুহূর্তটার জন্যই wedding film বানাই।" (cold open on the ring exchange or the exit slow-mo)
@@ -156,7 +157,7 @@ wedding posts one week later.*
 **Sat 14 Nov · YT · Long-form: the solo BTS film (8–12 min)**
 - **Working title:** see the 5 title/thumbnail options in section 5.
 - **Structure:** cold open (best 10 s of the highlight) → the kit → church: settings and why 25p → audio →
-  vows/rings, how he chose the angle → lunch → the edit and grade (before/after) → the finished highlight
+  vows/rings, how he chose the angle → lunch → "how I cut it" in Premiere Pro (raw clips vs finished cut) → the finished highlight
   (60 s) → "what I'd do differently" → CTA.
 - **Footage:** BTS + W + G + E. Most of it is repurposed from weeks 1–2; new recording is only a short
   talking-head intro/outro (24mm, window light, Mic Mini 2).
@@ -171,7 +172,7 @@ wedding posts one week later.*
 
 **Mon 16 Nov · C · "5 settings I use for dark indoor events (no lights)" (6 slides)**
 - **Hook:** "No lights? এই ৫টা setting-ই যথেষ্ট।"
-- **Caption idea:** 25p + 1/50, HLG3, ISO ceiling 6400 (prefer 3200), fast primes wide open, manual white
+- **Caption idea:** 25p + 1/50, baked-in camera look (nothing to grade later), ISO ceiling 6400 (prefer 3200), fast primes wide open, manual white
   balance off a white card. One line each. CTA: "Save it. Share it with your shooter friend."
 - **Footage:** G menu photos + W frame grabs (church interior, no faces needed). **Fallback:** D1/G grabs.
 
@@ -212,7 +213,7 @@ wedding posts one week later.*
 | 29 Oct | Thu | IG + FB | Carousel | 25p vs 30p, 50 Hz flicker | G | |
 | 1 Nov | Sun | All vertical | Reel 20–30 s | Dhaka golden hour, 85mm | D1 | |
 | 3 Nov | Tue | All vertical | Reel 30–40 s | Zero-crew wedding BTS | BTS + W | yes |
-| 5 Nov | Thu | All vertical | Reel 10–15 s | Before/after grade | W details + E | yes |
+| 5 Nov | Thu | All vertical | Reel 10–15 s | Raw vs finished edit | W details + E | yes |
 | 7 Nov | Sat | All vertical | Reel 30–45 s | Highlight teaser | W | yes |
 | 10 Nov | Tue | YouTube + FB | Long video 3–5 min | Highlight film | W | yes |
 | 12 Nov | Thu | All vertical | Reel 15–20 s | Phone vs Mic Mini 2 | W speech audio | yes |
@@ -234,11 +235,11 @@ of text, readable at phone size. Use a real frame from the footage, never a stag
 
 | # | Title | Thumbnail |
 |---|---|---|
-| 1 | **I Filmed a Whole Wedding Alone — One Camera, Two Lenses (Dhaka)** | Split frame: left, Frank in the church aisle with the A7C (BTS); right, the graded vow close-up. Text: "NO CREW" |
+| 1 | **I Filmed a Whole Wedding Alone — One Camera, Two Lenses (Dhaka)** | Split frame: left, Frank in the church aisle with the A7C (BTS); right, the finished vow close-up. Text: "NO CREW" |
 | 2 | **Shooting a Dhaka Wedding with No Lights, No Gimbal, No Crew** | Dark church interior wide, Frank small in the frame holding the camera. Text: "NO LIGHTS?" |
 | 3 | **Sony A7C Wedding BTS: How I Shot a Church Wedding Solo** | Close-up of the A7C + 85mm in Frank's hand, the couple soft and blurred behind. Text: "A7C + 85mm" |
-| 4 | **একা একটা বিয়ে শুট করলাম \| Solo Wedding Filmmaking in Bangladesh** | Ring-exchange close-up (85mm), warm grade. Bangla text: "একা শুট" |
-| 5 | **What One Filmmaker Can Do in One Day (Wedding BTS, Dhaka)** | Before/after diagonal split of the same church shot (flat HLG vs graded). Text: "1 PERSON" |
+| 4 | **একা একটা বিয়ে শুট করলাম \| Solo Wedding Filmmaking in Bangladesh** | Ring-exchange close-up (85mm), warm light. Bangla text: "একা শুট" |
+| 5 | **What One Filmmaker Can Do in One Day (Wedding BTS, Dhaka)** | Diagonal split: the raw Premiere Pro timeline vs the finished church shot. Text: "1 PERSON" |
 
 **Pick:** #1 for the main upload (clearest promise, works for both local clients and global filmmaker
 viewers). If the couple doesn't want faces in the thumbnail, use #3 or #5. Test a second thumbnail with
@@ -253,7 +254,7 @@ YouTube Studio's thumbnail test if it's available on his channel.
 | Highlight film | YouTube + FB long video, teaser Reel, booking Reel, thumbnail frames |
 | Ceremony edit | Private to the couple only. Not posted. |
 | BTS phone clips | Zero-crew Reel, long-video segments, "mistakes" Reel |
-| Ungraded vs graded clips | Before/after Reel, long-video grade segment, thumbnail #5 |
+| Raw clips vs finished cut | Raw-vs-finished Reel, long-video "how I cut it" segment, thumbnail #5 |
 | Audio tracks | Phone vs mic Reel |
 | Frame grabs | Two carousels, thumbnail options |
 
