@@ -1,0 +1,399 @@
+<title>Banns Photo Cards</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;800&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&family=Noto+Sans+Bengali:wght@400;500;600&display=swap">
+<style>
+/* Layout: one column of viewfinder cards in shooting order, sticky progress bar on top; built to be read one-handed on a phone mid-shoot. */
+:root {
+  --bg: #f3f1ec; --panel: #fffdf9; --line: #ddd8ce; --fg: #1c1a17; --muted: #6a645a;
+  --accent: #b5660a; --accent-ink: #fffaf2; --ok: #23824a; --rec: #cf3424;
+  --sk-bg: #e9e5dc; --sk-grid: #bdb6a8; --sk-fig: #3b3731; --sk-bride: #fbfaf6; --sk-soft: #8f887b; --sk-light: #fff4d6;
+  --display: "Big Shoulders Display", "Arial Narrow", Impact, sans-serif;
+  --body: "IBM Plex Sans", "Noto Sans Bengali", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --bn: "Noto Sans Bengali", "IBM Plex Sans", system-ui, sans-serif;
+  --mono: "IBM Plex Mono", ui-monospace, Menlo, Consolas, monospace;
+  --r: 12px;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --bg: #131210; --panel: #1d1b18; --line: #34312c; --fg: #f2eee7; --muted: #a39d92;
+  --accent: #f0a63c; --accent-ink: #1a1306; --ok: #5fd08a; --rec: #ff5a48;
+  --sk-bg: #26231f; --sk-grid: #4a463f; --sk-fig: #d8d2c6; --sk-bride: #fffdf6; --sk-soft: #6f695f; --sk-light: #5a4a26;
+  color-scheme: dark; } }
+:root[data-theme="dark"] {
+  --bg: #131210; --panel: #1d1b18; --line: #34312c; --fg: #f2eee7; --muted: #a39d92;
+  --accent: #f0a63c; --accent-ink: #1a1306; --ok: #5fd08a; --rec: #ff5a48;
+  --sk-bg: #26231f; --sk-grid: #4a463f; --sk-fig: #d8d2c6; --sk-bride: #fffdf6; --sk-soft: #6f695f; --sk-light: #5a4a26;
+  color-scheme: dark; }
+
+* { box-sizing: border-box; }
+body { background: var(--bg); color: var(--fg); font-family: var(--body); font-size: 15px; line-height: 1.45; }
+button { font: inherit; color: inherit; }
+button:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.wrap { max-width: 40rem; margin: 0 auto; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); padding-block: 0 48px; display: grid; gap: 14px; }
+
+body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); z-index: 10; background: var(--bg); }
+.top { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 5; background: var(--bg); padding-block: 10px; border-bottom: 1px solid var(--line); display: grid; gap: 8px; }
+.top-row { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; }
+h1 { margin: 0; font-family: var(--display); font-weight: 800; font-size: 26px; letter-spacing: .03em; text-transform: uppercase; line-height: 1; }
+.count { font-family: var(--mono); font-size: 13px; color: var(--muted); white-space: nowrap; }
+.count b { color: var(--fg); }
+.bar { height: 4px; border-radius: 4px; background: var(--line); overflow: hidden; }
+.bar i { display: block; height: 100%; width: 0; background: var(--ok); transition: width .3s; }
+.filters { display: flex; gap: 6px; overflow-x: auto; scrollbar-width: none; }
+.filters::-webkit-scrollbar { display: none; }
+.f { flex: none; min-height: 36px; padding: 0 12px; border-radius: 999px; border: 1px solid var(--line); background: var(--panel); cursor: pointer; font-size: 13px; }
+.f[aria-pressed="true"] { background: var(--fg); color: var(--bg); border-color: var(--fg); }
+
+.intro { font-size: 13px; color: var(--muted); margin: 4px 0 0; }
+.intro b { color: var(--fg); }
+.settings { background: var(--panel); border: 1px solid var(--line); border-radius: var(--r); padding: 12px; display: grid; gap: 6px; }
+.settings h2 { margin: 0; font-family: var(--display); font-weight: 600; font-size: 18px; text-transform: uppercase; letter-spacing: .04em; }
+.set-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 9rem), 1fr)); gap: 6px; }
+.set { font-size: 13px; background: var(--bg); border-radius: 8px; padding: 6px 8px; }
+.set span { display: block; font-family: var(--mono); font-size: 10.5px; color: var(--muted); text-transform: uppercase; letter-spacing: .06em; }
+
+.moment { font-family: var(--display); font-weight: 600; font-size: 20px; text-transform: uppercase; letter-spacing: .03em; margin: 10px 0 -4px; display: flex; gap: 10px; align-items: baseline; }
+.moment small { font-family: var(--mono); font-size: 12px; color: var(--muted); font-weight: 400; letter-spacing: 0; text-transform: none; }
+
+.card { background: var(--panel); border: 1px solid var(--line); border-radius: var(--r); overflow: hidden; display: grid; }
+.card.must { border-color: color-mix(in srgb, var(--accent) 55%, var(--line)); }
+.card.done { opacity: .55; }
+.vf { position: relative; background: var(--sk-bg); }
+.vf svg { display: block; width: 100%; height: auto; }
+.vf .tag { position: absolute; top: 8px; left: 8px; font-family: var(--mono); font-size: 11px; background: color-mix(in srgb, var(--panel) 85%, transparent); padding: 2px 8px; border-radius: 999px; }
+.vf .star { position: absolute; top: 8px; right: 8px; font-family: var(--mono); font-size: 11px; font-weight: 500; background: var(--accent); color: var(--accent-ink); padding: 2px 8px; border-radius: 999px; }
+.body { padding: 12px; display: grid; gap: 6px; }
+.head { display: flex; gap: 8px; align-items: baseline; justify-content: space-between; }
+.title { font-weight: 600; font-size: 16px; line-height: 1.3; }
+.num { font-family: var(--mono); font-size: 12px; color: var(--muted); flex: none; }
+.chips { display: flex; flex-wrap: wrap; gap: 6px; }
+.chip { font-family: var(--mono); font-size: 12px; padding: 2px 8px; border-radius: 6px; background: var(--bg); border: 1px solid var(--line); }
+.chip.lens { font-weight: 500; }
+.bn { font-family: var(--bn); font-size: 15px; line-height: 1.55; }
+.how { font-size: 13px; color: var(--muted); }
+.acts { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 4px; }
+.btn { min-height: 40px; padding: 0 14px; border-radius: 10px; border: 1px solid var(--line); background: var(--bg); cursor: pointer; font-size: 14px; font-weight: 500; }
+.btn.got { background: var(--fg); color: var(--bg); border-color: var(--fg); }
+.card.done .btn.got { background: var(--ok); border-color: var(--ok); color: var(--panel); }
+.prompt { font-size: 12.5px; background: var(--bg); border: 1px solid var(--line); border-radius: 8px; padding: 8px 10px; font-family: var(--mono); line-height: 1.5; user-select: all; overflow-wrap: anywhere; }
+.card.video .vf::after { content: "● REC · VIDEO ONLY"; position: absolute; bottom: 8px; left: 8px; font-family: var(--mono); font-size: 11px; color: var(--rec); background: color-mix(in srgb, var(--panel) 85%, transparent); padding: 2px 8px; border-radius: 999px; }
+
+.groups { display: grid; gap: 6px; }
+.g { display: flex; align-items: center; gap: 10px; min-height: 44px; padding: 0 12px; border-radius: 10px; border: 1px solid var(--line); background: var(--bg); cursor: pointer; text-align: left; width: 100%; font-size: 14px; }
+.g i { width: 20px; height: 20px; border-radius: 6px; border: 2px solid var(--muted); flex: none; display: grid; place-items: center; font-style: normal; font-size: 13px; }
+.g[aria-pressed="true"] i { background: var(--ok); border-color: var(--ok); color: var(--panel); }
+.g[aria-pressed="true"] span { text-decoration: line-through; color: var(--muted); }
+.note { font-size: 12px; color: var(--muted); }
+.toast { position: fixed; left: 50%; bottom: calc(16px + env(safe-area-inset-bottom, 0px)); transform: translateX(-50%); background: var(--fg); color: var(--bg); padding: 10px 14px; border-radius: 10px; font-size: 14px; z-index: 20; max-width: calc(100% - 32px); }
+.reset { justify-self: start; }
+@media (prefers-reduced-motion: reduce) { .bar i { transition: none; } }
+</style>
+
+<header class="top">
+  <div class="top-row">
+    <h1>Banns Photo Cards</h1>
+    <span class="count"><b id="got">0</b> / <span id="total">0</span> shot · ★ <b id="mustGot">0</b>/<span id="mustTotal">0</span></span>
+  </div>
+  <div class="bar"><i id="barFill"></i></div>
+  <div class="filters" role="group" aria-label="Show">
+    <button class="f" type="button" data-f="all" aria-pressed="true">All frames</button>
+    <button class="f" type="button" data-f="must" aria-pressed="false">★ Must-get</button>
+    <button class="f" type="button" data-f="left" aria-pressed="false">Not shot yet</button>
+  </div>
+</header>
+
+<main class="wrap">
+  <p class="intro">Fri 23 Oct · Farmgate church → Green Garden, Dhanmondi. প্রতিটা card-এ ছবিটা <b>viewfinder-এ কেমন দেখাবে</b> তার sketch আছে: dashed লাইন = rule of thirds, <b>কমলা বাক্স = focus/চোখ</b>। ছবি তোলা হলে <b>Got it</b> চাপুন।</p>
+
+  <section class="settings" aria-label="Photo settings">
+    <h2>Photo mode settings</h2>
+    <div class="set-grid">
+      <div class="set"><span>Dial</span>M = photo · MR = video</div>
+      <div class="set"><span>File</span>RAW + JPEG Fine</div>
+      <div class="set"><span>Look</span>PP Off · Standard −1/0/−1</div>
+      <div class="set"><span>Shutter</span>24mm ≥ 1/125 · 85mm ≥ 1/250</div>
+      <div class="set"><span>Under LEDs</span>1/100 or 1/200</div>
+      <div class="set"><span>ISO</span>Auto, max 6400</div>
+      <div class="set"><span>Focus</span>AF-C · Eye AF · Tracking Wide</div>
+      <div class="set"><span>White balance</span>Custom, same as video</div>
+    </div>
+    <p class="note">AI prompt-গুলো শুধু framing practice-এর reference ছবি বানানোর জন্য। AI ছবি কখনো নিজের কাজ হিসেবে post করবেন না।</p>
+  </section>
+
+  <div id="list" class="wrap" style="padding:0"></div>
+
+  <button class="btn reset" id="reset" type="button">Clear all ticks</button>
+</main>
+<div class="toast" id="toast" hidden></div>
+
+<script>
+const CTX = "a Christian Banns of Marriage in Dhaka, Bangladesh; Bangladeshi bride in a white or pastel saree, groom in a suit";
+const MOMENTS = [
+  ["arrival", "Arrival & details", "09:40–09:55 · church"],
+  ["rite", "The ceremony", "10:00–10:45 · video first"],
+  ["after", "Exit, greetings & groups", "10:45–11:05 · church steps, open shade"],
+  ["portraits", "Couple portraits", "11:05–11:20 · open shade"],
+  ["lunch", "Green Garden lunch", "12:00–13:30 · restaurant"],
+];
+const F = [
+  {n:1, m:"arrival", t:"09:40", title:"Church exterior with doors", lens:24, f:"8", must:1, k:"exterior",
+   bn:"নিচু হয়ে বসে তুলুন। পথ/সিঁড়ি যেন দরজার দিকে টেনে নেয়। দরজা ডান দিকের তৃতীয় লাইনে।",
+   how:"Steps or path lead into the door; door on a third; low angle makes the facade taller.",
+   scene:"the church exterior with its sign and main doors, a few guests small in the frame, steps leading to the door"},
+  {n:2, m:"arrival", t:"09:40", title:"Couple arriving at the door", lens:24, f:"2.8", k:"doorway",
+   bn:"দরজার ফ্রেমের ভেতর দিয়ে দুজনকে ধরুন। ওরা যেদিকে তাকাচ্ছে সেদিকে ফাঁকা জায়গা রাখুন।",
+   how:"Doorway as a frame around them; leave space on the side they look toward.",
+   scene:"the couple arriving at the church door, framed by the dark doorway edges in the foreground"},
+  {n:3, m:"arrival", t:"09:45", title:"Rings on the open Bible", lens:85, f:"2.8", must:1, k:"rings",
+   bn:"উপর থেকে বা ৪৫° কোণে। আংটি তৃতীয় লাইনে, বাকি পাতা ফাঁকা। জানালার আলো পাশ থেকে।",
+   how:"Top-down or 45°, rings on a third, open pages as negative space, window side light.",
+   scene:"two gold wedding rings resting on an open Bible, close-up detail"},
+  {n:4, m:"arrival", t:"09:45", title:"Bible page texture", lens:85, f:"2.8", k:"book",
+   bn:"খুব কাছ থেকে। লেখার লাইনগুলো আংটি বা ফুলের দিকে নিয়ে যাক।",
+   how:"Tight crop; the lines of text lead to the rings or a flower.",
+   scene:"a tight close-up of Bible page texture with lines of text leading to a flower"},
+  {n:5, m:"arrival", t:"09:45", title:"Flowers through the pews", lens:85, f:"2", k:"flowers",
+   bn:"সামনে ঝাপসা ফুল বা বেঞ্চের কোণা রেখে পেছনের ফুলে focus করুন।",
+   how:"Shoot through pew ends or other flowers as soft foreground.",
+   scene:"altar flowers seen through soft out-of-focus pew ends in the foreground"},
+  {n:6, m:"arrival", t:"09:45", title:"Invitation card flat lay", lens:24, f:"4", k:"flatlay",
+   bn:"একদম উপর থেকে সোজা। card ফ্রেমের সাথে সমান্তরাল, চারপাশে জায়গা।",
+   how:"Top-down on a pew or table, square to the frame, space around.",
+   scene:"a top-down flat lay of the wedding invitation card with a few flowers and a ribbon on a wooden pew"},
+  {n:7, m:"arrival", t:"09:50", title:"Altar wide, down the aisle", lens:24, f:"4", must:1, k:"aisle",
+   bn:"আইলের ঠিক মাঝখানে, বুকের উচ্চতায়, camera সোজা। দুই পাশের বেঞ্চ লাইন হয়ে বেদির দিকে।",
+   how:"Centred symmetry, pews as leading lines, chest height, camera level.",
+   scene:"a symmetrical wide view down the church aisle to the decorated altar, pews as leading lines"},
+  {n:8, m:"rite", t:"10:00", title:"Banns reading at the lectern", lens:85, f:"—", video:1, k:"lectern",
+   bn:"শুধু ভিডিও। পরে 4K থেকে frame grab নেবেন।", how:"Video-first. No stills while rolling.",
+   scene:"the officiant reading at the lectern"},
+  {n:9, m:"rite", t:"10:15", title:"Vows: faces", lens:85, f:"—", video:1, k:"twoclose",
+   bn:"শুধু ভিডিও, mic চালু। পরে frame grab।", how:"Video-first. Frame grabs only.",
+   scene:"bride and groom facing each other during vows"},
+  {n:10, m:"rite", t:"10:25", title:"Ring exchange", lens:85, f:"—", video:1, k:"hands",
+   bn:"শুধু ভিডিও। আংটি পরানো শেষ হলে চাইলে ছোট burst, নইলে card 20 দিয়ে পূরণ।", how:"Video-first; frame 20 recreates it.",
+   scene:"hands exchanging rings"},
+  {n:11, m:"rite", t:"10:45", title:"First embrace after the blessing", lens:85, f:"2", k:"twoclose",
+   bn:"Burst-এ তুলুন। মুখ উপরের তৃতীয় লাইনে, পেছনের এলোমেলো জিনিস বাদ।",
+   how:"Burst (Cont. Mid). Faces on the upper third; crop altar clutter.",
+   scene:"the couple's first embrace after the blessing, faces close, emotional candid moment"},
+  {n:12, m:"after", t:"10:45", title:"Couple walking out the doors", lens:24, f:"2.8", must:1, k:"walktoward",
+   bn:"আগে slow-mo ভিডিও। তারপর ২০ সেকেন্ডের জন্য আবার হাঁটতে বলুন, সামনে নিচু হয়ে তুলুন, পেছনে দরজা।",
+   how:"Video SM first, then a repeat walk: shoot low, ahead of them, doorway behind.",
+   scene:"the couple walking out of the church doors toward the camera, low angle, doorway behind them"},
+  {n:13, m:"after", t:"10:50", title:"Hugs with parents", lens:85, f:"2", k:"overshoulder",
+   bn:"একজন অতিথির কাঁধের উপর দিয়ে তুলুন। জড়িয়ে ধরার চূড়ান্ত মুহূর্তের জন্য অপেক্ষা করুন।",
+   how:"Over a guest's shoulder (foreground framing); wait for the peak of the hug.",
+   scene:"a parent hugging the couple, shot over a guest's shoulder that is soft in the foreground"},
+  {n:14, m:"after", t:"10:55", title:"Family groups G1–G6", lens:24, f:"5.6", must:1, k:"group", groups:1,
+   bn:"ছায়ায়, সবার চোখে আলো। লম্বারা পেছনে, couple মাঝখানে। প্রতিটা group-এ ৩+ ছবি (চোখ বন্ধের জন্য)।",
+   how:"Open shade on the steps, tidy line, camera at chest height, 3–4 m back, 1/250.",
+   scene:"a formal family group photo on church steps in open shade, couple in the centre, tallest at the back"},
+  {n:15, m:"portraits", t:"11:05", title:"Hero: couple close in open shade", lens:85, f:"2", must:1, k:"twoclose",
+   bn:"দরজা বা বারান্দার কিনারে, মুখ খোলা আকাশের দিকে। চোখ উপরের তৃতীয় লাইনে, পেছন ঝাপসা।",
+   how:"Doorway or porch edge, faces toward open sky; eyes on the upper third, background soft.",
+   scene:"a close portrait of the couple in soft open shade at the church porch, background softly blurred"},
+  {n:16, m:"portraits", t:"11:05", title:"Couple small with the facade", lens:24, f:"2.8", must:1, k:"smallwide",
+   bn:"Couple ছোট করে বাঁ দিকের তৃতীয় লাইনে, বাকিটা গির্জার দেয়াল। নিচু থেকে।",
+   how:"Couple small on a third, lots of facade as negative space, low angle.",
+   scene:"the couple standing small on the left third with the church facade filling the frame"},
+  {n:17, m:"portraits", t:"11:08", title:"Walking away, holding hands", lens:24, f:"2.8", k:"walkaway",
+   bn:"পথ যেন লাইন হয়ে ওদের দিকে যায়। ৫ মিটার হাঁটতে দিন, burst।",
+   how:"Path as a leading line; let them walk 5 m and shoot a burst.",
+   scene:"the couple walking away from the camera holding hands along a path"},
+  {n:18, m:"portraits", t:"11:10", title:"Bride alone, then groom alone", lens:85, f:"2", k:"single",
+   bn:"কাঁধ একটু ঘোরানো, মুখ আলোর দিকে। মাথা-কাঁধ পর্যন্ত, কখনো জয়েন্টে (কনুই/কব্জি) কাটবেন না।",
+   how:"Shoulders angled, face to the light; head-and-shoulders, never crop at the joints.",
+   scene:"a head-and-shoulders portrait of the bride, shoulders angled, face turned to soft light"},
+  {n:19, m:"portraits", t:"11:12", title:"Laughing candid", lens:85, f:"2", k:"twoclose",
+   bn:"বরকে বলুন কনের কানে একটা গোপন কথা বলতে। কাছ থেকে, আসল হাসির জন্য burst।",
+   how:"\"Tell her a secret\"; tight two-shot; burst for the real laugh.",
+   scene:"the groom whispering to the bride and both laughing, tight candid two-shot"},
+  {n:20, m:"portraits", t:"11:15", title:"Recreate the ring hands", lens:85, f:"2.8", must:1, k:"hands",
+   bn:"শুধু হাত, আংটি sharp। হাতগুলো ফ্রেমে কোনাকুনি। Bible বা bouquet-এর উপর।",
+   how:"Hands only, rings sharp; diagonal across the frame; window or shade light.",
+   scene:"the couple's hands with wedding rings resting on a Bible, placed diagonally across the frame"},
+  {n:21, m:"lunch", t:"12:00", title:"Room wide before guests sit", lens:24, f:"2.8", k:"room",
+   bn:"এক কোণা থেকে উঁচুতে (হাত উপরে বা ধাপে দাঁড়িয়ে)। টেবিলের লাইন ভেতরে টেনে নেয়।",
+   how:"From a corner, high; table lines lead in.",
+   scene:"a wide view of a decorated restaurant banquet room with set tables before guests arrive, from a high corner"},
+  {n:22, m:"lunch", t:"12:05", title:"Table details", lens:85, f:"2", k:"tabledetail",
+   bn:"একটা জিনিস sharp (name card বা ফুল), বাকি টেবিল ঝাপসা।",
+   how:"One subject sharp, the rest of the table soft.",
+   scene:"a table detail with a name card sharp and the rest of the place setting softly blurred"},
+  {n:23, m:"lunch", t:"12:15", title:"Hero dish as it lands", lens:85, f:"2.8", k:"dish",
+   bn:"৪৫° কোণে। জানালা থাকলে ধোঁয়া পেছন থেকে আলোয়। প্লেট তৃতীয় লাইনে।",
+   how:"45°, steam backlit if a window allows; plate on a third.",
+   scene:"a plate of Bangladeshi festive food with steam backlit by window light, at 45 degrees"},
+  {n:24, m:"lunch", t:"12:20", title:"The cake alone", lens:85, f:"2.8", must:1, k:"cake",
+   bn:"Cake-এর স্তরের সমান উচ্চতায়। পেছনে পরিষ্কার দেয়াল, পিছিয়ে দাঁড়ান।",
+   how:"Eye level with the tiers, clean wall behind, step back.",
+   scene:"a tiered wedding cake photographed at eye level against a clean wall"},
+  {n:25, m:"lunch", t:"12:25", title:"Couple feeding each other cake", lens:85, f:"2", must:1, k:"feeding",
+   bn:"Cake কাটা slow-mo ভিডিওতে। তারপর photo mode-এ খাইয়ে দেওয়ার মুহূর্ত, burst।",
+   how:"Video SM covers the cut; switch to stills for the feeding (burst).",
+   scene:"the bride and groom feeding each other wedding cake, laughing"},
+  {n:26, m:"lunch", t:"12:40", title:"Speeches", lens:85, f:"—", video:1, k:"lectern",
+   bn:"শুধু ভিডিও। ছবি শুধু হাততালির সময়।", how:"Video-first. Stills only during applause.",
+   scene:"a guest giving a speech"},
+  {n:27, m:"lunch", t:"12:45", title:"Couple laughing at a speech", lens:85, f:"2", must:1, k:"laughfg",
+   bn:"হাততালির সময় burst। couple তৃতীয় লাইনে, সামনে বক্তা ঝাপসা হলে আরও ভালো।",
+   how:"During applause: burst on the couple; speaker soft in the foreground.",
+   scene:"the couple laughing at a speech, the speaker blurred in the foreground"},
+  {n:28, m:"lunch", t:"13:00", title:"Candids: toasts, kids, grandparents", lens:24, f:"2.8", k:"candid",
+   bn:"24mm নিয়ে কাছে যান, ফ্রেম ভরিয়ে দিন, ওদের চোখের উচ্চতায়।",
+   how:"Get close with the 24, fill the frame, shoot at their eye level.",
+   scene:"candid guests toasting at a table, shot close at eye level"},
+  {n:29, m:"lunch", t:"13:15", title:"Hero: couple by a window", lens:85, f:"1.8", must:1, k:"window",
+   bn:"জানালা পাশে রেখে নরম আলো। পেছনের অন্ধকার ঘর ফাঁকা জায়গা হিসেবে।",
+   how:"Window to the side for soft, wrapping light; dark room as negative space.",
+   scene:"the couple standing by a window with soft side light, dark room behind them"},
+  {n:30, m:"lunch", t:"13:30", title:"Leaving and waving", lens:24, f:"2.8", k:"between",
+   bn:"অতিথিদের পেছন থেকে, দুজন অতিথির মাঝখান দিয়ে couple-কে ফ্রেম করুন।",
+   how:"From behind the guests, the couple framed between them.",
+   scene:"the couple waving goodbye, framed between two guests seen from behind"},
+];
+const GROUPS = ["G1 · couple + both families", "G2 · couple + both sets of parents", "G3 · couple + bride's parents", "G4 · couple + groom's parents", "G5 · couple + siblings", "G6 · couple + friends"];
+
+// ---- sketch primitives (viewBox 150×100) ----
+const S = {
+  rect: (x,y,w,h,fill,extra="") => `<rect x="${x}" y="${y}" width="${w}" height="${h}" fill="${fill}" ${extra}/>`,
+  circ: (x,y,r,fill,extra="") => `<circle cx="${x}" cy="${y}" r="${r}" fill="${fill}" ${extra}/>`,
+  line: (x1,y1,x2,y2,c="var(--sk-soft)",w=1.2) => `<line x1="${x1}" y1="${y1}" x2="${x2}" y2="${y2}" stroke="${c}" stroke-width="${w}" fill="none"/>`,
+  person(x, feet, h, bride=false) {
+    const r = h*0.11, hy = feet-h+r, sw = h*0.2;
+    const body = bride
+      ? `<path d="M${x-sw*0.55} ${hy+r*1.3} L${x+sw*0.55} ${hy+r*1.3} L${x+sw*1.25} ${feet} L${x-sw*1.25} ${feet} Z" fill="var(--sk-bride)" stroke="var(--sk-fig)" stroke-width="0.8"/>`
+      : `<path d="M${x-sw} ${hy+r*1.3} L${x+sw} ${hy+r*1.3} L${x+sw*0.7} ${feet} L${x-sw*0.7} ${feet} Z" fill="var(--sk-fig)"/>`;
+    return body + S.circ(x, hy, r, "var(--sk-fig)");
+  },
+  couple(x, feet, h, gap) { return S.person(x-gap/2, feet, h, true) + S.person(x+gap/2, feet, h*1.05); },
+  bust(x, y, r, bride=false) {
+    const sh = `<path d="M${x-r*2.1} 100 Q${x-r*1.9} ${y+r*1.4} ${x} ${y+r*1.3} Q${x+r*1.9} ${y+r*1.4} ${x+r*2.1} 100 Z" fill="${bride ? "var(--sk-bride)" : "var(--sk-fig)"}" stroke="var(--sk-fig)" stroke-width="0.8"/>`;
+    return sh + S.circ(x, y, r, "var(--sk-fig)");
+  },
+  af: (x,y,s=6) => `<rect x="${x-s}" y="${y-s}" width="${s*2}" height="${s*2}" fill="none" stroke="var(--accent)" stroke-width="1.6" rx="1"/>`,
+  soft: (x,y,rx,ry) => `<ellipse cx="${x}" cy="${y}" rx="${rx}" ry="${ry}" fill="var(--sk-soft)" opacity=".55" filter="url(#blur)"/>`,
+  rings(x,y,s=1) { return `<circle cx="${x}" cy="${y}" r="${4*s}" fill="none" stroke="var(--accent)" stroke-width="${1.8*s}"/><circle cx="${x+5*s}" cy="${y+2*s}" r="${3.4*s}" fill="none" stroke="var(--accent)" stroke-width="${1.6*s}"/>`; },
+  book(x,y,w,h) { let s = S.rect(x,y,w/2-1,h,"var(--sk-bride)",'stroke="var(--sk-soft)" stroke-width=".8"') + S.rect(x+w/2+1,y,w/2-1,h,"var(--sk-bride)",'stroke="var(--sk-soft)" stroke-width=".8"');
+    for (let i=0;i<6;i++){ const ly=y+6+i*(h-10)/6; s+=S.line(x+4,ly,x+w/2-5,ly,"var(--sk-grid)",.8)+S.line(x+w/2+5,ly,x+w-4,ly,"var(--sk-grid)",.8);} return s; },
+  flower(x,y,r) { let s=""; for(let a=0;a<6;a++){const t=a*Math.PI/3; s+=S.circ(x+Math.cos(t)*r*0.7,y+Math.sin(t)*r*0.7,r*0.55,"var(--sk-bride)",'stroke="var(--sk-soft)" stroke-width=".6"');} return s+S.circ(x,y,r*0.4,"var(--accent)"); },
+};
+
+function sketch(k) {
+  const P = S;
+  switch (k) {
+    case "exterior": return P.rect(40,22,90,62,"var(--sk-soft)",'opacity=".45"') + `<path d="M85 22 L100 6 L115 22 Z" fill="var(--sk-soft)" opacity=".6"/>` + P.rect(92,48,16,36,"var(--sk-fig)",'rx="8"') + P.line(0,100,92,84) + P.line(30,100,98,84) + P.line(150,100,108,84) + P.person(70,88,10) + P.person(122,90,9) + P.af(100,62,7);
+    case "doorway": return P.rect(0,0,28,100,"var(--sk-fig)",'opacity=".85"') + P.rect(122,0,28,100,"var(--sk-fig)",'opacity=".85"') + P.rect(28,0,94,12,"var(--sk-fig)",'opacity=".85"') + P.couple(62,96,58,16) + P.af(54,48,5);
+    case "rings": return P.book(25,22,100,62) + P.rings(96,38,1.4) + P.af(100,40,10) + P.rect(0,0,14,100,"var(--sk-light)",'opacity=".7"');
+    case "book": return P.book(-10,8,170,90) + P.flower(106,36,9) + P.af(106,36,10);
+    case "flowers": return P.soft(14,70,30,40) + P.soft(140,30,24,36) + P.flower(98,36,12) + P.flower(116,48,8) + P.af(98,36,11);
+    case "flatlay": return P.rect(48,24,54,52,"var(--sk-bride)",'stroke="var(--sk-fig)" stroke-width="1"') + P.line(58,40,92,40,"var(--sk-grid)") + P.line(62,48,88,48,"var(--sk-grid)") + P.flower(104,74,7) + P.flower(112,66,5) + P.af(75,44,9);
+    case "aisle": { let s = P.rect(64,26,22,22,"var(--sk-light)") + P.rect(60,44,30,8,"var(--sk-fig)");
+      for (let i=0;i<5;i++){ const y=56+i*9, w=8+i*7; s+=P.rect(60-w,y,w,4,"var(--sk-fig)",'opacity=".75"')+P.rect(90,y,w,4,"var(--sk-fig)",'opacity=".75"'); }
+      return s + P.line(75,52,30,100) + P.line(75,52,120,100) + P.af(75,38,8); }
+    case "lectern": return P.rect(64,58,24,42,"var(--sk-soft)") + P.bust(78,38,8);
+    case "twoclose": return P.bust(58,36,11,true) + P.bust(88,34,12) + P.af(58,34,6) + P.af(88,32,6);
+    case "hands": return `<path d="M-5 92 L60 52 L72 58 L8 100 Z" fill="var(--sk-bride)" stroke="var(--sk-fig)" stroke-width=".9"/><path d="M155 14 L82 50 L74 44 L148 4 Z" fill="var(--sk-fig)"/>` + P.rings(64,52,1.1) + P.af(67,53,8);
+    case "walktoward": return P.rect(45,0,60,72,"var(--sk-fig)",'opacity=".8" rx="28"') + P.line(0,100,60,72) + P.line(150,100,90,72) + P.couple(75,98,70,20) + P.af(66,44,5);
+    case "overshoulder": return `<path d="M-10 100 Q0 30 40 26 Q70 30 72 100 Z" fill="var(--sk-fig)" opacity=".9" filter="url(#blur)"/>` + P.person(100,98,62) + P.person(115,98,58,true) + P.af(108,44,6);
+    case "group": { let s = P.rect(0,78,150,22,"var(--sk-soft)",'opacity=".35"'); const back=[22,38,54,96,112,128], front=[30,46,104,120];
+      back.forEach(x=>s+=P.person(x,80,30)); front.forEach(x=>s+=P.person(x,90,30)); s+=P.couple(75,92,34,14); return s + P.af(75,64,6); }
+    case "smallwide": return P.rect(20,8,124,80,"var(--sk-soft)",'opacity=".45"') + `<path d="M74 8 L84 -4 L94 8 Z" fill="var(--sk-soft)"/>` + P.rect(98,46,18,42,"var(--sk-fig)",'rx="9" opacity=".7"') + P.couple(48,90,20,8) + P.af(46,74,4);
+    case "walkaway": return P.line(30,100,72,40,"var(--sk-soft)",2) + P.line(120,100,80,40,"var(--sk-soft)",2) + P.person(73,62,18,true) + P.person(80,62,19) + P.af(76,50,5);
+    case "single": return P.bust(100,40,15,true) + P.rect(0,0,30,100,"var(--sk-light)",'opacity=".6"') + P.af(100,36,7);
+    case "room": { let s=""; for(let i=0;i<4;i++){ const y=40+i*15, w=30+i*14; s+=`<ellipse cx="${40+i*22}" cy="${y}" rx="${w/2}" ry="${4+i*1.5}" fill="var(--sk-bride)" stroke="var(--sk-soft)" stroke-width=".8"/>`; }
+      return s + P.line(0,30,150,90,"var(--sk-grid)") + P.af(84,70,6); }
+    case "tabledetail": return P.soft(30,60,22,10) + P.soft(130,62,20,10) + P.rect(64,40,30,22,"var(--sk-bride)",'stroke="var(--sk-fig)"') + P.line(70,50,88,50,"var(--sk-fig)") + `<ellipse cx="78" cy="72" rx="46" ry="8" fill="var(--sk-soft)" opacity=".35"/>` + P.af(79,51,9);
+    case "dish": return P.rect(110,0,40,60,"var(--sk-light)") + `<ellipse cx="100" cy="64" rx="30" ry="14" fill="var(--sk-bride)" stroke="var(--sk-fig)"/>` + `<ellipse cx="100" cy="62" rx="16" ry="7" fill="var(--accent)" opacity=".7"/>` + `<path d="M94 50 q4 -8 0 -16 M104 50 q4 -8 0 -16" stroke="var(--sk-soft)" fill="none"/>` + P.af(100,60,8);
+    case "cake": return P.rect(56,70,38,20,"var(--sk-bride)",'stroke="var(--sk-fig)"') + P.rect(62,52,26,18,"var(--sk-bride)",'stroke="var(--sk-fig)"') + P.rect(67,38,16,14,"var(--sk-bride)",'stroke="var(--sk-fig)"') + P.flower(75,36,4) + P.line(30,90,120,90,"var(--sk-soft)",1.5) + P.af(75,58,10);
+    case "feeding": return P.bust(54,40,12,true) + P.bust(96,38,12) + `<path d="M70 52 L84 46" stroke="var(--accent)" stroke-width="2.5"/>` + P.af(54,38,6) + P.af(96,36,6);
+    case "laughfg": return P.bust(16,64,14) + `<g filter="url(#blur)" opacity=".6">${P.bust(16,64,14)}</g>` + P.bust(92,40,9,true) + P.bust(112,38,9.5) + P.af(102,38,9);
+    case "candid": return P.bust(46,44,16) + P.bust(104,50,14,true) + `<path d="M70 70 L74 42 L82 42 L78 70 Z" fill="var(--sk-light)" stroke="var(--sk-fig)"/>` + P.af(46,42,7);
+    case "window": return P.rect(10,6,36,64,"var(--sk-light)",'stroke="var(--sk-fig)" stroke-width="1.5"') + P.line(28,6,28,70,"var(--sk-fig)") + P.line(10,38,46,38,"var(--sk-fig)") + P.rect(46,0,104,100,"var(--sk-fig)",'opacity=".25"') + P.bust(72,44,10,true) + P.bust(92,42,10.5) + P.af(82,42,10);
+    case "between": return P.person(16,104,96) + P.person(134,104,92) + P.couple(75,82,38,12) + `<path d="M84 44 l6 -10" stroke="var(--sk-fig)" stroke-width="2"/>` + P.af(75,56,6);
+  }
+  return "";
+}
+
+function svg(k) {
+  const grid = [50,100].map(x=>S.line(x,0,x,100,"var(--sk-grid)",.7)).join("") + [33.3,66.6].map(y=>S.line(0,y,150,y,"var(--sk-grid)",.7)).join("");
+  return `<svg viewBox="0 0 150 100" role="img" aria-label="Framing sketch"><defs><filter id="blur"><feGaussianBlur stdDeviation="2.4"/></filter><clipPath id="cp"><rect width="150" height="100"/></clipPath></defs>${S.rect(0,0,150,100,"var(--sk-bg)")}<g clip-path="url(#cp)">${sketch(k)}</g><g stroke-dasharray="2 2">${grid}</g></svg>`;
+}
+
+function promptFor(fr) {
+  return `Realistic documentary wedding photograph at ${CTX}. ${fr.scene[0].toUpperCase() + fr.scene.slice(1)}. Shot on a full-frame mirrorless camera with a ${fr.lens}mm prime lens at f/${fr.f}. Composition: ${fr.how} Natural light, true-to-life colours, candid, 3:2, no text, no watermark.`;
+}
+
+// ---- state (ticks kept on this phone only) ----
+let ticks = {}, filter = "all";
+try { ticks = JSON.parse(localStorage.getItem("banns-photo-ticks") || "{}") || {}; } catch (e) { ticks = {}; }
+const save = () => { try { localStorage.setItem("banns-photo-ticks", JSON.stringify(ticks)); } catch (e) {} };
+
+let toastT;
+function toast(msg) { const t = document.getElementById("toast"); t.textContent = msg; t.hidden = false; clearTimeout(toastT); toastT = setTimeout(() => t.hidden = true, 2200); }
+function copy(text, el) {
+  const sel = () => { const r = document.createRange(); r.selectNodeContents(el); const s = getSelection(); s.removeAllRanges(); s.addRange(r); toast("Selected. Long-press to copy."); };
+  try { navigator.clipboard.writeText(text).then(() => toast("Prompt copied"), sel); } catch (e) { sel(); }
+}
+
+const el = (tag, cls, text) => { const e = document.createElement(tag); if (cls) e.className = cls; if (text != null) e.textContent = text; return e; };
+
+function render() {
+  const list = document.getElementById("list");
+  const shootable = F.filter(f => !f.video), must = F.filter(f => f.must);
+  const got = shootable.filter(f => ticks["f" + f.n]).length, mustGot = must.filter(f => ticks["f" + f.n]).length;
+  document.getElementById("got").textContent = got; document.getElementById("total").textContent = shootable.length;
+  document.getElementById("mustGot").textContent = mustGot; document.getElementById("mustTotal").textContent = must.length;
+  document.getElementById("barFill").style.width = (100 * got / shootable.length) + "%";
+  list.replaceChildren();
+  MOMENTS.forEach(([id, name, sub]) => {
+    const frames = F.filter(f => f.m === id).filter(f => filter === "all" || (filter === "must" && f.must) || (filter === "left" && !f.video && !ticks["f" + f.n]));
+    if (!frames.length) return;
+    const h = el("h2", "moment", name); h.append(el("small", null, sub)); list.append(h);
+    frames.forEach(fr => {
+      const done = !!ticks["f" + fr.n];
+      const card = el("article", "card" + (fr.must ? " must" : "") + (fr.video ? " video" : "") + (done ? " done" : "")); card.id = "frame-" + fr.n;
+      const vf = el("div", "vf"); vf.innerHTML = svg(fr.k);
+      vf.append(el("span", "tag", fr.t)); if (fr.must) vf.append(el("span", "star", "★ MUST-GET"));
+      const body = el("div", "body");
+      const head = el("div", "head"); head.append(el("div", "title", fr.title), el("span", "num", "#" + fr.n));
+      const chips = el("div", "chips"); chips.append(el("span", "chip lens", fr.lens + "mm"), el("span", "chip", fr.video ? "video" : "f/" + fr.f));
+      body.append(head, chips, el("div", "bn", fr.bn));
+      if (!fr.video) body.append(el("div", "how", fr.how));
+      if (fr.groups) {
+        const g = el("div", "groups");
+        GROUPS.forEach((name, i) => {
+          const key = "g" + (i + 1), b = el("button", "g"); b.type = "button"; b.setAttribute("aria-pressed", String(!!ticks[key]));
+          b.append(el("i", null, ticks[key] ? "✓" : ""), el("span", null, name));
+          b.addEventListener("click", () => { ticks[key] = !ticks[key]; save(); render(); });
+          g.append(b);
+        });
+        body.append(g, el("div", "note", "বড় group থেকে ছোট। একজন বন্ধু/ভাইবোনকে \"group caller\" বানান।"));
+      }
+      if (!fr.video) {
+        const p = el("div", "prompt", promptFor(fr)); p.hidden = true; p.id = "prompt-" + fr.n;
+        const acts = el("div", "acts");
+        const gotBtn = el("button", "btn got", done ? "✓ Got it" : "Got it"); gotBtn.type = "button";
+        gotBtn.addEventListener("click", () => { ticks["f" + fr.n] = !done; save(); render(); });
+        const pb = el("button", "btn", "AI prompt"); pb.type = "button"; pb.setAttribute("aria-expanded", "false"); pb.setAttribute("aria-controls", p.id);
+        pb.addEventListener("click", () => { const open = p.hidden; p.hidden = !open; pb.setAttribute("aria-expanded", String(open)); if (open) copy(p.textContent, p); });
+        acts.append(gotBtn, pb);
+        body.append(acts, p);
+      }
+      card.append(vf, body);
+      list.append(card);
+    });
+  });
+}
+
+document.querySelectorAll(".f").forEach(b => b.addEventListener("click", () => {
+  filter = b.dataset.f; document.querySelectorAll(".f").forEach(x => x.setAttribute("aria-pressed", String(x === b))); render();
+}));
+let armed = false;
+document.getElementById("reset").addEventListener("click", (e) => {
+  if (!armed) { armed = true; e.target.textContent = "Tap again to clear"; setTimeout(() => { armed = false; e.target.textContent = "Clear all ticks"; }, 3000); return; }
+  ticks = {}; save(); armed = false; e.target.textContent = "Clear all ticks"; render(); toast("Ticks cleared");
+});
+render();
+</script>
