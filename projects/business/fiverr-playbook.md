@@ -182,27 +182,24 @@ What the research shows, and how firm each finding is:
   many of them from South Asian sellers with large review counts. Niche gigs stand out: coaches and course creators,
   fitness, real estate, talking-head editing ([examples](https://fiverr.com/jam_abid/script-edit-reels-coaches),
   [examples](https://fiverr.com/jamie_deeps/edit-short-form-content)). **(Our reading of the listings, not market data.)**
-- **Colour grading is crowded too, but specialised.** One Fiverr category page showed about 15,943 "color" services.
-  Log → Rec.709, S-Log3 and LUT work are standard offerings ([block.fiverr.com/gigs/color](https://block.fiverr.com/gigs/color?page=13);
-  [example gig](https://fiverr.com/ajoshuafilms/do-professional-cinematic-color-grading-davinci-resolve)). No demand data was
-  found. **(Unverified demand.)**
-- **Wedding highlight editing is an active market.** Listings start around $80–125 and deliver in 3–7 days for
-  highlights, 7–14 for full films ([block.fiverr.com wedding-highlight](https://block.fiverr.com/gigs/wedding-highlight);
-  [example](https://fiverr.com/nitheesh_seban/do-professional-wedding-reels)). We found no data on how many buyers
-  there are. It needs hours of footage per order (large uploads from abroad) and long edit sessions, so it's a poor
-  first gig for a solo editor who also shoots local weddings.
+- **Wedding highlight editing is an active market at higher prices.** Listings start around $80–125, well above
+  the $5–20 entry prices common in short-form editing. They deliver in 3–7 days for highlights, 7–14 for full films
+  ([block.fiverr.com wedding-highlight](https://block.fiverr.com/gigs/wedding-highlight);
+  [example](https://fiverr.com/nitheesh_seban/do-professional-wedding-reels);
+  [example](https://fiverr.com/roy_valerafilms/edit-your-wedding-videos-and-highlights)). We found no data on how many
+  buyers there are **(unverified demand)**. Buyers are typically couples or videographers who send hours of footage
+  through Drive/Dropbox/WeTransfer.
 
 **Ranking logic for Frank:** pick the gigs where (a) buyers come back every week or month, (b) one order fits around
-local shoots, and (c) Frank's "I shoot too" story is a real edge. Drone editing has too few buyers to stand alone
-**(unverified; no data found)**, so it goes into Gig 3 as a selling point and a tag.
+local shoots, and (c) Frank's real experience is an edge. He already edits weddings and his bio says so. Drone
+editing has too few buyers to stand alone **(unverified; no data found)**, so it goes into Gig 3 as a selling point
+(drone shots cut into the highlight).
 
 | Rank | Gig | Why it's here | Main risk |
 |---|---|---|---|
-| **1** | Short-form editing (Reels / TikTok / Shorts) for coaches, creators & small brands | Biggest pool of buyers; monthly batches → repeat buyers; small files, fast turnaround | Price war in generic listings. Win by niche + quality, not price |
+| **1** | Short-form editing (UGC / Reels / TikTok / Shorts) for coaches, creators & small brands | Biggest pool of buyers; monthly batches → repeat buyers; small files, fast turnaround | Price war in generic listings. Win by niche + quality, not price |
 | **2** | YouTube / talking-head video editing | Weekly uploads mean steady repeat work; feeds Gig 1 (long video → clips upsell) | Longer edits; scope creep. Cap the raw-footage length per package |
-| **3** | Cinematic colour grading in DaVinci Resolve (Log footage, incl. drone) | Frank's style and gear knowledge (S-Log3 on the A7C) are a real edge; fast to deliver; before/afters sell it | Smaller, more technical buyers; must show strong before/afters |
-
-Later, once Gigs 1–3 have reviews: wedding highlight editing, as a 4th gig aimed at other videographers.
+| **3** | Wedding & event highlight editing in Premiere Pro | Higher order value; Frank shoots and edits weddings locally, so he knows the story beats; videographer buyers can come back each wedding season | Large uploads and long edit sessions. Cap footage hours per package and set realistic delivery times around his own shoots |
 
 ---
 

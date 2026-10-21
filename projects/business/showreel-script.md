@@ -11,7 +11,7 @@ Built for the sales plan's three niches, in ranked order: (1) intimate weddings,
 - **Couple's written OK.** Version A is used only if the Banns couple agrees in writing (WhatsApp or Messenger text counts; keep a screenshot). If they say yes to some shots and not others (for example, no faces, or no voices), cut A to match, or use B. No answer = B.
 - **Guests.** Even with the couple's OK, prefer the couple, details and wide shots. No recognisable guest close-ups unless that guest agrees.
 - **Music: licensed only.** One track, about 85 s, from James-the-less's licensed library, with the licence covering social and YouTube use. Save the licence or download receipt in the project folder. **Never** use the church's hymns, the restaurant's background music or any track ripped from YouTube or a phone recording.
-- **Camera base (matches Friday):** PAL, 4K 25p at 1/50; slow motion 1080p 100p at 1/100 (4x slow at 25p); HLG3 / Pro colour; manual white balance. 25p and 1/50 keep Dhaka's 50 Hz lights from flickering.
+- **Camera base (matches Friday):** PAL, 4K 25p at 1/50; slow motion 1080p 100p at 1/100 (4x slow at 25p); baked-in picture style (see shot-list.md); manual white balance. 25p and 1/50 keep Dhaka's 50 Hz lights from flickering.
 - **No drone.** No DJI Neo 2 shots unless Simon confirms the flight was legal and it was actually flown. Both versions work without it.
 - **No gear we don't own.** No tripod, gimbal, lights or ND: brace on walls, tables, a stack of books. Window light only indoors.
 - **Text on screen** in English, with an optional Bangla line under the end-card headline. Thomas checks spelling in both. The reel must work with the sound off (Facebook autoplays muted).
@@ -134,6 +134,6 @@ Frank is busy 22–23 Oct (Banns prep and shoot), so these go on the free days a
 ## Hand-offs
 
 - **James-the-less:** pick one licensed track (about 85 s, soft start, lift around 0:20 to 0:24, gentle resolve). Confirm the licence covers Facebook, YouTube, Reels and TikTok; file the licence.
-- **Bartholomew:** cut A (if OK'd) or B in 16:9 plus the 9:16 versions. Grade HLG3 to Rec.709 to match Friday. Check that guest and stranger faces follow the rules above.
+- **Bartholomew:** cut A (if OK'd) or B in 16:9 plus the 9:16 versions. Cut in Premiere Pro with light colour correction to match shots. Check that guest and stranger faces follow the rules above.
 - **Thomas:** check text spelling (English and Bangla), the couple's written OK on file, the music licence on file, and that the end-card placeholders were replaced with Frank's real WhatsApp and Messenger details.
 - **Frank:** ask the couple for written OK after delivering their film (not on the day); fill in the end-card contact details; approve before pinning to the Facebook page.
