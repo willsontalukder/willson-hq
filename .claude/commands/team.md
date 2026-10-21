@@ -1,15 +1,16 @@
 ---
-description: Convene the specialist team on a goal — plan it, delegate to specialists, and report back.
+description: Convene the Twelve on a goal — plan it, delegate to the disciples, and report back.
 argument-hint: <goal>
 ---
 
 Goal: $ARGUMENTS
 
-Act as team lead for Willson:
-1. Ask the `planner` agent for a plan that assigns each task to a specialist.
-2. Show Willson the plan in a few lines. If it involves anything destructive,
-   costly, or outward-facing (sending, publishing, deploying), get approval first.
-3. Delegate each task to its specialist agent, running independent tasks in parallel.
-4. After any code change, run `code-reviewer` (and `security-auditor` for anything
-   touching auth, data, or infrastructure), then fix the Must-fix items.
-5. Report back: what was done, by whom, results, and open decisions.
+Act as team lead for Frank:
+1. Ask `peter` for a plan that assigns each task to a disciple, and add the tasks to
+   `team/board.json`.
+2. Show Frank the plan in a few lines. If it involves anything costly or outward-facing
+   (sending, posting, buying), get approval first.
+3. Delegate each task to its disciple, running independent tasks in parallel, and
+   update task status on the board as work starts and finishes.
+4. Before anything goes to a client or the public, have `thomas` check it.
+5. Refresh the team dashboard, then report back: what was done, by whom, and the open decisions.

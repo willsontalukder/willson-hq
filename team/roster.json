@@ -1,0 +1,14 @@
+[
+  {"agent": "peter", "name": "Peter", "role": "Producer", "focus": "Plans every project, schedules, assigns work", "order": 1},
+  {"agent": "andrew", "name": "Andrew", "role": "Clients & outreach", "focus": "Leads, inquiries, proposals, follow-ups", "order": 2},
+  {"agent": "james", "name": "James", "role": "Director of photography", "focus": "A7C settings, 24mm / 85mm, shot lists, light", "order": 3},
+  {"agent": "john", "name": "John", "role": "Screenwriter", "focus": "Ideas, scripts, narration, interview questions", "order": 4},
+  {"agent": "philip", "name": "Philip", "role": "Locations & logistics", "focus": "Scouting, golden hour, weather, call sheets", "order": 5},
+  {"agent": "bartholomew", "name": "Bartholomew", "role": "Editor & colorist", "focus": "Edit structure, S-Log3 grading, exports", "order": 6},
+  {"agent": "thomas", "name": "Thomas", "role": "Quality control", "focus": "Checks every export before it ships", "order": 7},
+  {"agent": "matthew", "name": "Matthew", "role": "Finance", "focus": "Rates, quotes, invoices, budgets", "order": 8},
+  {"agent": "james-the-less", "name": "James the Less", "role": "Sound & music", "focus": "Recording, mixing, licensed music", "order": 9},
+  {"agent": "jude", "name": "Jude", "role": "Marketing & social", "focus": "YouTube, Instagram, TikTok, thumbnails", "order": 10},
+  {"agent": "simon", "name": "Simon", "role": "Drone pilot", "focus": "DJI Neo 2 shots, safety, flight rules", "order": 11},
+  {"agent": "matthias", "name": "Matthias", "role": "Studio tech", "focus": "ASUS TUF, proxies, backups, this dashboard", "order": 12}
+]

@@ -1,0 +1,15 @@
+[
+  {"id": "T01", "title": "List current and upcoming shoots so every project gets a plan", "owner": "peter", "project": "Studio setup", "status": "Needs Frank", "priority": "High", "updated": "2026-10-21"},
+  {"id": "T02", "title": "Create A7C picture-profile presets (S-Log3, HLG, Cine) for memory recall", "owner": "james", "project": "Studio setup", "status": "To do", "priority": "High", "updated": "2026-10-21"},
+  {"id": "T03", "title": "Write a lens guide: when to use the 24mm vs the 85mm", "owner": "james", "project": "Studio setup", "status": "To do", "priority": "Medium", "updated": "2026-10-21"},
+  {"id": "T04", "title": "Develop three short-film ideas Frank can shoot alone", "owner": "john", "project": "Portfolio", "status": "To do", "priority": "Medium", "updated": "2026-10-21"},
+  {"id": "T05", "title": "Build a location-scouting checklist and golden-hour planner", "owner": "philip", "project": "Studio setup", "status": "To do", "priority": "Medium", "updated": "2026-10-21"},
+  {"id": "T06", "title": "Build a DaVinci Resolve template with an S-Log3 color pipeline", "owner": "bartholomew", "project": "Studio setup", "status": "To do", "priority": "High", "updated": "2026-10-21"},
+  {"id": "T07", "title": "Write a pre-delivery QC checklist (specs, loudness, captions)", "owner": "thomas", "project": "Studio setup", "status": "To do", "priority": "Medium", "updated": "2026-10-21"},
+  {"id": "T08", "title": "Build a rate card and per-project quote template", "owner": "matthew", "project": "Business", "status": "Needs Frank", "priority": "High", "updated": "2026-10-21"},
+  {"id": "T09", "title": "Draft a client-inquiry reply and a one-page services sheet", "owner": "andrew", "project": "Business", "status": "To do", "priority": "High", "updated": "2026-10-21"},
+  {"id": "T10", "title": "Recommend a solo audio setup for the A7C (no XLR) and licensed music sources", "owner": "james-the-less", "project": "Studio setup", "status": "To do", "priority": "High", "updated": "2026-10-21"},
+  {"id": "T11", "title": "Audit Frank's social channels and propose a 30-day content calendar", "owner": "jude", "project": "Business", "status": "Needs Frank", "priority": "Medium", "updated": "2026-10-21"},
+  {"id": "T12", "title": "Check DJI Neo 2 firmware and drone rules where Frank flies", "owner": "simon", "project": "Studio setup", "status": "Needs Frank", "priority": "High", "updated": "2026-10-21"},
+  {"id": "T13", "title": "Set up offload, proxy and 3-2-1 backup workflow on the ASUS TUF", "owner": "matthias", "project": "Studio setup", "status": "To do", "priority": "High", "updated": "2026-10-21"}
+]
