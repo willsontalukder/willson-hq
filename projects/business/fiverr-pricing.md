@@ -4,6 +4,84 @@ Prepared by Matthew (finance), 21 Oct 2026. For Frank Willson Talukder, Dhaka. H
 
 **Updated 21 Oct 2026** with Frank's real Fiverr stats from `fiverr-snapshot.md`, which were read from his app screenshots. We still don't know the laptop's specs. We couldn't open Fiverr itself from here (fiverr.com did not resolve). Every market figure therefore comes from search-engine snippets of Fiverr pages or from third-party guides, and each one is cited and rated below. **Before publishing, open 10 to 15 competing gigs in each category on Fiverr and check them against §1.**
 
+## Your starting point
+
+**Where Frank stands (21 Oct 2026):**
+- 4.8 stars from 61 reviews, 80 orders, 38 unique clients, $1,462 earned. Member since Oct 2019.
+- He is at **Level 0** and his last delivery was **about 43 weeks ago**.
+- Both video gigs start at **$20**. His average order so far is $1,462 ÷ 80 = **$18.28**, which nets him about $14.60 after Fiverr's fee.
+
+He has already passed the order, client and earnings numbers for Level 1, and even the order count for Level 2. The missing piece is recent activity. So the goal for the next few weeks is **orders moving again**, not maximum price.
+
+We still lift him off $20. Prices rise in one moderate step, and package scope is trimmed so every package still clears the **$10/h net floor** from §4. Once he has **5 new completed orders**, he moves to the target prices in the tables below.
+
+### Phase A: comeback prices (until 5 new completed orders)
+
+**YouTube video editing** (existing gig, 32 reviews, currently from $20)
+
+| | Basic | Standard | Premium |
+|---|---|---|---|
+| Comeback price | **$30** | **$70** | **$140** |
+| Scope (trimmed from the §2 tables) | up to 15 min raw → up to 3 min finished, 1 revision, 3 days | up to 45 min raw → up to 8 min, subtitles, sound design, 2 revisions, 4 days | up to 90 min raw → up to 15 min, full grade, motion graphics, thumbnail, 3 revisions, 6 days |
+| Net USD / BDT (@122) | $24 / ৳2,928 | $56 / ৳6,832 | $112 / ৳13,664 |
+| Hours (estimate) / net per hour | 2.25 h / $10.7 | 5 h / $11.2 | 9.5 h / $11.8 |
+
+**UGC / TikTok ad editing** (existing gig, 9 reviews, currently from $20). This gig uses the §2 short-form packages.
+
+| | Basic | Standard | Premium |
+|---|---|---|---|
+| Comeback price | **$25** | **$55** | **$120** |
+| Scope | 1 video up to 60 s from up to 10 min raw, styled captions, 1 revision, 2 days | 3 videos from up to 20 min raw, animated captions, color correction, 2 revisions, 3 days | 6 videos from up to 60 min raw, animated captions, grade, cover frames, 3 revisions, 5 days |
+| Net USD / BDT (@122) | $20 / ৳2,440 | $44 / ৳5,368 | $96 / ৳11,712 |
+| Hours (estimate) / net per hour | 1.75 h / $11.4 | 4 h / $11.0 | 8.5 h / $11.3 |
+
+**Color grading** (new gig, no reviews of its own, but the profile's 4.8 helps)
+
+| | Basic | Standard | Premium |
+|---|---|---|---|
+| Launch price | **$35** | **$80** | **$160** |
+| Scope | as §2 Gig 3 | as §2 Gig 3 | as §2 Gig 3 |
+| Net USD / BDT (@122) | $28 / ৳3,416 | $64 / ৳7,808 | $128 / ৳15,616 |
+| Hours (estimate) / net per hour | 2.5 h / $11.2 | 6 h / $10.7 | 12 h / $10.7 |
+
+This gig fits the filmmaker story, and Frank already works in DaVinci Resolve and S-Log. Lead with "Sony S-Log / DaVinci Resolve".
+
+**Why these step-ups are safe:**
+- $20 → $30 and $20 → $25 keep the gig's "From" price inside the $25–50 range where most reviewed sellers sit (see §1).
+- 61 reviews at 4.8 justify being above the $5–15 beginner tier.
+- Buyers see a single small jump. Standard and Premium carry the real value.
+
+### Phase B: target prices (after 5 new completed orders)
+
+| Gig | Basic | Standard | Premium |
+|---|---|---|---|
+| YouTube editing | $45 | $95 | $180 |
+| UGC / short-form | $25 | $65 | $160 |
+| Color grading | $40 | $90 | $180 |
+
+Packages go back to the full scope in §2. From there the ladder in §5 takes over. He is likely to regain Level 1 quickly, since he already meets its order, client and earnings numbers, and that triggers Stage 1. **His review count is already past Stage 2's 20 reviews, so he can apply Stage 2 prices as soon as Level 2 comes back.**
+
+### The $5 gigs
+
+**"Create any kind of graphic design" ($5, 5.0 from 20 reviews): pause it, don't delete it.**
+- A $5 order nets $4. Even at 30 minutes of work that is $8/h, below the floor.
+- It pulls the profile away from the video specialist story.
+- Pausing keeps the gig and its reviews so it can be reactivated later. Deleting cannot be undone. We haven't checked how Fiverr shows a paused gig's reviews on the profile.
+- If Frank wants to keep it live, the minimum is **$15 Basic**, limited to one simple design and one revision.
+
+**"Design a catchy YouTube thumbnail" ($5, no reviews): pause it.**
+- Fold thumbnails into the YouTube gig: one is included in Premium, and it is a **+$15 extra** on Basic and Standard (§2).
+- That puts the thumbnail work behind a $30+ order instead of a $5 one.
+
+**Also do now (no price change):**
+- Answer the 28 unread messages within 24 h. Response rate counts toward level.
+- Replace the cartoon avatar with a real photo, and fix the grammar in the bio.
+- The AI voice and AI video gigs were not part of this task. Frank decides whether to keep them, but every extra unrelated gig dilutes the video specialist profile.
+
+None of these changes happens without Frank's approval: he makes them in his own Fiverr account.
+
+---
+
 ## Summary
 
 | Gig | Basic | Standard | Premium |
@@ -13,7 +91,7 @@ Prepared by Matthew (finance), 21 Oct 2026. For Frank Willson Talukder, Dhaka. H
 | Color grading (DaVinci Resolve) | **$40** | **$90** | **$180** |
 | Wedding/event highlight | **$70** | **$150** | **$290** |
 
-These are **launch prices** for a new to mid-level seller. After Fiverr's 20% fee they net about **$10–13 per hour** of Frank's time, which is about **৳1,240–1,560/h**. That is between 2 and 3 times his effective rate on local Dhaka shoots (~৳490–575/h in `packages-and-pricing.md`), with no travel and no gear wear. The ladder in §5 raises prices once reviews arrive.
+These are the **Phase B target prices**. Frank uses the Phase A comeback prices above until he has 5 new orders. After Fiverr's 20% fee they net about **$10–13 per hour** of Frank's time, which is about **৳1,240–1,560/h**. That is between 2 and 3 times his effective rate on local Dhaka shoots (~৳490–575/h in `packages-and-pricing.md`), with no travel and no gear wear. The ladder in §5 raises prices once reviews arrive.
 
 ---
 
@@ -223,7 +301,7 @@ Fiverr's level requirements, from [Fiverr Help Center "Achieving levels"](https:
 
 | Stage | Trigger | Action | Net target |
 |---|---|---|---|
-| **0. Launch** | 0–4 reviews | Use the prices in this document. Do not discount Standard or Premium. Basic is the "door" that brings first orders. If there are no orders after ~30 days with healthy impressions, cut **Basic only** by $5 (short-form to $20, YouTube to $40). Never go below $10/h net. | $10–12/h |
+| **0. Launch** | 0–4 reviews (for Frank: the first 5 new orders after his restart, priced at Phase A comeback prices; see "Your starting point") | Use the prices in this document. Do not discount Standard or Premium. Basic is the "door" that brings first orders. If there are no orders after ~30 days with healthy impressions, cut **Basic only** by $5 (short-form to $20, YouTube to $40). Never go below $10/h net. | $10–12/h |
 | **1. First proof** | **5 reviews at 4.8+** or Level 1 | Raise Basic ~20% (e.g. YouTube $55, short-form $30). Raise Standard/Premium ~10% (YouTube $105/$200, wedding $165/$320). | $12–14/h |
 | **2. Established** | **20 reviews** or Level 2 | +20–25% on all tiers (e.g. YouTube $65/$130/$240, short-form $35/$85/$200, wedding $90/$190/$360). Add a 4-week "repeat client" custom-offer bundle. | $15–17/h |
 | **3. In demand** | 40+ reviews, Top Rated, or Pro | Price towards the top of the observed market: wedding $250+ for a 3–5 min highlight, colorist $100–240. Drop the cheapest Basic or make it a "1 Short" sampler. | $20–25/h |
@@ -241,7 +319,8 @@ How to raise:
 ---
 
 ## Open items
-- Frank to confirm his current level, review count and current gig prices. The ladder stage follows from those.
+- ~~Frank to confirm his level, reviews and prices~~ Done 21 Oct 2026 (`fiverr-snapshot.md`): Level 0, 61 reviews at 4.8, 80 orders, video gigs from $20. Next: Frank to approve and enter the Phase A prices, and pause the two $5 gigs.
+- Find out why Frank is at Level 0 despite meeting the numbers. The likely reason is no recent activity, but this is not verified on Fiverr's site.
 - Frank to open Fiverr's "Fiverr fees for sellers" help page once to confirm the 20% (third-party sources agree, but it is not seen directly).
 - Spot-check 10–15 competitor gigs per category on Fiverr. The search data here is thin for short-form and color grading.
 - Laptop specs (CPU/GPU/RAM) decide whether 4K/RAW client footage is viable at these hours.
