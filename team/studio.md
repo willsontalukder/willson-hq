@@ -11,9 +11,10 @@ Every plan must be doable by one person.
 | 24mm prime | Wide: establishing shots, interiors, handheld, vlog |
 | 85mm prime | Tele: portraits, interviews, compression, details |
 | DJI Neo 2 | Small drone. Check specs, flight modes and local rules against DJI's and the aviation authority's official sources before relying on them |
+| DJI Mic Mini 2 | Wireless mic kit. Check exact specs (transmitters, range, recording options) on DJI's official page before relying on them |
 | ASUS TUF laptop | Editing machine. Exact model, CPU, GPU and RAM not recorded yet; ask Frank |
 
-Not owned (as far as we know): dedicated microphone or audio recorder, lights, gimbal,
+Not owned (as far as we know): lights, gimbal,
 ND filters, tripod. Ask before assuming.
 
 ## The team board
