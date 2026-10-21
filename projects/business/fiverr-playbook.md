@@ -4,16 +4,121 @@ Owner: Jude (marketing) · For: Frank Willson Talukder (Keep Rolling), solo film
 Status: **DRAFT. Nothing here has been posted or changed on Fiverr. Frank edits his profile and gigs himself. Thomas checks
 the gig copy before it goes live, and Matthew sets every price.**
 
-**What we don't know.** We can't open Fiverr from this environment. We have **not seen** Frank's current gigs, reviews,
-seller level, Success Score, response rate or analytics, so this playbook includes none of them. Every number about
-Frank below is a blank to fill in. Every claim about Fiverr's rules or algorithm comes with a source. Claims marked
-**(unverified)** come from third-party guides or seller listings, not from Fiverr itself. Check them in your Fiverr
-dashboard before you rely on them.
+**Where the facts come from.** We can't open Fiverr from this environment. The account facts in "Your account today"
+come from Frank's own screenshots, written up in [fiverr-snapshot.md](fiverr-snapshot.md) on 21 Oct 2026. Nothing
+else about his account is assumed. Every claim about Fiverr's rules or algorithm comes with a source. Claims marked
+**(unverified)** come from third-party guides, forum posts or seller listings, not from Fiverr's own rules. Check them
+in your Fiverr dashboard before you rely on them.
 
-> **Want a real audit?** Send Jude screenshots of: (1) your public profile page, (2) each gig's public page plus its
-> edit screens (Overview, Pricing, Description & FAQ, Requirements, Gallery), (3) Analytics (impressions, clicks,
-> orders, conversion for the last 30/60 days), (4) the Levels/Success Score page and (5) the inbox response-rate figure.
-> Jude will then mark each line of the checklist below pass/fix and rewrite only what needs it.
+> **Still missing from the screenshots:** each gig's edit screens (description, FAQ, requirements, gallery), the
+> Analytics page (impressions, clicks, orders per gig), and the full text of the 28 unread messages. Send those and
+> Jude will finish the per-gig audit in §1.
+
+---
+
+## 0. Your account today (from the 21 Oct 2026 screenshots)
+
+### The short version
+
+The work is fine. **Activity is the problem.** You have 80 orders, 38 clients, $1,462 earned and a **4.8 rating from 61
+reviews**. That is more than the targets the dashboard shows (5 orders, 3 clients, $400). Yet you're **Level 0**, with no
+Success Score or response rate shown ("–"), your last delivery was **about 43 weeks ago**, and **28 messages are unread**.
+
+Why the level is stuck: Fiverr doesn't publish the exact rules, and we couldn't read its level pages from here. The
+order, client and earnings targets are clearly met, so the gap is most likely the Success Score and response rate,
+which aren't being calculated. Fiverr forum posts from sellers describe exactly this: a blank score after months
+without orders, or for sellers who haven't been scored yet. They also describe being demoted to Level 0 after a long
+gap **(unverified: forum reports, not Fiverr's rules)**
+([forum: score empty after inactivity](https://community.fiverr.com/public/forum/boards/ask-the-community-xsm/posts/338079-success-score-is-show-empty);
+[forum: "not calculated yet"](https://community.fiverr.com/public/forum/boards/start-here-c9d/posts/326275-success-score);
+[forum: level demotion](https://community.fiverr.com/forums/topic/328712-level-demotion)). A third-party guide says
+levels are now checked daily and that Level 2 needs a minimum response rate and Success Score **(unverified)**
+([Zenlance](https://zenlance.net/fiverr-seller-levels/); [EduEarnHub](https://eduearnhub.com/?p=5735)). Whatever the
+exact rule, the fix is the same: **answer fast, deliver on time, get orders moving again.**
+
+The gigs pull in five directions: video editing, thumbnails, graphic design, AI voice and AI video. The profile
+(cartoon avatar, a bio with grammar mistakes) undersells someone with 61 reviews.
+
+### (1) 7-day comeback plan (ranked: do them in this order)
+
+| Day | Task | Why first | Done when |
+|---|---|---|---|
+| **1** | **Answer all 28 unread messages.** Sort them: (a) real buyers with a project, (b) old inquiries, (c) spam or scams. Reply to (a) today: short, honest, no excuses essay: *"Sorry for the slow reply, I'm back and taking orders. If this project is still open, send me the footage details and I'll send you an offer."* For (a), send a **Fiverr custom offer** only where the buyer asked for work. Reply to (b) with one polite line. Report (c) with Fiverr's spam tool; don't click links. **No phone, email or WhatsApp in any reply, and no "pay me outside Fiverr".** | It's the cheapest win: response speed is widely treated as a ranking factor **(unverified weight)** ([Unilink](https://www.unilink.us/blog/fiverr-seo-2026)), and some of these may be paid orders waiting. | Inbox at 0 unread. From now on, reply within 1 h during working hours, from the Fiverr app with notifications on. |
+| **2** | **Fix the profile:** replace the cartoon avatar with a real photo (see (4)), paste the new bio (see (3)), and check the languages are true. **English (Fluent)** and **French (Basic)** are listed; keep French only if you could really handle a short message in French. | Buyers who click through from a gig see this next. Trust first. | Real face, new bio, honest languages. |
+| **3** | **Gig cleanup, part 1: pause** the 4 gigs that don't fit, or merge them as add-ons (see (2)). Remove the "click bait" thumbnail image and any gig image with other people's faces (see (4)). | A focused profile reads as a specialist; removes the riskiest images straight away. | 3 live gigs (plus graphic design, see (2)). |
+| **4** | **Gig cleanup, part 2: rewrite the YouTube editing gig** (32 reviews) with the Gig 2 copy in §2. Keep its category and the words "YouTube video editing" in the title, so the gig keeps its search history. | Your most-reviewed gig: the best shot at the first new order. | New description, 5 FAQs, requirements, before/after image 1, gig video. |
+| **5** | **Rewrite the UGC gig** (9 reviews) with the Gig 1 copy in §2 (UGC version). | Second-strongest gig; short-form buyers order again and again. | Same as day 4. |
+| **6** | **Create the colour-grading gig** (Gig 3 in §2) with 2–3 before/after images from your own S-Log3 and drone footage. Set delivery times you can hit around local shoots. | It's the one gig with no reviewed version to keep, and it shows your strongest skill. | Live, with a gig video. |
+| **7** | **Prices and promotion.** Send Matthew the facts (from $20 today, 4.8 from 61 reviews) for new package prices. Then post one Facebook Reel linking the YouTube gig. Start the §3 daily routine. | Getting found again: off-platform traffic to the gig is allowed; contacting buyers out of the blue is not (next box). | Prices set by Matthew, one FB post live, routine running. |
+
+**About Briefs and past buyers. This is where it's easy to break the rules:**
+- **Briefs can't be sent; they come to you.** Fiverr's matching sends each Brief to a small group of sellers
+  ([Fiverr help: Briefs](https://help.fiverr.com/hc/en-us/articles/4415608857745)). Your dashboard shows "New Briefs:
+  Nothing here". The only levers are gig titles, categories and tags that match what buyers ask for (days 4–6), and
+  being active. When a Brief does arrive, reply the same day (template in §3).
+- **Don't message past buyers out of the blue to ask for work.** Fiverr's Community Standards list "sending direct
+  messages to promote your services or specific Gigs" and contacting users with offers unrelated to their orders or
+  requests as spam ([Fiverr: Our Community Standards](https://help.fiverr.com/hc/en-us/articles/32242973123985-Our-Community-Standards)).
+  Fiverr's own blog names messaging past buyers for more work as an example of spam ([Fiverr blog: "Spam me not"](https://community.fiverr.com/public/blogs/spam-me-not); 2017, older but consistent).
+  **Allowed:** replying to past buyers who write to you (some of the 28 may be past buyers), sending a custom offer
+  when they ask for one, and making the gigs easy to find from your own Facebook page. They can also find you again
+  through "Order again" on their side.
+
+### (2) Your 7 gigs: keep, rewrite, pause or merge
+
+Reviews stay with the gig they were left on, so **keep and rewrite the reviewed video gigs. Don't start them again
+from scratch.** Your profile rating already shows all 61 reviews.
+
+| Current gig | Reviews · From | Decision | Maps to |
+|---|---|---|---|
+| Do professional YouTube video editing… | 4.7 (32) · $20 | **Keep + rewrite** (day 4). Keep category and "YouTube video editing" in the title. Add the old thumbnail service as an add-on ("thumbnail design") if you still want to sell it. | **Gig 2** · YouTube / talking-head editing |
+| Do UGC video editing for TikTok ads and Instagram… | 4.7 (9) · $20 | **Keep + rewrite** (day 5). Keep "UGC" in the title and tags; widen it to Reels/TikTok/Shorts. | **Gig 1** · Short-form editing (UGC / Reels / TikTok / Shorts) |
+| *(new)* Colour grading in DaVinci Resolve | — | **Create** (day 6). No reviewed gig to reuse; the paused AI gigs have no reviews, so nothing is lost. | **Gig 3** · Colour grading (incl. drone) |
+| Design a catchy YouTube thumbnail in 2… ("Click bait" image) | none · $5 | **Pause** and **merge** as an add-on to the YouTube gig. Remove the "click bait" image now. | Add-on to Gig 2 |
+| Create any kind of graphic design into st… | **5.0 (20)** · $5 | **Keep live for now, don't promote.** 20 five-star reviews and new orders count as activity while the video gigs restart. Decide at day 30: pause it once the video gigs are getting orders. | None (off-brand side gig) |
+| Provide natural text to speech AI human voice… | none · $10 | **Pause.** Off-brand, no reviews. | — |
+| Create cinematic AI videos from your photos (Google Veo 3) | none · $10 | **Pause.** No reviews. AI-generated video sits badly next to "I shoot my own films", and AI-labelled content already did worst on your FB page. | — |
+| Create cinematic AI commercial and brand… | none · $30 | **Pause.** Same reasons. | — |
+
+Pausing (not deleting) keeps the gigs if you change your mind. Prices on every kept gig: **[Matthew's price]**.
+
+### (3) New bio, ready to paste (495 characters)
+
+Third-party guides put the bio limit at 600 characters **(unverified; Fiverr's page not checked)**
+([EduEarnHub character limits](https://eduearnhub.com/?p=5875)). This version fits under that. It makes no claims we
+can't check: no "expert", no years of experience, no numbers. Your 61 reviews already speak for you on the same page.
+
+```
+I'm Willson, a filmmaker and video editor from Dhaka, Bangladesh. I shoot my own films on a Sony full-frame camera and a drone, and I edit and colour grade in DaVinci Resolve, so I understand footage from both sides of the camera.
+
+Here I edit YouTube videos, UGC ads and short-form Reels, TikToks and Shorts, and I colour grade Log footage for a cinematic look.
+
+I edit every order myself. Send me a sample clip and tell me what you're making, and I'll tell you honestly what I can do with it.
+```
+
+What changed from the old bio ("I am  a Filmmaker And Professional Video Editor i have experience 6+ years i am expert
+at this serves…"): grammar and capitals fixed; "6+ years" and "expert" removed, since a buyer can't check them and
+your reviews make the point better; the wedding/short-film list replaced with the 3 services you'll actually sell; ends
+with an on-platform call to action. If you want "6+ years" back, it's your claim to make, but only if it's true.
+
+### (4) Avatar and gig images
+
+- **Avatar: replace the cartoon with a real photo of you.** Head and shoulders, shot on the A7C + 85mm, soft window
+  light, plain background, looking at the camera. Buyers are hiring a person to handle their footage, and a real face
+  is the quickest trust signal. Use the same photo on the FB page so the two match. Not the Keep Rolling logo, and not
+  an AI-generated portrait.
+- **Thumbnail images with other people's faces: remove them.** Fiverr requires that gig images are your own work or
+  something you have commercial rights to. It may remove gigs that use copyrighted images. Showing work delivered to a
+  client needs that client's consent ([Fiverr: Gig image guidelines](https://help.fiverr.com/hc/en-us/articles/15863342952977);
+  [Fiverr: Intellectual property](https://help.fiverr.com/hc/en-us/articles/32243499862673-Intellectual-Property);
+  [Fiverr: Gig violations](https://help.fiverr.com/hc/en-us/articles/34551698015761-Gig-violations)). Fiverr's pages
+  we found don't mention celebrity faces specifically, but a famous YouTuber's face or a stock face you didn't license
+  is someone else's image **(our reading)**. Replace them with frames from your own footage, or with real client
+  thumbnails only where the client has said yes in writing on Fiverr.
+- **"Click bait" wording: drop it.** The word itself tells buyers the thumbnail overpromises, which clashes with a
+  filmmaker selling quality. Use "Before / After" or a plain outcome ("YouTube edit · captions · colour"), and keep
+  overlay text to 3–5 words.
+- **Every gig image 1:** a split-screen before/after from your own footage. That is your best proof.
 
 ---
 
@@ -101,21 +206,21 @@ Later, once Gigs 1–3 have reviews: wedding highlight editing, as a 4th gig aim
 
 ---
 
-### Gig 1 · Short-form editing (Reels / TikTok / Shorts)
+### Gig 1 · Short-form editing (UGC / Reels / TikTok / Shorts)
+
+**Rewrite of the existing UGC gig (9 reviews). Don't create a new one.** Keep its current category.
 
 **Gig title (ready to paste):**
-`I will edit engaging reels, tiktok and youtube shorts for coaches and brands`
+`I will do UGC video editing for tiktok ads, instagram reels and youtube shorts`
 
 Alternatives to A/B test later (change one thing at a time; allow time between changes; one guide suggests about 30
-days **(unverified)**):
-- `I will turn your talking head videos into scroll stopping reels and shorts`
-- `I will edit short form videos with captions, b roll and cinematic color`
-- `I will edit instagram reels and tiktok videos for coaches and small businesses`
+days **(unverified)**). Keep "UGC" in any version so the gig keeps the searches it already ranks for:
+- `I will edit UGC ads and talking head reels with captions and cinematic color`
+- `I will edit UGC videos and reels for coaches, creators and small brands`
 
-**Category:** Video & Animation → Video Editing (or Short Video Ads / a social-media subcategory if the live menu has a
-closer match).
+**Category:** keep the UGC gig's current category (Video & Animation → its existing subcategory).
 
-**Search tags (5):** `reels editing` · `short form video` · `youtube shorts` · `tiktok video editing` · `talking head video`
+**Search tags (5):** `ugc video editing` · `reels editing` · `tiktok ads` · `youtube shorts` · `talking head video`
 
 **Packages:** Basic: 1 Reel up to 60 s · Standard: 3 Reels · Premium: 8 Reels (a month of content). Each includes
 captions, cuts, music from a licensed source or the buyer's own, colour and 2 revisions. Prices: **[Matthew's price]**.
@@ -176,14 +281,17 @@ Delivery days: Frank's call. Suggested defaults: 2 / 4 / 7 days.
 
 ### Gig 2 · YouTube / talking-head video editing
 
+**Rewrite of the existing YouTube editing gig (32 reviews). Don't create a new one.** Keep its current category.
+
 **Gig title (ready to paste):**
-`I will edit your youtube videos with clean cuts, captions and cinematic color`
+`I will do professional youtube video editing with captions and cinematic color`
 
-Alternatives:
-- `I will edit talking head youtube videos that keep viewers watching`
-- `I will professionally edit your youtube vlog or podcast video in davinci resolve`
+Alternatives (keep "youtube video editing" in any version):
+- `I will do youtube video editing for talking head, vlog and podcast channels`
+- `I will do professional youtube video editing in davinci resolve`
 
-**Category:** Video & Animation → Video Editing.
+**Category:** keep the YouTube gig's current category (Video & Animation → Video Editing). Thumbnail design moves
+here as an add-on (see §0).
 
 **Search tags (5):** `youtube video editing` · `talking head video` · `vlog editing` · `podcast video editing` · `davinci resolve`
 
@@ -348,8 +456,9 @@ Example:
 - **Week 3. Look at the numbers.** In Analytics, note impressions → clicks → orders per gig. Lots of impressions but few
   clicks: fix gig image 1 and the title. Clicks but no orders: fix the description, pricing and FAQs. Change one thing
   per gig, then leave it alone. Write the numbers into this file's log at the bottom.
-- **Week 4. Repeat buyers and review check.** Message every past buyer once, on Fiverr only, with something useful
-  (see below). Re-run the §1 checklist. Send Jude the screenshots for a proper audit.
+- **Week 4. Repeat buyers and review check.** Look after the buyers from this month's orders (see below). **Don't
+  message older buyers out of the blue:** Fiverr treats that as spam (§0). Re-run the §1 checklist. Send Jude new
+  screenshots (dashboard, Analytics, each gig) for the day-30 audit.
 
 ### Turning buyers into repeat buyers
 
@@ -358,8 +467,10 @@ Example:
 - Keep a short style note per buyer (fonts, colours, caption style, music mood) in your own files, so order 2 needs no
   briefing. That consistency is what makes buyers come back.
 - Upsell honestly across the gigs. YouTube buyer → "want 3 Shorts cut from this?" Grade buyer → "want the LUT?"
-- One check-in 2–3 weeks after delivery, on Fiverr: "Your Reel's been up a couple of weeks. Want the next batch
-  in the same style?" One message, no chasing.
+- **No follow-up sales messages after the order closes.** Fiverr lists messages that promote your services or gigs
+  as spam ([Community Standards](https://help.fiverr.com/hc/en-us/articles/32242973123985-Our-Community-Standards)).
+  Make the offer once, inside the delivery message, while the order is still open. After that, wait for the buyer to
+  write or use "Order again".
 
 ### Asking for a review, honestly
 
@@ -411,6 +522,7 @@ These protect the account. Breaking them can get it restricted or suspended, whi
 | **No fake, traded or arranged reviews** | No review swaps with other sellers, no friends or family ordering to leave reviews, no second accounts, no "order my $5 gig and I'll refund you". | [Integrity and Authenticity](https://help.fiverr.com/hc/en-us/articles/32243087473553-Integrity-and-Authenticity); [Account restrictions](https://help.fiverr.com/hc/en-us/articles/34551010553489-Account-restrictions) |
 | **No pressure for feedback** | One neutral review request at delivery, that's it. Never pressure a buyer about their rating. | [Integrity and Authenticity](https://help.fiverr.com/hc/en-us/articles/32243087473553-Integrity-and-Authenticity) |
 | **No paying off-platform** | Never suggest bKash, PayPal, bank transfer, a direct contract or "cheaper outside Fiverr" to anyone you met on Fiverr. All payments go through Fiverr. | [Off-platform policy](https://help.fiverr.com/hc/en-us/articles/38728907371665-Community-Standards-Off-platform-policy) |
+| **No unsolicited promo messages** | Don't message past buyers or other users to ask for work or push a gig. Reply when they write; make offers only on request or inside an open order. | [Our Community Standards](https://help.fiverr.com/hc/en-us/articles/32242973123985-Our-Community-Standards); [Fiverr blog: Spam me not](https://community.fiverr.com/public/blogs/spam-me-not) |
 | **No contact details in Fiverr messages** | No phone number, email, WhatsApp, Telegram, Instagram handle or Facebook link in messages, gig text, gig images or the gig video. Footage links (Drive/Dropbox/WeTransfer) for the work itself are normal practice. | [Off-platform policy](https://help.fiverr.com/hc/en-us/articles/38728907371665-Community-Standards-Off-platform-policy); [Stay protected](https://help.fiverr.com/hc/en-us/articles/12792122691601-Communication-The-Dos-and-Don-ts) |
 | **Keep communication on Fiverr** | One Fiverr help article suggests third-party tools may be OK *after* an order, if you document them back on Fiverr. A Fiverr community post says moving to WhatsApp/Discord isn't allowed. **Sources conflict, so take the safe reading: everything on Fiverr.** If a buyer asks for a call, use Fiverr's own call feature if your account has it. | [Stay protected](https://help.fiverr.com/hc/en-us/articles/12792122691601-Communication-The-Dos-and-Don-ts); [Fiverr community blog](https://community.fiverr.com/public/blogs/taking-business-off-platform-2025-06-02) |
 | **Original portfolio only** | Only work you shot and/or edited yourself. For client work, get the client's OK before showing it. No stock showreels, no other editors' work, no AI-generated "samples" presented as your edits. Gig video: no copyrighted music or visuals you don't own, no watermarks. | [Creating a Gig](https://help.fiverr.com/hc/en-us/articles/360010451397-Creating-a-Gig); [Integrity and Authenticity](https://help.fiverr.com/hc/en-us/articles/32243087473553-Integrity-and-Authenticity) |
@@ -428,7 +540,10 @@ extracts of those pages, dated 21 Oct 2026. Frank should skim the linked pages o
   the current rate.
 - **Thomas:** check the gig copy, FAQs and FB promo captions before Frank publishes them.
 - **James-the-less:** confirm a licensed music source Frank can use in client edits and gig videos.
-- **Frank:** confirm his English level for the Languages field, and send the screenshots for a real audit.
+- **Matthew (pricing input):** today the kept gigs start at $20 (YouTube, UGC) and $5 (graphic design), with 4.8 from 61
+  reviews.
+- **Frank:** clear the 28 unread messages first (day 1). Confirm the French (Basic) language entry is accurate. Send
+  each gig's edit screens and the Analytics page so Jude can finish the per-gig audit.
 
 ## Results log (Frank fills in)
 
@@ -448,7 +563,14 @@ Fiverr official:
 - [Off-platform policy](https://help.fiverr.com/hc/en-us/articles/38728907371665-Community-Standards-Off-platform-policy) · [Stay protected](https://help.fiverr.com/hc/en-us/articles/12792122691601-Communication-The-Dos-and-Don-ts) · [Taking business off-platform (community blog)](https://community.fiverr.com/public/blogs/taking-business-off-platform-2025-06-02)
 - [Integrity and Authenticity](https://help.fiverr.com/hc/en-us/articles/32243087473553-Integrity-and-Authenticity) · [Account restrictions](https://help.fiverr.com/hc/en-us/articles/34551010553489-Account-restrictions)
 
+- [Our Community Standards (spam)](https://help.fiverr.com/hc/en-us/articles/32242973123985-Our-Community-Standards) · [Spam me not (Fiverr blog, 2017)](https://community.fiverr.com/public/blogs/spam-me-not)
+- [Gig image guidelines](https://help.fiverr.com/hc/en-us/articles/15863342952977) · [Intellectual property](https://help.fiverr.com/hc/en-us/articles/32243499862673-Intellectual-Property) · [Gig violations](https://help.fiverr.com/hc/en-us/articles/34551698015761-Gig-violations)
+
+Account facts: [fiverr-snapshot.md](fiverr-snapshot.md) (Frank's screenshots, 21 Oct 2026).
+
 Third-party (unverified):
+- Fiverr forum reports on blank Success Scores and Level 0: [#338079](https://community.fiverr.com/public/forum/boards/ask-the-community-xsm/posts/338079-success-score-is-show-empty) · [#326275](https://community.fiverr.com/public/forum/boards/start-here-c9d/posts/326275-success-score) · [#328712](https://community.fiverr.com/forums/topic/328712-level-demotion)
+- [EduEarnHub: character limits 2026](https://eduearnhub.com/?p=5875)
 - [Unilink: Fiverr SEO 2026](https://www.unilink.us/blog/fiverr-seo-2026) · [Zenlance: seller levels 2026](https://zenlance.net/fiverr-seller-levels/) · [EduEarnHub: levels 2026](https://eduearnhub.com/?p=5735) · [AiProposer: brief responses](https://aiproposer.com/guides/fiverr/fiverr-buyer-request-responses)
 - Fiverr community thread on review requests: [#311345](https://community.fiverr.com/public/forum/boards/start-here-c9d/posts/311345-can-we-ask-buyers-to-write-a-review-it-is-not-against-tos)
 - Live listings used only to see what competitors offer: [colour category](https://block.fiverr.com/gigs/color?page=13), [wedding highlight category](https://block.fiverr.com/gigs/wedding-highlight), [coaches Reels gig](https://fiverr.com/jam_abid/script-edit-reels-coaches), [short-form gig](https://fiverr.com/jamie_deeps/edit-short-form-content), [grading gig](https://fiverr.com/ajoshuafilms/do-professional-cinematic-color-grading-davinci-resolve), [wedding gig](https://fiverr.com/nitheesh_seban/do-professional-wedding-reels)
