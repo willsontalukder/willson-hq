@@ -22,12 +22,15 @@ ND filters, tripod. Ask before assuming.
 (https://claude.ai/artifact/T8T6R7Xy33u1VNk6RNG1yC). Each task:
 
 ```json
-{"id": "T14", "title": "…", "owner": "james", "project": "…", "status": "To do", "priority": "High", "updated": "YYYY-MM-DD"}
+{"id": "T14", "title": "…", "owner": "james", "project": "…", "status": "To do", "priority": "High",
+ "ask": "…", "next": "…", "updated": "YYYY-MM-DD"}
 ```
 
 - `status` is one of `To do`, `In progress`, `Needs Frank`, `Done`.
 - `priority` is one of `High`, `Medium`, `Low`.
 - `owner` is the agent id from `team/roster.json`.
+- `ask` (only when status is `Needs Frank`): one short question Frank must answer.
+- `next`: one line on what the disciple does next.
 
 When a task starts, finishes or gets blocked on Frank, update its status and `updated` date,
 then refresh the dashboard (re-upload `board.json` to the dashboard's Task board source).
