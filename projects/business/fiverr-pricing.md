@@ -2,7 +2,7 @@
 
 Prepared by Matthew (finance), 21 Oct 2026. For Frank Willson Talukder, Dhaka. He edits in DaVinci Resolve on an ASUS TUF laptop.
 
-**What we don't know:** Frank's Fiverr level, review count, current gig prices and the laptop's specs. Nothing here assumes them. We couldn't open Fiverr itself from here (fiverr.com did not resolve). Every market figure therefore comes from search-engine snippets of Fiverr pages or from third-party guides, and each one is cited and rated below. **Before publishing, open 10 to 15 competing gigs in each category on Fiverr and check them against §1.**
+**Updated 21 Oct 2026** with Frank's real Fiverr stats from `fiverr-snapshot.md`, which were read from his app screenshots. We still don't know the laptop's specs. We couldn't open Fiverr itself from here (fiverr.com did not resolve). Every market figure therefore comes from search-engine snippets of Fiverr pages or from third-party guides, and each one is cited and rated below. **Before publishing, open 10 to 15 competing gigs in each category on Fiverr and check them against §1.**
 
 ## Summary
 
