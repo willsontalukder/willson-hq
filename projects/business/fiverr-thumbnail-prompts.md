@@ -67,3 +67,28 @@ Cinematic wedding film still for a video editing thumbnail, 16:10 landscape. A S
 - Small line: clean sans (e.g. Inter or IBM Plex Sans), white at 80%.
 - A small "Keep Rolling" logo in one corner, same corner on all three gigs.
 - No emojis, arrows or "16x more views" style claims.
+
+---
+
+## YouTube gig · with Frank's own face (22 Oct)
+
+Upload your photo to ChatGPT or Gemini (image editing), then paste:
+
+```
+Use the person in my uploaded photo. Keep his face exactly the same: same features, skin tone, beard and hair. No beauty filter, no face changes, no cartoon style.
+
+Create a 1280x769 landscape Fiverr gig thumbnail for a YouTube video editing service.
+
+Person: place him on the right third, chest-up, turned slightly toward the left, confident friendly smile, looking at the camera. Change his outfit to a plain black crew-neck t-shirt. Soft warm key light from the left, gentle gold rim light on his shoulder.
+
+Behind and to the left of him: a dark, modern video-editing room. A large monitor shows a video editing timeline with colourful clips, audio waveforms and captions, and a bright, polished talking-head video in the preview window. Warm gold desk lamp, soft blue screen glow, shallow depth of field so the room is slightly blurred.
+
+Colour: deep black and charcoal background, warm gold highlights, one small glowing red recording dot in the top-left corner.
+
+Leave the top-left 40% clean and dark for a headline I will add later. No text, no letters, no logos, no software icons, no watermark. Photorealistic, cinematic, sharp face.
+```
+
+Add in Canva afterwards:
+- Headline (gold, tall bold font, 2 lines): `YOUTUBE EDITING` / `THAT KEEPS VIEWERS`
+- Small line (white): `Cuts · Captions · B-roll · Sound`
+- Small Keep Rolling logo, bottom-left corner
