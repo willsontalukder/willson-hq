@@ -92,3 +92,31 @@ Add in Canva afterwards:
 - Headline (gold, tall bold font, 2 lines): `YOUTUBE EDITING` / `THAT KEEPS VIEWERS`
 - Small line (white): `Cuts · Captions · B-roll · Sound`
 - Small Keep Rolling logo, bottom-left corner
+
+---
+
+## YouTube gig · full prompt v2, with face match and headline (22 Oct)
+
+Upload your real photo first, then paste:
+
+```
+IMPORTANT – FACE: Use the man in my uploaded photo as the only person. His face must match the photo exactly: same face shape and width, same eyes, nose, lips and eyebrows, same skin tone, same thin short beard and moustache, same wavy black hair. Do NOT make the face fuller, rounder or more handsome, do NOT thicken the beard, do NOT change the hair. No beauty filter, no smoothing, keep natural skin texture. He must be instantly recognisable as the same person.
+
+FORMAT: Landscape Fiverr gig thumbnail, exactly 1280 x 769 pixels (16:10 feel). Photorealistic, cinematic, sharp focus on the face.
+
+PERSON: Right third of the frame, chest-up, body turned slightly to the left, head facing the camera, natural friendly smile with eye contact. Plain black crew-neck t-shirt. Keep his head and shoulders fully inside the frame with a little space above the hair.
+
+SCENE: A dark, modern video-editing room behind and to the left of him. On the desk, a large monitor showing a video editing timeline with colourful video clips, green audio waveforms and caption bars, and a bright talking-head video in the preview window. A warm desk lamp, a small plant, a mirrorless camera and a keyboard on the desk. Shallow depth of field: the room is softly blurred, the face is sharp.
+
+LIGHT AND COLOUR: Soft warm key light on his face from the left, a thin gold rim light on his shoulder and hair, soft blue glow from the monitor. Deep black and charcoal background, warm gold highlights. One small glowing red recording dot in the top-left corner.
+
+TEXT: In the dark empty area at the top left, write exactly two lines in a tall, bold, condensed sans-serif font, left-aligned:
+Line 1, large, warm gold: YOUTUBE EDITING
+Line 2, smaller, white: Cuts · Captions · B-roll · Sound
+Spell every word exactly as written. No other text anywhere.
+
+AVOID: logos, software icons, brand names, watermarks, extra people in the foreground, distorted hands, cartoon or 3D style, cluttered background.
+```
+
+If the face still doesn't match, reply: "The face is different from my photo. Keep everything else, but redraw the face to match my uploaded photo exactly."
+If any letter in the text is wrong, generate it without the TEXT section and add the two lines in Canva.
