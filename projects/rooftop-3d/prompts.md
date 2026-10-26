@@ -46,3 +46,10 @@ Smooth cinematic drone shot slowly orbiting a modern rooftop in Dhaka at golden 
 ## Notes
 - AI image tools make a nice visual but won't keep exact measurements. For an accurate, editable 3D model with real dimensions, build it in SketchUp Free or Blender from the table above, then use prompt 1 to restyle a screenshot of it.
 - If the AI moves zones around, reply: "Keep the layout exactly like the uploaded plan: service block and pool on the left, awning walkway in the middle, lounge top-right, garden bottom-right."
+
+## Architect model files (model/)
+- `rooftop-plan.dxf`: 2D plan in feet with layers (AutoCAD, SketchUp, Revit import)
+- `rooftop.dae`: 3D massing model (SketchUp: File → Import → COLLADA), metres
+- `rooftop.obj`: 3D model, metres (SketchUp 2021+, Blender, Rhino)
+- `rooftop.glb`: 3D model for web/phone viewers, metres
+- Rebuild with `python3 build_model.py` (needs trimesh, ezdxf, scipy, pycollada).
