@@ -45,4 +45,4 @@ Smooth cinematic drone shot slowly orbiting a modern rooftop in Dhaka at golden 
 
 ## Notes
 - AI image tools make a nice visual but won't keep exact measurements. For an accurate, editable 3D model with real dimensions, build it in SketchUp Free or Blender from the table above, then use prompt 1 to restyle a screenshot of it.
-- If the AI moves zones around, reply: "Keep the layout exactly like the uploaded plan: pool top-left, lounge top-right, garden bottom-right."
+- If the AI moves zones around, reply: "Keep the layout exactly like the uploaded plan: service block and pool on the left, awning walkway in the middle, lounge top-right, garden bottom-right."
