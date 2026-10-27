@@ -1,0 +1,169 @@
+<title>Mishti &amp; Moto Shot Kit</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;800&family=Hind+Siliguri:wght@400;600&family=IBM+Plex+Mono:wght@400&display=swap">
+<style>
+/* Layout: a shooting-day kit. Sticky episode switcher, then one card per shot in edit order. */
+:root{
+  --bg:#FFF8E8; --surface:#FFFFFF; --ink:#3A2A1A; --muted:#7A6650; --line:#EADBC0;
+  --sun:#FFC94A; --orange:#F07A1A; --sky:#8FD3F4; --kite:#E8322B; --ok:#3E9B4F; --chip:#FFF0C9;
+  --display:"Baloo 2","Trebuchet MS",system-ui,sans-serif;
+  --body:"Hind Siliguri","Noto Sans Bengali",system-ui,sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,Menlo,Consolas,monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#1E1610; --surface:#2A2018; --ink:#F6EBD9; --muted:#BFA98C; --line:#463626;
+  --sun:#FFC94A; --orange:#FF9447; --sky:#8FD3F4; --kite:#FF6A62; --ok:#6CCB7C; --chip:#3A2C1C; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#1E1610; --surface:#2A2018; --ink:#F6EBD9; --muted:#BFA98C; --line:#463626;
+  --sun:#FFC94A; --orange:#FF9447; --sky:#8FD3F4; --kite:#FF6A62; --ok:#6CCB7C; --chip:#3A2C1C; color-scheme:dark}
+body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:16px;line-height:1.55}
+.wrap{max-width:860px;margin:0 auto;padding-block:20px 60px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+h1,h2,h3{font-family:var(--display);line-height:1.1;text-wrap:balance;margin:0}
+h1{font-size:2rem;font-weight:800}
+h1 .oops{color:var(--orange)}
+.sub{color:var(--muted);margin:4px 0 0}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--bg)}
+nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--bg);padding-block:10px;border-bottom:2px solid var(--line);margin-top:16px}
+.tabs{display:flex;gap:6px;overflow-x:auto;scrollbar-width:none}
+.tabs a{flex:0 0 auto;text-decoration:none;color:var(--ink);font-family:var(--display);font-weight:600;font-size:1rem;padding:6px 14px;border-radius:999px;border:2px solid var(--line);background:var(--surface);white-space:nowrap}
+.tabs a[aria-current="page"]{background:var(--sun);border-color:var(--sun);color:#3A2A1A}
+.tabs a .n{font-size:.75rem;color:var(--muted);margin-left:4px}
+.tabs a[aria-current="page"] .n{color:#6b4a12}
+.tabs a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid var(--sky);outline-offset:2px}
+section{display:grid;gap:16px;margin-top:20px}
+.ephead{display:grid;gap:8px}
+.ephead h2{font-size:1.6rem;font-weight:800}
+.meta{display:flex;flex-wrap:wrap;gap:6px}
+.chip{background:var(--chip);border-radius:6px;padding:2px 8px;font-size:.85rem}
+.log{margin:0;max-width:65ch}
+.progress{height:10px;border-radius:999px;background:var(--line);overflow:hidden}
+.progress i{display:block;height:100%;background:var(--ok);width:0;transition:width .3s}
+.plabel{font-size:.85rem;color:var(--muted)}
+.shot{background:var(--surface);border:2px solid var(--line);border-radius:14px;padding:14px;display:grid;gap:10px;min-width:0}
+.shot.done{border-color:var(--ok)}
+.shot.done .see{opacity:.6}
+.top{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.sid{font-family:var(--display);font-weight:800;font-size:1.3rem;color:var(--orange);font-variant-numeric:tabular-nums}
+.beat{font-family:var(--display);font-weight:600;letter-spacing:.06em;text-transform:uppercase;font-size:.8rem;background:var(--ink);color:var(--bg);padding:2px 8px;border-radius:4px}
+.edit{font-size:.85rem;color:var(--muted);font-variant-numeric:tabular-nums}
+.see{margin:0;max-width:65ch}
+.ingr{display:flex;flex-wrap:wrap;gap:6px;align-items:center;font-size:.85rem}
+.ingr b{font-weight:600;color:var(--muted)}
+.ing{border:1.5px dashed var(--orange);border-radius:6px;padding:1px 8px}
+details{min-width:0}
+summary{cursor:pointer;color:var(--muted);font-size:.9rem}
+pre{font-family:var(--mono);font-size:.78rem;line-height:1.5;white-space:pre-wrap;word-break:break-word;background:var(--bg);border-radius:8px;padding:10px;margin:8px 0 0;max-height:320px;overflow:auto}
+.actions{display:flex;gap:8px;flex-wrap:wrap}
+button{font-family:var(--display);font-weight:600;font-size:1rem;border-radius:10px;padding:8px 16px;border:2px solid var(--ink);background:var(--surface);color:var(--ink);cursor:pointer}
+button.copy{background:var(--sun);border-color:var(--sun);color:#3A2A1A}
+button.copy.ok{background:var(--ok);border-color:var(--ok);color:#fff}
+button.mark[aria-pressed="true"]{background:var(--ok);border-color:var(--ok);color:#fff}
+.box{background:var(--surface);border:2px solid var(--line);border-radius:14px;padding:14px;display:grid;gap:8px}
+.box h3{font-size:1.15rem}
+.box ul,.box ol{margin:0;padding-left:20px;display:grid;gap:4px}
+.cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}
+.cols>*{min-width:0}
+.note{border-left:4px solid var(--kite);padding-left:10px;max-width:65ch}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+
+<div class="wrap">
+  <header>
+    <h1>Mishti &amp; Moto <span class="oops">Shot Kit</span></h1>
+    <p class="sub">Oops! Toons · ৭টা পর্ব · ৪৯টা Google Flow prompt · প্রতিটা prompt-এ Copy চাপুন, Flow-এ paste করুন</p>
+  </header>
+  <nav><div class="tabs" id="tabs"></div></nav>
+  <main id="view"></main>
+</div>
+
+<script>
+const DATA = /*DATA*/null;
+const KEY = 'mm-shotkit-done';
+let done = {};
+try { done = JSON.parse(localStorage.getItem(KEY) || '{}') || {}; } catch (e) { done = {}; }
+function save(){ try { localStorage.setItem(KEY, JSON.stringify(done)); } catch (e) {} }
+const esc = s => String(s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const bn = n => String(n).replace(/\d/g, d => '০১২৩৪৫৬৭৮৯'[d]);
+const charFile = {Mishti:'Mishti_sheet_v1.png', Moto:'Moto_sheet_v1.png'};
+
+function copyText(btn, text){
+  const ok = () => { btn.textContent = 'Copied ✓'; btn.classList.add('ok'); setTimeout(()=>{btn.textContent='Copy prompt';btn.classList.remove('ok')},1600); };
+  const fallback = () => { const pre = btn.closest('.shot,.box').querySelector('pre'); const d = btn.closest('.shot,.box').querySelector('details'); if (d) d.open = true; const r = document.createRange(); r.selectNodeContents(pre); const s = getSelection(); s.removeAllRanges(); s.addRange(r); btn.textContent = 'Selected: copy it'; };
+  try { navigator.clipboard.writeText(text).then(ok, fallback); } catch (e) { fallback(); }
+}
+
+function tabs(cur){
+  const items = [['start','শুরু করুন','']].concat(DATA.episodes.map(e => ['ep'+e.num, 'EP'+String(e.num).padStart(2,'0'), e.shots.filter(s=>done[s.id]).length+'/7']));
+  document.getElementById('tabs').innerHTML = items.map(([id,label,n]) =>
+    `<a href="#${id}" ${id===cur?'aria-current="page"':''}>${label}${n?`<span class="n">${n}</span>`:''}</a>`).join('');
+}
+
+function startView(){
+  return `<section>
+  <div class="box"><h3>✅ Character sheet: approved</h3>
+   <p class="log">দুটো sheet-ই ঠিক আছে। Moto-র খাড়া কান সামনে থেকে বাঁয়ে আর পেছন থেকে ডানে, যেমন হওয়ার কথা। এগুলোই final। প্রতিটা panel আলাদা crop করে <code>Mishti_sheet_v1.png</code> আর <code>Moto_sheet_v1.png</code> নামে save করুন।</p></div>
+  <div class="box"><h3>Flow-এ প্রতিটা shot বানানোর নিয়ম</h3>
+   <ol>
+    <li>Flow-এ নতুন project খুলুন, aspect ratio দিন <b>9:16</b>।</li>
+    <li><b>Ingredients to Video</b> mode বেছে নিন। Shot card-এ যে ছবিগুলো লেখা আছে (চরিত্র আর location) সেগুলো upload করুন।</li>
+    <li><b>Copy prompt</b> চেপে Flow-এ paste করুন, তারপর Generate।</li>
+    <li>২–৪টা take থেকে সেরাটা নিন। Moto-র কান উল্টে গেলে Premiere-এ Horizontal Flip করবেন।</li>
+    <li>ভালো take পেলে card-এ <b>Done</b> চাপুন। কতটা হলো উপরে tab-এ দেখাবে।</li>
+   </ol>
+   <p class="note">Flow-এর নিজের sound শুধু guide। আসল sound effect Premiere-এ library থেকে বসাবেন। কোনো কথা বা গান চলে এলে কেটে দিন।</p></div>
+  <div class="box"><h3>আগে ৪টা location ছবি বানান (৩০ অক্টোবর)</h3>
+   <p class="log">এগুলো খালি background, কোনো চরিত্র ছাড়া। Image tool-এ 9:16 দিয়ে বানাবেন।</p></div>
+  ${DATA.plates.map(p=>`<div class="box"><div class="top"><span class="sid" style="font-size:1rem">${esc(p.file)}</span></div>
+   <details><summary>Prompt দেখুন</summary><pre>${esc(p.prompt)}</pre></details>
+   <div class="actions"><button class="copy" data-plate="${esc(p.file)}">Copy prompt</button></div></div>`).join('')}
+  <div class="box"><h3>৭টা পর্ব</h3><ol>${DATA.episodes.map(e=>`<li><a href="#ep${e.num}">${esc(e.title)}</a></li>`).join('')}</ol></div>
+  </section>`;
+}
+
+function epView(e){
+  const n = e.shots.filter(s=>done[s.id]).length;
+  return `<section>
+  <div class="ephead">
+    <h2>EP${String(e.num).padStart(2,'0')} · ${esc(e.title)}</h2>
+    <div class="meta"><span class="chip">${esc(e.location)}</span></div>
+    <p class="log">${esc(e.logline)}</p>
+    <p class="log"><b>Prop:</b> ${esc(e.props)}</p>
+    <div class="progress" aria-hidden="true"><i style="width:${n/7*100}%"></i></div>
+    <span class="plabel">${bn(n)}/৭ shot done</span>
+  </div>
+  ${e.shots.map(s=>`<article class="shot ${done[s.id]?'done':''}" data-id="${s.id}">
+    <div class="top"><span class="sid">${s.id}</span><span class="beat">${esc(s.beat)}</span><span class="edit">edit ${esc(s.edit)}</span></div>
+    <p class="see">${esc(s.see)}</p>
+    <div class="ingr"><b>Ingredients:</b>${s.chars.map(c=>`<span class="ing">${charFile[c]}</span>`).join('')}${s.loc?`<span class="ing">${s.loc}</span>`:''}</div>
+    <details><summary>পুরো prompt দেখুন</summary><pre>${esc(s.prompt)}</pre></details>
+    <div class="actions"><button class="copy" data-shot="${s.id}">Copy prompt</button>
+      <button class="mark" data-mark="${s.id}" aria-pressed="${!!done[s.id]}">${done[s.id]?'Done ✓':'Done'}</button></div>
+  </article>`).join('')}
+  <div class="cols">
+   <div class="box"><h3>Sound effects (Premiere)</h3><ul>${e.sfx.map(x=>`<li>${esc(x)}</li>`).join('')}</ul></div>
+   <div class="box"><h3>Upload</h3>
+     <p><b>Title:</b> ${esc(e.title)}</p>
+     <p><b>Description-এর প্রথম লাইন:</b> ${esc(e.descline)}</p>
+     <p><b>Hashtags:</b> ${esc(e.hashtags)}</p>
+     <p class="plabel">বাকি description channel-kit-এর template থেকে নেবেন।</p></div>
+  </div>
+  </section>`;
+}
+
+function render(){
+  const h = location.hash.slice(1);
+  const m = /^ep([1-7])$/.exec(h);
+  const cur = m ? h : 'start';
+  tabs(cur);
+  document.getElementById('view').innerHTML = m ? epView(DATA.episodes[+m[1]-1]) : startView();
+}
+document.addEventListener('click', ev => {
+  const b = ev.target.closest('button'); if (!b) return;
+  if (b.dataset.shot) { const s = DATA.episodes.flatMap(e=>e.shots).find(s=>s.id===b.dataset.shot); copyText(b, s.prompt); }
+  else if (b.dataset.plate) { copyText(b, DATA.plates.find(p=>p.file===b.dataset.plate).prompt); }
+  else if (b.dataset.mark) { const id = b.dataset.mark; if (done[id]) delete done[id]; else done[id] = 1; save(); const y = scrollY; render(); scrollTo(0, y); }
+});
+addEventListener('hashchange', () => { render(); scrollTo(0,0); });
+render();
+</script>
