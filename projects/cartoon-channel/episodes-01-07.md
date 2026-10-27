@@ -1,5 +1,7 @@
 # Mishti & Moto · Episodes 01–07 (storyboards + Google Flow prompts)
 
+> **Superseded on 28 Oct by `episodes-v2.md`** (4 shots, 15–20 s, short prompts). Kept for reference.
+
 Channel: **Oops! Toons** · Written by John (storyteller), 27 Oct 2026 · Status: **draft for Frank's approval** (nothing generated, nothing posted).
 
 Source: `projects/cartoon-channel/plan.md` (formula, first 10 ideas), `projects/cartoon-channel/channel-kit.md` (titles, SEO), `projects/cartoon-channel/character-bible.md` (LOCK blocks).

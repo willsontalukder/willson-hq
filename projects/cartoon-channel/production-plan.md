@@ -64,8 +64,8 @@ Use the drive with the most free space (default `D:\OopsToons\`, or `C:\OopsToon
 
 ```
 OopsToons\
-  00_bible\        mishti_sheet_v01.png, moto_sheet_v01.png, loc-A_street.png, loc-B_rooftop.png,
-                   loc-C_home.png, prompts.md, style-notes.md
+  00_bible\        Mishti_sheet_v1.png, Moto_sheet_v1.png, loc-lane.png, loc-rooftop.png,
+                   loc-home.png, loc-home-doorstep-rain.png, prompts.md
   01_sound\        sfx\ , music\ , licences.md (track, source, date)
   02_templates\    oops-template.prproj, endcard.png, watermark.png
   episodes\
