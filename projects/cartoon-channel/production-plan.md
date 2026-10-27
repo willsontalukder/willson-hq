@@ -87,16 +87,16 @@ OopsToons\
 | Date | Release | Status today (27 Oct) |
 |---|---|---|
 | Mon 9 Nov | EP001 · Moto vs the Falling Ice Cream 🍦 Oops! | Buffer: make 31 Oct–1 Nov |
-| Tue 10 Nov | EP002 · Moto vs the Rickshaw Horn | Buffer: make 2 Nov |
-| Wed 11 Nov | EP003 · Mishti's Tea Cup Tower… Oops! ☕ | Buffer: make 3 Nov |
-| Thu 12 Nov | EP004 · When the Umbrella Won't Open 🌧️ | Buffer: make 4 Nov |
-| Fri 13 Nov | EP005 · Moto's First Kite | Buffer: make 5 Nov |
+| Tue 10 Nov | EP002 · Moto's First Kite Won't Fly 🪁 Oops! | Buffer: make 2 Nov |
+| Wed 11 Nov | EP003 · Mishti's Tea Cup Tower vs Moto's Sneeze ☕ Oops! | Buffer: make 3 Nov |
+| Thu 12 Nov | EP004 · Moto Tries to Be Quiet (Mishti Is Sleeping) 🤫 Oops! | Buffer: make 4 Nov |
+| Fri 13 Nov | EP005 · Moto vs the Mango That's Too High 🥭 Oops! | Buffer: make 5 Nov |
 | Sun 15 Nov | No compilation yet (only 5 episodes out). First Sunday review | |
-| Mon 16 Nov | EP006 · The Mango That's Too High | Buffer: make 6 Nov |
-| Tue 17 Nov | EP007 · Bath-Time Escape | Buffer: make 7 Nov |
-| Wed 18 Nov | EP008 · The Lost Slipper | Batch 1: make 9–13 Nov |
-| Thu 19 Nov | EP009 · The Power Cut and the Torch | Batch 1 |
-| Fri 20 Nov | EP010 · Moto Tries to Be Quiet | Batch 1 |
+| Mon 16 Nov | EP006 · Moto vs the Rickshaw Horn 📯 Oops! | Buffer: make 6 Nov |
+| Tue 17 Nov | EP007 · Moto vs the Umbrella That Won't Open 🌧️ Oops! | Buffer: make 7 Nov |
+| Wed 18 Nov | EP008 · John's batch 2 (approve Sun 8 Nov) | Batch 1: make 9–13 Nov |
+| Thu 19 Nov | EP009 · John's batch 2 | Batch 1 |
+| Fri 20 Nov | EP010 · John's batch 2 | Batch 1 |
 | Sun 22 Nov | **COMP01** · Best of EP001–EP010 + new linking scene (~8 min) | Edit Sat 21 Nov |
 | Mon 23 – Tue 24 Nov | EP011–EP012 (John's batch 2 ideas, approve Sun 8 Nov) | Batch 1 |
 | Wed 25 – Fri 27 Nov | EP013–EP015 | Batch 2: make 16–20 Nov |
@@ -166,3 +166,5 @@ November totals: 16 Shorts and 2 compilations, which matches the Month 1 target 
 | 11 | Monthly AI/music budget | matthew | Medium | Check the current Flow plan price and credits before the free tier runs out. Needs Frank's approval to buy |
 | 12 | Scripts EP011–EP020 | john | Medium | Batch 2 for approval on Sun 8 Nov |
 | 13 | Sunday analytics review | jude | Medium | First review on Sun 15 Nov, using the section 6 table |
+
+_Calendar titles follow episodes-01-07.md (John's release order). Bath-time, lost slipper and power cut were dropped there; see that file for why._
