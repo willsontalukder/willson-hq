@@ -12,7 +12,7 @@ Every plan must be doable by one person.
 | 85mm prime | Tele: portraits, interviews, compression, details |
 | DJI Neo 2 | Small drone. Check specs, flight modes and local rules against DJI's and the aviation authority's official sources before relying on them |
 | DJI Mic Mini 2 | Wireless mic kit. Check exact specs (transmitters, range, recording options) on DJI's official page before relying on them |
-| Adobe Premiere Pro | Frank's editing software. He does **not** use DaVinci Resolve and does **not** offer colour grading. Footage should look right straight out of camera; in Premiere only light correction (exposure, white balance, Lumetri basics) as part of an edit |
+| Adobe Premiere Pro | Frank's editing software. He does **not** use DaVinci Resolve. He does not sell colour grading yet; since 27 Oct 2026 he is **learning colour grading in Premiere Pro** (see `projects/color-grading-course/`). Footage should look right straight out of camera; in Premiere only light correction (exposure, white balance, Lumetri basics) as part of an edit |
 | ASUS TUF laptop | Editing machine. Exact model, CPU, GPU and RAM not recorded yet; ask Frank |
 
 Not owned (as far as we know): lights, gimbal,
