@@ -71,7 +71,7 @@ button.mark[aria-pressed="true"]{background:var(--ok);border-color:var(--ok);col
 <div class="wrap">
   <header>
     <h1>Mishti &amp; Moto <span class="oops">Shot Kit</span></h1>
-    <p class="sub">Oops! Toons · ৭টা পর্ব · ৪৯টা Google Flow prompt · প্রতিটা prompt-এ Copy চাপুন, Flow-এ paste করুন</p>
+    <p class="sub">Oops! Toons · ৭টা পর্ব · ২৮টা Google Flow prompt · প্রতিটা ১৫–২০ সেকেন্ড · প্রতিটা prompt-এ Copy চাপুন, Flow-এ paste করুন</p>
   </header>
   <nav><div class="tabs" id="tabs"></div></nav>
   <main id="view"></main>
@@ -79,7 +79,7 @@ button.mark[aria-pressed="true"]{background:var(--ok);border-color:var(--ok);col
 
 <script>
 const DATA = /*DATA*/null;
-const KEY = 'mm-shotkit-done';
+const KEY = 'mm-shotkit-v2';
 let done = {};
 try { done = JSON.parse(localStorage.getItem(KEY) || '{}') || {}; } catch (e) { done = {}; }
 function save(){ try { localStorage.setItem(KEY, JSON.stringify(done)); } catch (e) {} }
@@ -94,7 +94,7 @@ function copyText(btn, text){
 }
 
 function tabs(cur){
-  const items = [['start','শুরু করুন','']].concat(DATA.episodes.map(e => ['ep'+e.num, 'EP'+String(e.num).padStart(2,'0'), e.shots.filter(s=>done[s.id]).length+'/7']));
+  const items = [['start','শুরু করুন','']].concat(DATA.episodes.map(e => ['ep'+e.num, 'EP'+String(e.num).padStart(2,'0'), e.shots.filter(s=>done[s.id]).length+'/'+e.shots.length]));
   document.getElementById('tabs').innerHTML = items.map(([id,label,n]) =>
     `<a href="#${id}" ${id===cur?'aria-current="page"':''}>${label}${n?`<span class="n">${n}</span>`:''}</a>`).join('');
 }
@@ -108,6 +108,7 @@ function startView(){
     <li>Flow-এ নতুন project খুলুন, aspect ratio দিন <b>9:16</b>।</li>
     <li><b>Ingredients to Video</b> mode বেছে নিন। Shot card-এ যে ছবিগুলো লেখা আছে (চরিত্র আর location) সেগুলো upload করুন।</li>
     <li><b>Copy prompt</b> চেপে Flow-এ paste করুন, তারপর Generate।</li>
+    <li>Flow action না দিলে আগে image tool-এ shot-এর প্রথম frame ছবি হিসেবে বানান, তারপর সেটা start frame দিয়ে animate করুন।</li>
     <li>২–৪টা take থেকে সেরাটা নিন। Moto-র কান উল্টে গেলে Premiere-এ Horizontal Flip করবেন।</li>
     <li>ভালো take পেলে card-এ <b>Done</b> চাপুন। কতটা হলো উপরে tab-এ দেখাবে।</li>
    </ol>
@@ -129,18 +130,20 @@ function epView(e){
     <div class="meta"><span class="chip">${esc(e.location)}</span></div>
     <p class="log">${esc(e.logline)}</p>
     <p class="log"><b>Prop:</b> ${esc(e.props)}</p>
-    <div class="progress" aria-hidden="true"><i style="width:${n/7*100}%"></i></div>
-    <span class="plabel">${bn(n)}/৭ shot done</span>
+    <p class="log"><b>শুরুর caption (২ সেকেন্ড):</b> <span class="chip">${esc(e.caption)}</span></p>
+    <div class="progress" aria-hidden="true"><i style="width:${n/e.shots.length*100}%"></i></div>
+    <span class="plabel">${bn(n)}/${bn(e.shots.length)} shot done</span>
   </div>
   ${e.shots.map(s=>`<article class="shot ${done[s.id]?'done':''}" data-id="${s.id}">
     <div class="top"><span class="sid">${s.id}</span><span class="beat">${esc(s.beat)}</span><span class="edit">edit ${esc(s.edit)}</span></div>
     <p class="see">${esc(s.see)}</p>
     <div class="ingr"><b>Ingredients:</b>${s.chars.map(c=>`<span class="ing">${charFile[c]}</span>`).join('')}${s.loc?`<span class="ing">${s.loc}</span>`:''}</div>
-    <details><summary>পুরো prompt দেখুন</summary><pre>${esc(s.prompt)}</pre></details>
+    <details open><summary>Prompt</summary><pre>${esc(s.prompt)}</pre></details>
     <div class="actions"><button class="copy" data-shot="${s.id}">Copy prompt</button>
       <button class="mark" data-mark="${s.id}" aria-pressed="${!!done[s.id]}">${done[s.id]?'Done ✓':'Done'}</button></div>
   </article>`).join('')}
   <div class="cols">
+   <div class="box"><h3>Edit (Premiere)</h3><ul>${e.edit.map(x=>`<li>${esc(x)}</li>`).join('')}</ul></div>
    <div class="box"><h3>Sound effects (Premiere)</h3><ul>${e.sfx.map(x=>`<li>${esc(x)}</li>`).join('')}</ul></div>
    <div class="box"><h3>Upload</h3>
      <p><b>Title:</b> ${esc(e.title)}</p>
