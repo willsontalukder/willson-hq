@@ -64,6 +64,8 @@ button.mark[aria-pressed="true"]{background:var(--ok);border-color:var(--ok);col
 .box ul,.box ol{margin:0;padding-left:20px;display:grid;gap:4px}
 .cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}
 .cols>*{min-width:0}
+.kf{display:grid;gap:6px;border-top:1px dashed var(--line);padding-top:8px;min-width:0}
+.kf pre{margin:0}
 .note{border-left:4px solid var(--kite);padding-left:10px;max-width:65ch}
 @media (prefers-reduced-motion:reduce){*{transition:none!important}}
 </style>
@@ -88,13 +90,13 @@ const bn = n => String(n).replace(/\d/g, d => '০১২৩৪৫৬৭৮৯'[d
 const charFile = {Mishti:'Mishti_sheet_v1.png', Moto:'Moto_sheet_v1.png'};
 
 function copyText(btn, text){
-  const ok = () => { btn.textContent = 'Copied ✓'; btn.classList.add('ok'); setTimeout(()=>{btn.textContent='Copy prompt';btn.classList.remove('ok')},1600); };
-  const fallback = () => { const pre = btn.closest('.shot,.box').querySelector('pre'); const d = btn.closest('.shot,.box').querySelector('details'); if (d) d.open = true; const r = document.createRange(); r.selectNodeContents(pre); const s = getSelection(); s.removeAllRanges(); s.addRange(r); btn.textContent = 'Selected: copy it'; };
+  const ok = () => { btn.textContent = 'Copied ✓'; btn.classList.add('ok'); setTimeout(()=>{btn.textContent=btn.dataset.pp?'Copy':'Copy prompt';btn.classList.remove('ok')},1600); };
+  const fallback = () => { const pre = btn.closest('.kf,.shot,.box').querySelector('pre'); const d = btn.closest('.shot,.box').querySelector('details'); if (d) d.open = true; const r = document.createRange(); r.selectNodeContents(pre); const s = getSelection(); s.removeAllRanges(); s.addRange(r); btn.textContent = 'Selected: copy it'; };
   try { navigator.clipboard.writeText(text).then(ok, fallback); } catch (e) { fallback(); }
 }
 
 function tabs(cur){
-  const items = [['start','শুরু করুন','']].concat(DATA.episodes.map(e => ['ep'+e.num, 'EP'+String(e.num).padStart(2,'0'), e.shots.filter(s=>done[s.id]).length+'/'+e.shots.length]));
+  const items = [['start','শুরু করুন',''],['pilot','★ EP01 Pro Pilot',DATA.pilot.shots.filter(s=>done[s.id]).length+'/'+DATA.pilot.shots.length]].concat(DATA.episodes.map(e => ['ep'+e.num, 'EP'+String(e.num).padStart(2,'0'), e.shots.filter(s=>done[s.id]).length+'/'+e.shots.length]));
   document.getElementById('tabs').innerHTML = items.map(([id,label,n]) =>
     `<a href="#${id}" ${id===cur?'aria-current="page"':''}>${label}${n?`<span class="n">${n}</span>`:''}</a>`).join('');
 }
@@ -118,7 +120,8 @@ function startView(){
   ${DATA.plates.map(p=>`<div class="box"><div class="top"><span class="sid" style="font-size:1rem">${esc(p.file)}</span></div>
    <details><summary>Prompt দেখুন</summary><pre>${esc(p.prompt)}</pre></details>
    <div class="actions"><button class="copy" data-plate="${esc(p.file)}">Copy prompt</button></div></div>`).join('')}
-  <div class="box"><h3>৭টা পর্ব</h3><ol>${DATA.episodes.map(e=>`<li><a href="#ep${e.num}">${esc(e.title)}</a></li>`).join('')}</ol></div>
+  <div class="box"><h3>★ নতুন: <a href="#pilot">EP01 Pro Pilot</a></h3><p class="log">TV-cartoon মানের পদ্ধতি। আগে এটা দিয়ে পরীক্ষা করুন।</p></div>
+  <div class="box"><h3>৭টা পর্ব (দ্রুত version)</h3><ol>${DATA.episodes.map(e=>`<li><a href="#ep${e.num}">${esc(e.title)}</a></li>`).join('')}</ol></div>
   </section>`;
 }
 
@@ -154,16 +157,52 @@ function epView(e){
   </section>`;
 }
 
+
+function kf(label, note, text, key){
+  if (!text) return '';
+  return `<div class="kf"><div class="kfh"><b>${label}</b>${note?` <span class="plabel">${esc(note)}</span>`:''}</div>
+    <pre>${esc(text)}</pre><div class="actions"><button class="copy" data-pp="${key}">Copy</button></div></div>`;
+}
+function pilotView(){
+  const P = DATA.pilot, n = P.shots.filter(s=>done[s.id]).length;
+  return `<section>
+  <div class="ephead"><h2>EP01 Pro Pilot · Moto vs the Flying Ice Cream 🍦</h2>
+   <p class="log">TV-cartoon পদ্ধতি: ১১টা ছোট shot, ২৭ সেকেন্ড। প্রতিটা shot-এ আগে শুরুর আর শেষের ছবি (keyframe), তারপর Flow-এর <b>Frames to Video</b>। এক shot-এর শেষ ছবি = পরের shot-এর শুরুর ছবি।</p>
+   <p class="log"><b>শুরুর caption:</b> <span class="chip">he had ONE job 🍦</span></p>
+   <div class="progress" aria-hidden="true"><i style="width:${n/P.shots.length*100}%"></i></div>
+   <span class="plabel">${bn(n)}/${bn(P.shots.length)} shot done</span></div>
+  <div class="box"><h3>Continuity-র নিয়ম (প্রতিটা ছবিতে মিলিয়ে নিন)</h3><ul>${P.rules.map(r=>`<li>${esc(r)}</li>`).join('')}</ul>
+   <details><summary>গলির staging map</summary><pre>${esc(P.map)}</pre></details></div>
+  <div class="box"><h3>ধাপ</h3><ol>
+   <li>Image tool-এ reference দিন: <code>Moto_sheet_v1.png</code>, <code>Mishti_sheet_v1.png</code>, <code>loc-lane.png</code>। Card-এ "attach" লেখা থাকলে আগের keyframe-টাও দিন।</li>
+   <li>Start keyframe বানান, তারপর End keyframe।</li>
+   <li>Flow → <b>Frames to Video</b>, 9:16: start আর end ছবি দিয়ে Video prompt paste করুন।</li>
+   <li>৮ সেকেন্ডের clip থেকে edit-এ শুধু সেরা ১.৫–৩.৫ সেকেন্ড নেবেন।</li>
+   <li>আগে ১১টা start keyframe Premiere-এ সাজিয়ে দেখে নিন (animatic), তারপর video বানান।</li></ol></div>
+  ${P.shots.map((s,i)=>`<article class="shot ${done[s.id]?'done':''}">
+    <div class="top"><span class="sid">${s.id}</span><span class="beat">${esc(s.size)}</span><span class="edit">${esc(s.edit)}</span></div>
+    <p class="see"><b>Camera:</b> ${esc(s.move)}</p>
+    <p class="see">${esc(s.see)}</p>
+    <p class="plabel">পরের shot-এ cut: ${esc(s.cut)}</p>
+    ${kf('① Start keyframe (ছবি)', s.startnote, s.start, i+':start')}
+    ${kf('② End keyframe (ছবি)', s.endnote, s.end, i+':end')}
+    ${kf('③ Flow video prompt', '', s.video, i+':video')}
+    <div class="actions"><button class="mark" data-mark="${s.id}" aria-pressed="${!!done[s.id]}">${done[s.id]?'Done ✓':'Done'}</button></div>
+  </article>`).join('')}
+  </section>`;
+}
+
 function render(){
   const h = location.hash.slice(1);
   const m = /^ep([1-7])$/.exec(h);
-  const cur = m ? h : 'start';
+  const cur = m ? h : (h==='pilot' ? 'pilot' : 'start');
   tabs(cur);
-  document.getElementById('view').innerHTML = m ? epView(DATA.episodes[+m[1]-1]) : startView();
+  document.getElementById('view').innerHTML = m ? epView(DATA.episodes[+m[1]-1]) : (cur==='pilot' ? pilotView() : startView());
 }
 document.addEventListener('click', ev => {
   const b = ev.target.closest('button'); if (!b) return;
   if (b.dataset.shot) { const s = DATA.episodes.flatMap(e=>e.shots).find(s=>s.id===b.dataset.shot); copyText(b, s.prompt); }
+  else if (b.dataset.pp) { const [i,k] = b.dataset.pp.split(':'); copyText(b, DATA.pilot.shots[+i][k]); }
   else if (b.dataset.plate) { copyText(b, DATA.plates.find(p=>p.file===b.dataset.plate).prompt); }
   else if (b.dataset.mark) { const id = b.dataset.mark; if (done[id]) delete done[id]; else done[id] = 1; save(); const y = scrollY; render(); scrollTo(0, y); }
 });
